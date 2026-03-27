@@ -1,0 +1,24 @@
+Dream: Popstars
+
+Synopsis: Popstar Hub is a stylized, pop culture inspired multiplayer game that combines a collection of mini-games into a single interactive experience centered around music, performance, and competition. Players enter a vibrant hub world where they can choose from a variety of game modes, earn in-game currency (StarCoins), and customize their popstar identity.
+
+Overall, Popstar Hub aims to deliver a fun, expressive, and competitive experience that blends casual gameplay with the excitement of popstar culture, allowing players to perform, customize, and battle their way to stardom.
+
+Techstack: 
+
+GameEnngine - Unity
+Language - C#
+Multiplayer - Unity Netcode for GameObjects
+Assets and Design- Flaticon and tbd
+
+
+Platform: PC (Mobile in consideration)
+
+Team Roles:
+Andre Ayiku - Lead Game Designer
+Gilbert Tetteh - Lead Developer
+Sedem Agudetse - Narrative Designer
+Jason Agyeman-Darko - Arts Designer
+Alan Ofori -
+Elsie Lartey -
+Kobina Coleman -
