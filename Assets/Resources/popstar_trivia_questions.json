@@ -1,0 +1,92 @@
+[
+    {
+        "id": "q1",
+        "category": "Albums",
+        "difficulty": "easy",
+        "question": "Which artist released the album Future Nostalgia?",
+        "options": ["Dua Lipa", "SZA", "Rihanna", "Doja Cat"],
+        "correctIndex": 0,
+        "explanation": "Future Nostalgia was released by Dua Lipa in 2020."
+    },
+    {
+        "id": "q2",
+        "category": "Awards",
+        "difficulty": "easy",
+        "question": "Which artist won Grammy Album of the Year for Midnights?",
+        "options": ["Beyonce", "Adele", "Taylor Swift", "Billie Eilish"],
+        "correctIndex": 2,
+        "explanation": "Taylor Swift won Album of the Year for Midnights at the 2024 Grammys."
+    },
+    {
+        "id": "q3",
+        "category": "Songs",
+        "difficulty": "easy",
+        "question": "Who sang the hit song Bad Guy?",
+        "options": ["Ariana Grande", "Billie Eilish", "Olivia Rodrigo", "Lorde"],
+        "correctIndex": 1,
+        "explanation": "Bad Guy is a hit song by Billie Eilish from her debut album."
+    },
+    {
+        "id": "q4",
+        "category": "Albums",
+        "difficulty": "medium",
+        "question": "Which artist released the album Renaissance?",
+        "options": ["Rihanna", "Nicki Minaj", "Beyonce", "Cardi B"],
+        "correctIndex": 2,
+        "explanation": "Renaissance was released by Beyonce in 2022."
+    },
+    {
+        "id": "q5",
+        "category": "Songs",
+        "difficulty": "easy",
+        "question": "Who sang Drivers License?",
+        "options": ["Sabrina Carpenter", "Olivia Rodrigo", "Taylor Swift", "Dua Lipa"],
+        "correctIndex": 1,
+        "explanation": "Drivers License was Olivia Rodrigo's debut single released in 2021."
+    },
+    {
+        "id": "q6",
+        "category": "Songs",
+        "difficulty": "medium",
+        "question": "Which artist released the song Espresso?",
+        "options": ["Doja Cat", "Ariana Grande", "Sabrina Carpenter", "Charli XCX"],
+        "correctIndex": 2,
+        "explanation": "Espresso was released by Sabrina Carpenter in 2024."
+    },
+    {
+        "id": "q7",
+        "category": "Albums",
+        "difficulty": "medium",
+        "question": "What is the name of SZA's 2022 album?",
+        "options": ["Ctrl", "SOS", "Good Days", "Kill Bill"],
+        "correctIndex": 1,
+        "explanation": "SZA released her second studio album SOS in December 2022."
+    },
+    {
+        "id": "q8",
+        "category": "Songs",
+        "difficulty": "hard",
+        "question": "Which artist released the song Boom Boom Bass?",
+        "options": ["Nicki Minaj", "Cardi B", "Megan Thee Stallion", "Doja Cat"],
+        "correctIndex": 3,
+        "explanation": "Boom Boom Bass is a track by Doja Cat."
+    },
+    {
+        "id": "q9",
+        "category": "Awards",
+        "difficulty": "medium",
+        "question": "Who was the first artist to win Grammy Record of the Year twice in a row?",
+        "options": ["Adele", "Billie Eilish", "Taylor Swift", "Beyonce"],
+        "correctIndex": 1,
+        "explanation": "Billie Eilish won Record of the Year in both 2020 and 2021."
+    },
+    {
+        "id": "q10",
+        "category": "Songs",
+        "difficulty": "easy",
+        "question": "Who released the song As It Was?",
+        "options": ["Ed Sheeran", "Harry Styles", "Niall Horan", "Louis Tomlinson"],
+        "correctIndex": 1,
+        "explanation": "As It Was was released by Harry Styles in 2022 and became a global hit."
+    }
+]
