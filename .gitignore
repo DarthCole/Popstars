@@ -10,3 +10,4 @@
 *.userprefs
 *.csproj
 *.sln
+.fake
