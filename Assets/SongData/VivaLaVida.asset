@@ -1,0 +1,152 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf5c5860321ed24db12c9934ce5630c, type: 3}
+  m_Name: VivaLaVida
+  m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songName: Viva La Vida
+  artist: Coldplay
+  BPM: 0
+  backingTrack: {fileID: 8300000, guid: d3097da9e7c60c342b36d2c60c70b798, type: 3}
+  coverArt: {fileID: 5458508558293845083, guid: 37d8fa8884dd8f740986fc8cfc6b60ea, type: 3}
+  lines:
+  - timestamp: 13.11
+    text: I used to rule the world
+    targetPitch: 249.96
+  - timestamp: 17.08
+    text: Seas would rise when I gave the word
+    targetPitch: 191.16
+  - timestamp: 19.79
+    text: Now in the mornin', I sleep alone
+    targetPitch: 252.17
+  - timestamp: 23.99
+    text: Sweep the streets I used to own
+    targetPitch: 322.51
+  - timestamp: 41.09
+    text: I used to roll the dice
+    targetPitch: 252.17
+  - timestamp: 44.72
+    text: Feel the fear in my enemy's eyes
+    targetPitch: 215.1
+  - timestamp: 48.03
+    text: Listened as the crowd would sing
+    targetPitch: 245.69
+  - timestamp: 51.98
+    text: '"Now the old king is dead, long live the king"'
+    targetPitch: 215.46
+  - timestamp: 54.85
+    text: One minute I held the key
+    targetPitch: 328.43
+  - timestamp: 58.74
+    text: Next, the walls were closed on me
+    targetPitch: 280.32
+  - timestamp: 61.4
+    text: And I discovered that my castles stand
+    targetPitch: 244.18
+  - timestamp: 65.69
+    text: Upon pillars of salt and pillars of sand
+    targetPitch: 213.22
+  - timestamp: 69.73
+    text: I hear Jerusalem bells a-ringin'
+    targetPitch: 307.33
+  - timestamp: 73.38
+    text: Roman cavalry choirs are singin'
+    targetPitch: 265.28
+  - timestamp: 76.65
+    text: Be my mirror, my sword and shield
+    targetPitch: 307.94
+  - timestamp: 80.12
+    text: My missionaries in a foreign field
+    targetPitch: 246.15
+  - timestamp: 83.61
+    text: For some reason, I can't explain
+    targetPitch: 369.91
+  - timestamp: 87.12
+    text: Once you'd gone, there was never
+    targetPitch: 302.99
+  - timestamp: 89.79
+    text: Never an honest word
+    targetPitch: 247.36
+  - timestamp: 93.57
+    text: And that was when I ruled the world
+    targetPitch: 316.03
+  - timestamp: 109.85
+    text: It was a wicked and wild wind
+    targetPitch: 253.81
+  - timestamp: 114.44
+    text: Blew down the doors to let me in
+    targetPitch: 194.28
+  - timestamp: 117.31
+    text: Shattered windows and the sound of drums
+    targetPitch: 252.88
+  - timestamp: 121.55
+    text: People couldn't believe what I'd become
+    targetPitch: 216.16
+  - timestamp: 124.8
+    text: Revolutionaries wait
+    targetPitch: 321.12
+  - timestamp: 128.48
+    text: For my head on a silver plate
+    targetPitch: 296.74
+  - timestamp: 131.26
+    text: Just a puppet on a lonely string
+    targetPitch: 208.5
+  - timestamp: 135.58
+    text: Oh, who would ever wanna be king?
+    targetPitch: 205.94
+  - timestamp: 139.14
+    text: I hear Jerusalem bells a-ringin'
+    targetPitch: 307.6
+  - timestamp: 142.98
+    text: Roman cavalry choirs are singin'
+    targetPitch: 263.08
+  - timestamp: 146.32
+    text: Be my mirror, my sword and shield
+    targetPitch: 313.34
+  - timestamp: 149.65
+    text: My missionaries in a foreign field
+    targetPitch: 245.4
+  - timestamp: 153.46
+    text: For some reason, I can't explain
+    targetPitch: 368.5
+  - timestamp: 156.51
+    text: I know St. Peter won't call my name
+    targetPitch: 286.94
+  - timestamp: 159.85
+    text: Never an honest word
+    targetPitch: 251.73
+  - timestamp: 163.05
+    text: But that was when I ruled the world
+    targetPitch: 466.67
+  - timestamp: 194.93
+    text: Hear Jerusalem bells a-ringin'
+    targetPitch: 312.36
+  - timestamp: 198.58
+    text: Roman cavalry choirs are singin'
+    targetPitch: 276.1
+  - timestamp: 202.04
+    text: Be my mirror, my sword and shield
+    targetPitch: 317.93
+  - timestamp: 205.29
+    text: My missionaries in a foreign field
+    targetPitch: 257.79
+  - timestamp: 208.92
+    text: For some reason, I can't explain
+    targetPitch: 363.13
+  - timestamp: 212.24
+    text: I know St. Peter won't call my name
+    targetPitch: 289.49
+  - timestamp: 215.48
+    text: Never an honest word
+    targetPitch: 249.52
+  - timestamp: 218.65
+    text: But that was when I ruled the world
+    targetPitch: 196.5

@@ -1,0 +1,181 @@
+{
+  "songName": "Blinding Lights",
+  "artist": "The Weeknd",
+  "lines": [
+    {
+      "timestamp": 13.32,
+      "text": "Yeah",
+      "targetPitch": 369.64
+    },
+    {
+      "timestamp": 27.04,
+      "text": "I've been tryna call",
+      "targetPitch": 252.45
+    },
+    {
+      "timestamp": 29.98,
+      "text": "I've been on my own for long enough",
+      "targetPitch": 239.96
+    },
+    {
+      "timestamp": 32.75,
+      "text": "Maybe you can show me how to love, maybe",
+      "targetPitch": 231.09
+    },
+    {
+      "timestamp": 38.09,
+      "text": "I'm goin' through withdrawals",
+      "targetPitch": 249.9
+    },
+    {
+      "timestamp": 41.04,
+      "text": "You don't even have to do too much",
+      "targetPitch": 241.18
+    },
+    {
+      "timestamp": 43.84,
+      "text": "You can turn me on with just a touch, baby",
+      "targetPitch": 225.35
+    },
+    {
+      "timestamp": 49.39,
+      "text": "I look around and",
+      "targetPitch": 242.52
+    },
+    {
+      "timestamp": 50.59,
+      "text": "Sin City's cold and empty (oh)",
+      "targetPitch": 313.48
+    },
+    {
+      "timestamp": 53.55,
+      "text": "No one's around to judge me (oh)",
+      "targetPitch": 320.67
+    },
+    {
+      "timestamp": 56.24,
+      "text": "I can't see clearly when you're gone",
+      "targetPitch": 289.56
+    },
+    {
+      "timestamp": 60.81,
+      "text": "I said, \"Ooh, I'm blinded by the lights",
+      "targetPitch": 330.86
+    },
+    {
+      "timestamp": 66.53,
+      "text": "No, I can't sleep until I feel your touch\"",
+      "targetPitch": 348.28
+    },
+    {
+      "timestamp": 71.76,
+      "text": "I said, \"Ooh, I'm drowning in the night",
+      "targetPitch": 333.55
+    },
+    {
+      "timestamp": 77.75,
+      "text": "Oh, when I'm like this, you're the one I trust\"",
+      "targetPitch": 352.98
+    },
+    {
+      "timestamp": 82.15,
+      "text": "(Hey, hey, hey)",
+      "targetPitch": 806.85
+    },
+    {
+      "timestamp": 94.1,
+      "text": "I'm running out of time",
+      "targetPitch": 255.59
+    },
+    {
+      "timestamp": 97.06,
+      "text": "'Cause I can see the sun light up the sky",
+      "targetPitch": 228.77
+    },
+    {
+      "timestamp": 99.9,
+      "text": "So I hit the road in overdrive, baby, oh",
+      "targetPitch": 236.58
+    },
+    {
+      "timestamp": 106.79,
+      "text": "The city's cold and empty (oh)",
+      "targetPitch": 314.39
+    },
+    {
+      "timestamp": 109.46,
+      "text": "No one's around to judge me (oh)",
+      "targetPitch": 337.64
+    },
+    {
+      "timestamp": 112.48,
+      "text": "I can't see clearly when you're gone",
+      "targetPitch": 295.89
+    },
+    {
+      "timestamp": 116.77,
+      "text": "I said, \"Ooh, I'm blinded by the lights",
+      "targetPitch": 326.22
+    },
+    {
+      "timestamp": 122.72,
+      "text": "No, I can't sleep until I feel your touch\"",
+      "targetPitch": 346.14
+    },
+    {
+      "timestamp": 128.22,
+      "text": "I said, \"Ooh, I'm drowning in the night",
+      "targetPitch": 283.96
+    },
+    {
+      "timestamp": 134.17,
+      "text": "Oh, when I'm like this, you're the one I trust\"",
+      "targetPitch": 355.98
+    },
+    {
+      "timestamp": 139.46,
+      "text": "I'm just walking by to let you know (by to let you know)",
+      "targetPitch": 405.45
+    },
+    {
+      "timestamp": 142.44,
+      "text": "I could never say it on the phone (say it on the phone)",
+      "targetPitch": 361.7
+    },
+    {
+      "timestamp": 145.56,
+      "text": "Will never let you go this time (ooh)",
+      "targetPitch": 395.49
+    },
+    {
+      "timestamp": 150.71,
+      "text": "I said, \"Ooh, I'm blinded by the lights",
+      "targetPitch": 250.06
+    },
+    {
+      "timestamp": 156.56,
+      "text": "No, I can't sleep until I feel your touch\"",
+      "targetPitch": 350.22
+    },
+    {
+      "timestamp": 161.08,
+      "text": "(Hey, hey, hey)",
+      "targetPitch": 793.72
+    },
+    {
+      "timestamp": 172.16,
+      "text": "(Hey, hey, hey)",
+      "targetPitch": 634.43
+    },
+    {
+      "timestamp": 184.45,
+      "text": "I said, \"Ooh, I'm blinded by the lights",
+      "targetPitch": 335.96
+    },
+    {
+      "timestamp": 190.33,
+      "text": "No, I can't sleep until I feel your touch\"",
+      "targetPitch": 349.53
+    }
+  ]
+}

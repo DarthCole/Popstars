@@ -1,0 +1,144 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf5c5860321ed24db12c9934ce5630c, type: 3}
+  m_Name: DanceMonkey
+  m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songName: Dance Monkey
+  artist: Tones And I
+  BPM: 0
+  backingTrack: {fileID: 8300000, guid: a083a89f064d9564892b11ed68108245, type: 3}
+  coverArt: {fileID: -1499966076920533335, guid: 65f6e2e4d8867f443819272eaa12c9f8, type: 3}
+  lines:
+  - timestamp: 9.11
+    text: They say, "Oh my God, I see the way you shine
+    targetPitch: 376.49
+  - timestamp: 14.03
+    text: Take your hand, my dear, and place them both in mine"
+    targetPitch: 387.98
+  - timestamp: 18.62
+    text: You know you stopped me dead while I was passing by
+    targetPitch: 376.23
+  - timestamp: 23.73
+    text: And now I beg to see you dance just one more time
+    targetPitch: 400.09
+  - timestamp: 28.11
+    text: Ooh, I see you, see you, see you every time
+    targetPitch: 452.31
+  - timestamp: 33.64
+    text: And oh my, I, I, I like your style
+    targetPitch: 424.93
+  - timestamp: 38.08
+    text: You, you make me, make me, make me wanna cry
+    targetPitch: 423.76
+  - timestamp: 43.4
+    text: And now I beg to see you dance just one more time
+    targetPitch: 413.53
+  - timestamp: 47.58
+    text: So they say, "Dance for me, dance for me, dance for me, oh
+    targetPitch: 400.36
+  - timestamp: 53.28
+    text: I've never seen anybody do the things you do before"
+    targetPitch: 409.17
+  - timestamp: 57.65
+    text: They say, "Move for me, move for me, move for me, ay
+    targetPitch: 402.63
+  - timestamp: 63.04
+    text: And when you're done, I'll make you do it all again"
+    targetPitch: 405.67
+  - timestamp: 68.09
+    text: I said, "Oh my God, I see you walking by
+    targetPitch: 380.03
+  - timestamp: 72.94
+    text: Take my hands, my dear, and look me in my eyes"
+    targetPitch: 399.43
+  - timestamp: 77.42
+    text: Just like a monkey, I've been dancin' my whole life
+    targetPitch: 375.06
+  - timestamp: 82.59
+    text: But you just beg to see me dance just one more time
+    targetPitch: 399.34
+  - timestamp: 86.95
+    text: Ooh, I see you, see you, see you every time
+    targetPitch: 451.73
+  - timestamp: 92.42
+    text: And oh my, I, I, I like your style
+    targetPitch: 422.55
+  - timestamp: 96.82
+    text: You, you make me, make me, make me wanna cry
+    targetPitch: 435.98
+  - timestamp: 102.24
+    text: And now I beg to see you dance just one more time
+    targetPitch: 409.93
+  - timestamp: 106.48
+    text: So they say, "Dance for me, dance for me, dance for me, oh
+    targetPitch: 402.8
+  - timestamp: 112.04
+    text: I've never seen anybody do the things you do before"
+    targetPitch: 437.08
+  - timestamp: 116.48
+    text: They say, "Move for me, move for me, move for me, ay
+    targetPitch: 387.17
+  - timestamp: 121.84
+    text: And when you're done, I'll make you do it all again"
+    targetPitch: 427.72
+  - timestamp: 126.14
+    text: They say, "Dance for me, dance for me, dance for me, oh, oh, oh
+    targetPitch: 402.88
+  - timestamp: 131.59
+    text: I've never seen anybody do the things you do before"
+    targetPitch: 406.23
+  - timestamp: 135.99
+    text: They say, "Move for me, move for me, move for me, ay
+    targetPitch: 404.62
+  - timestamp: 141.36
+    text: And when you're done, I'll make you do it all again"
+    targetPitch: 404.47
+  - timestamp: 145.25
+    text: Ooh, ooh, ooh, ooh, ooh (do it all again, do it all again, do it all again)
+    targetPitch: 287.87
+  - timestamp: 155.21
+    text: Whoa, whoa, oh
+    targetPitch: 362.67
+  - timestamp: 156.73
+    text: Ooh, ooh, ooh, ooh, ooh-ooh (do it all again, do it all again, do it all
+      again)
+    targetPitch: 427.31
+  - timestamp: 163.96
+    text: Whoa, ah
+    targetPitch: 297.93
+  - timestamp: 164.45
+    text: They say, "Dance for me, dance for me, dance for me, oh
+    targetPitch: 398.57
+  - timestamp: 170.75
+    text: I've never seen anybody do the things you do before"
+    targetPitch: 402.97
+  - timestamp: 175.1
+    text: They say, "Move for me, move for me, move for me, ay
+    targetPitch: 400.69
+  - timestamp: 180.56
+    text: And when you're done, I'll make you do it all again"
+    targetPitch: 402.74
+  - timestamp: 184.9
+    text: They say, "Dance for me, dance for me, dance for me, oh, oh, oh
+    targetPitch: 402.27
+  - timestamp: 190.49
+    text: I've never seen anybody do the things you do before"
+    targetPitch: 428.68
+  - timestamp: 194.76
+    text: They say, "Move for me, move for me, move for me, ay (ooh)
+    targetPitch: 420.29
+  - timestamp: 199.98
+    text: And when you're done, I'll make you do it all again"
+    targetPitch: 400.48
+  - timestamp: 203.97
+    text: All again
+    targetPitch: 403.4

@@ -1,0 +1,306 @@
+{
+  "songName": "HOW FAR",
+  "artist": "NO11, Ayjay bobo, Monochrome",
+  "lines": [
+    {
+      "timestamp": 15.55,
+      "text": "Oh, yeah-yeah",
+      "targetPitch": 0.0
+    },
+    {
+      "timestamp": 18.08,
+      "text": "Roll with me, bebebe (bebebe)",
+      "targetPitch": 144.91
+    },
+    {
+      "timestamp": 19.5,
+      "text": "She said she knows me, I'm Mr. Ayjay (Ayjay)",
+      "targetPitch": 162.92
+    },
+    {
+      "timestamp": 22.19,
+      "text": "I told her I can be her bobo (bobobo)",
+      "targetPitch": 144.01
+    },
+    {
+      "timestamp": 24.08,
+      "text": "She said she wants to be my bebebe (bebebe)",
+      "targetPitch": 149.49
+    },
+    {
+      "timestamp": 26.35,
+      "text": "She said she's serious and she don't play",
+      "targetPitch": 162.77
+    },
+    {
+      "timestamp": 28.24,
+      "text": "I'm like, \"Okay, if that's what you wan say\" (if that's what you wan say)",
+      "targetPitch": 141.19
+    },
+    {
+      "timestamp": 30.9,
+      "text": "Many girl tell me, \"Involve me\"",
+      "targetPitch": 137.02
+    },
+    {
+      "timestamp": 32.55,
+      "text": "Depends how I feel at the time of the day",
+      "targetPitch": 137.15
+    },
+    {
+      "timestamp": 34.72,
+      "text": "She said she wan roll with the member",
+      "targetPitch": 164.01
+    },
+    {
+      "timestamp": 36.9,
+      "text": "She don come for December (don come for December)",
+      "targetPitch": 185.31
+    },
+    {
+      "timestamp": 39.06,
+      "text": "She gats slide if she knows what's better",
+      "targetPitch": 151.4
+    },
+    {
+      "timestamp": 41.23,
+      "text": "I need her for my agenda ('ge, ge')",
+      "targetPitch": 144.99
+    },
+    {
+      "timestamp": 43.23,
+      "text": "We be cartel like Xela",
+      "targetPitch": 142.68
+    },
+    {
+      "timestamp": 44.94,
+      "text": "Me and Ayjay locked in, that's bredda (that's bredda)",
+      "targetPitch": 163.06
+    },
+    {
+      "timestamp": 47.29,
+      "text": "And the instrumental is mental (ewo)",
+      "targetPitch": 160.33
+    },
+    {
+      "timestamp": 50.35,
+      "text": "Uh, yebo",
+      "targetPitch": 184.17
+    },
+    {
+      "timestamp": 53.48,
+      "text": "How far? Where you wan go, go, baby?",
+      "targetPitch": 141.32
+    },
+    {
+      "timestamp": 55.75,
+      "text": "How far? Where you wan go?",
+      "targetPitch": 154.79
+    },
+    {
+      "timestamp": 57.54,
+      "text": "How far? Where you wan roll, baby?",
+      "targetPitch": 142.99
+    },
+    {
+      "timestamp": 60.5,
+      "text": "Ayebo",
+      "targetPitch": 164.39
+    },
+    {
+      "timestamp": 61.99,
+      "text": "How far? Where you wan go, baby?",
+      "targetPitch": 142.62
+    },
+    {
+      "timestamp": 64.35,
+      "text": "How far? Where you wan go?",
+      "targetPitch": 153.05
+    },
+    {
+      "timestamp": 66.45,
+      "text": "How far? Where you wan roll, baby?",
+      "targetPitch": 147.49
+    },
+    {
+      "timestamp": 68.22,
+      "text": "Yebo, ay, yebo",
+      "targetPitch": 162.39
+    },
+    {
+      "timestamp": 70.34,
+      "text": "How far? Where you wan go? Make we enter",
+      "targetPitch": 145.79
+    },
+    {
+      "timestamp": 72.77,
+      "text": "You know shey you full my parole, and you special",
+      "targetPitch": 155.16
+    },
+    {
+      "timestamp": 74.86,
+      "text": "Take you where you never been before",
+      "targetPitch": 164.58
+    },
+    {
+      "timestamp": 76.86,
+      "text": "Asambuwulu waye",
+      "targetPitch": 180.26
+    },
+    {
+      "timestamp": 78.6,
+      "text": "Ambrisasuwusu wache",
+      "targetPitch": 164.15
+    },
+    {
+      "timestamp": 80.97,
+      "text": "Italawà, say na every day",
+      "targetPitch": 162.1
+    },
+    {
+      "timestamp": 82.6,
+      "text": "And we no dey tire, we dey like ogbanje",
+      "targetPitch": 164.7
+    },
+    {
+      "timestamp": 86.6,
+      "text": "Roll with me, bebebe",
+      "targetPitch": 143.74
+    },
+    {
+      "timestamp": 88.26,
+      "text": "She said she knows me, it's through my OPay (OPay)",
+      "targetPitch": 162.97
+    },
+    {
+      "timestamp": 90.49,
+      "text": "I told her I can be her bobo",
+      "targetPitch": 146.88
+    },
+    {
+      "timestamp": 92.68,
+      "text": "She said she wanna be my bebebe (baby)",
+      "targetPitch": 149.65
+    },
+    {
+      "timestamp": 94.72,
+      "text": "Hey, bebeski (yeah, yeah, bebeski)",
+      "targetPitch": 214.58
+    },
+    {
+      "timestamp": 97.02,
+      "text": "444 (swagu, swa', swa', yeah, baby, bebe nlo)",
+      "targetPitch": 129.16
+    },
+    {
+      "timestamp": 99.37,
+      "text": "Many girl tell me, \"Involve me\"",
+      "targetPitch": 148.84
+    },
+    {
+      "timestamp": 100.97,
+      "text": "But I'm not interested, yeah, I dey okay",
+      "targetPitch": 135.86
+    },
+    {
+      "timestamp": 103.25,
+      "text": "Hey, swagu, swa', swa' (swa', swa, swa')",
+      "targetPitch": 133.04
+    },
+    {
+      "timestamp": 105.37,
+      "text": "Hey, soon enough, we go dey Boho",
+      "targetPitch": 127.1
+    },
+    {
+      "timestamp": 107.52,
+      "text": "Call amigos, reposado",
+      "targetPitch": 123.98
+    },
+    {
+      "timestamp": 109.86,
+      "text": "Mami Wata dance amapiano (sehski)",
+      "targetPitch": 133.11
+    },
+    {
+      "timestamp": 111.98,
+      "text": "After the club, she go wan follow",
+      "targetPitch": 124.83
+    },
+    {
+      "timestamp": 114.07,
+      "text": "She wan dey 44 Prado",
+      "targetPitch": 135.19
+    },
+    {
+      "timestamp": 116.05,
+      "text": "Mami Wata kiss me, she turn Vado",
+      "targetPitch": 134.28
+    },
+    {
+      "timestamp": 118.14,
+      "text": "Wildcat, me I no be Daniel",
+      "targetPitch": 137.12
+    },
+    {
+      "timestamp": 120.25,
+      "text": "Reach aparte', make she hit high notes (ooh, wa) (sehski, sehski)",
+      "targetPitch": 110.66
+    },
+    {
+      "timestamp": 124.11,
+      "text": "Fire dey go, I no go stop, ay, ten bottles not enough",
+      "targetPitch": 132.83
+    },
+    {
+      "timestamp": 130.98,
+      "text": "Big bum-bum full the club",
+      "targetPitch": 128.78
+    },
+    {
+      "timestamp": 132.74,
+      "text": "Swagu, swa', swa', swa', you too dey hot (ewo)",
+      "targetPitch": 137.16
+    },
+    {
+      "timestamp": 136.29,
+      "text": "Uh, yebo",
+      "targetPitch": 174.15
+    },
+    {
+      "timestamp": 139.04,
+      "text": "How far? Where you wan go, baby?",
+      "targetPitch": 141.14
+    },
+    {
+      "timestamp": 141.39,
+      "text": "How far? Where you wan go?",
+      "targetPitch": 153.79
+    },
+    {
+      "timestamp": 143.51,
+      "text": "How far? Where you wan roll, baby?",
+      "targetPitch": 142.61
+    },
+    {
+      "timestamp": 146.17,
+      "text": "Ayebo",
+      "targetPitch": 154.69
+    },
+    {
+      "timestamp": 147.76,
+      "text": "How far? Where you wan go, baby?",
+      "targetPitch": 142.36
+    },
+    {
+      "timestamp": 149.97,
+      "text": "How far? Where you wan go?",
+      "targetPitch": 152.47
+    },
+    {
+      "timestamp": 151.82,
+      "text": "How far? Where you wan roll, baby?",
+      "targetPitch": 140.81
+    }
+  ]
+}

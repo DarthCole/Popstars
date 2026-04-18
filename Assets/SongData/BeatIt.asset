@@ -1,0 +1,176 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bf5c5860321ed24db12c9934ce5630c, type: 3}
+  m_Name: BeatIt
+  m_EditorClassIdentifier: Assembly-CSharp::SongData
+  songName: Beat It
+  artist: Michael Jackson
+  BPM: 0
+  backingTrack: {fileID: 8300000, guid: af885bbe277bd9649884fae59df7a493, type: 3}
+  coverArt: {fileID: 9034613832369730741, guid: c4b51a3b106cac14f91dfe3888054984, type: 3}
+  lines:
+  - timestamp: 38.12
+    text: They told him, "Don't you ever come around here"
+    targetPitch: 459.41
+  - timestamp: 41.33
+    text: '"Don''t wanna see your face, you better disappear"'
+    targetPitch: 448.58
+  - timestamp: 44.68
+    text: The fire's in their eyes and their words are really clear
+    targetPitch: 333.41
+  - timestamp: 47.93
+    text: So beat it, just beat it
+    targetPitch: 322.7
+  - timestamp: 51.8
+    text: You better run, you better do what you can
+    targetPitch: 464.07
+  - timestamp: 55.12
+    text: Don't wanna see no blood, don't be a macho man
+    targetPitch: 445.55
+  - timestamp: 58.63
+    text: You wanna be tough, better do what you can
+    targetPitch: 350.28
+  - timestamp: 61.88
+    text: So beat it, but you wanna be bad
+    targetPitch: 433.09
+  - timestamp: 65.47
+    text: Just beat it (beat it), beat it (beat it)
+    targetPitch: 469.57
+  - timestamp: 69.05
+    text: No one wants to be defeated
+    targetPitch: 126.37
+  - timestamp: 72.59
+    text: Show them how funky and strong is your fight
+    targetPitch: 133.08
+  - timestamp: 76.03
+    text: It doesn't matter who's wrong or right
+    targetPitch: 371.78
+  - timestamp: 79.17
+    text: Just beat it (beat it), just beat it (beat it)
+    targetPitch: 371.14
+  - timestamp: 82.66
+    text: Just beat it (beat it), just beat it (beat it, uh)
+    targetPitch: 302.96
+  - timestamp: 86.75
+    text: They're out to get you, better leave while you can
+    targetPitch: 461.85
+  - timestamp: 89.73
+    text: Don't wanna be a boy, you wanna be a man
+    targetPitch: 446.14
+  - timestamp: 93.25
+    text: You wanna stay alive, better do what you can
+    targetPitch: 344.47
+  - timestamp: 96.44
+    text: So beat it, just beat it (rrr)
+    targetPitch: 329.32
+  - timestamp: 100.2
+    text: You have to show them that you're really not scared
+    targetPitch: 465.73
+  - timestamp: 103.66
+    text: You're playin' with your life, this ain't no truth or dare
+    targetPitch: 446.74
+  - timestamp: 106.87
+    text: They'll kick you, then they'll beat you, then they'll tell you it's fair
+    targetPitch: 342.1
+  - timestamp: 110.31
+    text: So beat it, but you wanna be bad
+    targetPitch: 443.38
+  - timestamp: 113.88
+    text: Just beat it (beat it), beat it (beat it)
+    targetPitch: 428.2
+  - timestamp: 117.55
+    text: No one wants to be defeated
+    targetPitch: 422.94
+  - timestamp: 120.81
+    text: Show them how funky and strong is your fight
+    targetPitch: 138.65
+  - timestamp: 124.43
+    text: It doesn't matter who's wrong or right
+    targetPitch: 414.58
+  - timestamp: 127.61
+    text: Just beat it (beat it), beat it (beat it)
+    targetPitch: 443.95
+  - timestamp: 131.27
+    text: No one wants to be defeated
+    targetPitch: 366.15
+  - timestamp: 134.79
+    text: Show them how funky and strong is your fight
+    targetPitch: 305.67
+  - timestamp: 138.09
+    text: It doesn't matter who's wrong or right
+    targetPitch: 430.53
+  - timestamp: 141.59
+    text: Just beat it (beat it, beat it, beat it)
+    targetPitch: 360.8
+  - timestamp: 144.63
+    text: Beat it (beat it, beat it)
+    targetPitch: 359.96
+  - timestamp: 151.13
+    text: Beat it (beat it, beat it)
+    targetPitch: 359.19
+  - timestamp: 153.88
+    text: Beat it (beat it, beat it)
+    targetPitch: 363.38
+  - timestamp: 160.95
+    text: Beat it (beat it, beat it)
+    targetPitch: 69.62
+  - timestamp: 197.24
+    text: Beat it (beat it), beat it (beat it)
+    targetPitch: 422.41
+  - timestamp: 200.3
+    text: No one wants to be defeated
+    targetPitch: 457.78
+  - timestamp: 204.09
+    text: Show them how funky and strong is your fight
+    targetPitch: 94.28
+  - timestamp: 207.42
+    text: It doesn't matter who's wrong or right (who's right)
+    targetPitch: 418.6
+  - timestamp: 210.48
+    text: Just beat it (beat it), beat it (beat it)
+    targetPitch: 568.09
+  - timestamp: 214.45
+    text: No one wants to be defeated (no one)
+    targetPitch: 435.5
+  - timestamp: 217.82
+    text: Show them how funky and strong is your fight
+    targetPitch: 509.42
+  - timestamp: 221.31
+    text: It doesn't matter who's wrong or right
+    targetPitch: 624.88
+  - timestamp: 224.42
+    text: Just beat it (beat it), beat it (beat it)
+    targetPitch: 377.38
+  - timestamp: 228.29
+    text: No one wants to be defeated (oh, no)
+    targetPitch: 335.4
+  - timestamp: 231.77
+    text: Show them how funky and strong is your fight
+    targetPitch: 628.77
+  - timestamp: 235.25
+    text: It doesn't matter who's wrong or right
+    targetPitch: 780.01
+  - timestamp: 238.24
+    text: Just beat it (beat it), beat it (beat it)
+    targetPitch: 459.65
+  - timestamp: 242.01
+    text: No one wants to be defeated
+    targetPitch: 480.43
+  - timestamp: 245.45
+    text: Show them how funky and strong is your fight
+    targetPitch: 0
+  - timestamp: 248.8
+    text: It doesn't matter who's wrong or right
+    targetPitch: 0
+  - timestamp: 252.18
+    text: Just beat it (beat it), beat it (beat it)
+    targetPitch: 0
