@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6124667f41cb5314a94cc791f7c3af1a, type: 3}
+  m_Name: Rapper-woman
+  m_EditorClassIdentifier: Assembly-CSharp::OutfitData
+  outfitID: 10
+  outfitName: RapperWoman
+  previewIcon: {fileID: -4201845374164706440, guid: 9dee2ec278a1c844a954382175a67381, type: 3}
+  characterSprite: {fileID: -3587346112759958237, guid: 9e151b08331d1084c82c0209f9e2b21b, type: 3}
+  animatorController: {fileID: 0}
+  price: 400
+  isDefault: 0

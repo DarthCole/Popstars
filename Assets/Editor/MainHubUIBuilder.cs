@@ -94,7 +94,7 @@ public class MainHubUIBuilder : EditorWindow
 
     static void BuildNowPlayingPill(RectTransform p)
     {
-        var spr = Resources.GetBuiltinResource<Sprite>("UI/Skin/UISprite.psd");
+        var spr = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
 
         // Outer border ring
         var outerGO = new GameObject("NowPlayingPill_Border", typeof(RectTransform), typeof(Image));
@@ -171,8 +171,8 @@ public class MainHubUIBuilder : EditorWindow
     static void BuildCard(RectTransform p, string id, string emoji,
                           string title, string desc, bool hotBadge, float x, float y)
     {
-        var uiSpr  = Resources.GetBuiltinResource<Sprite>("UI/Skin/UISprite.psd");
-        var knobSpr = Resources.GetBuiltinResource<Sprite>("UI/Skin/Knob.psd");
+        var uiSpr  = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
+        var knobSpr = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Knob.psd");
 
         // ── Outer border ──────────────────────────────────────────────────────
         var borderGO = new GameObject(id + "_Border", typeof(RectTransform), typeof(Image));

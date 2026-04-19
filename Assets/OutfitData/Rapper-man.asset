@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6124667f41cb5314a94cc791f7c3af1a, type: 3}
+  m_Name: Rapper-man
+  m_EditorClassIdentifier: Assembly-CSharp::OutfitData
+  outfitID: 9
+  outfitName: Rapper Man
+  previewIcon: {fileID: 1749480033074080452, guid: 1beac345c6bd80c4798a740a64c4cee8, type: 3}
+  characterSprite: {fileID: -5574486714317539165, guid: ebacb9b4aa62f48469fd36debc1812bc, type: 3}
+  animatorController: {fileID: 0}
+  price: 350
+  isDefault: 0

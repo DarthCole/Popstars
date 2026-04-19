@@ -1,0 +1,1080 @@
+fileFormatVersion: 2
+guid: d809cf109dc94d34fb76ffa9221146bf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8028963670402072259
+    second: defaultman drinks_0
+  - first:
+      213: 984949978320759786
+    second: defaultman drinks_1
+  - first:
+      213: 8505646530600142194
+    second: defaultman drinks_2
+  - first:
+      213: -8855497836122045984
+    second: defaultman drinks_3
+  - first:
+      213: 5027922160144728065
+    second: defaultman drinks_4
+  - first:
+      213: -2858073091637682297
+    second: defaultman drinks_5
+  - first:
+      213: 2263787782556494609
+    second: defaultman drinks_6
+  - first:
+      213: -1870576250215618067
+    second: defaultman drinks_7
+  - first:
+      213: 7770081659772679117
+    second: defaultman drinks_8
+  - first:
+      213: 1731399412709090085
+    second: defaultman drinks_9
+  - first:
+      213: -2538995521129803109
+    second: defaultman drinks_10
+  - first:
+      213: -2321315713967027080
+    second: defaultman drinks_11
+  - first:
+      213: -8007205301501238496
+    second: defaultman drinks_12
+  - first:
+      213: 1310219525518557896
+    second: defaultman drinks_13
+  - first:
+      213: 3407187719468117240
+    second: defaultman drinks_14
+  - first:
+      213: 5735337354495719270
+    second: defaultman drinks_15
+  - first:
+      213: -3046854141744414393
+    second: defaultman drinks_16
+  - first:
+      213: -8628326740792959989
+    second: defaultman drinks_17
+  - first:
+      213: -7674974164979074348
+    second: defaultman drinks_18
+  - first:
+      213: -8441707601672345753
+    second: defaultman drinks_19
+  - first:
+      213: 2488611073424068981
+    second: defaultman drinks_20
+  - first:
+      213: 9021985633563154424
+    second: defaultman drinks_21
+  - first:
+      213: -1078881431581435023
+    second: defaultman drinks_22
+  - first:
+      213: -8532606349325095632
+    second: defaultman drinks_23
+  - first:
+      213: 1467975932792549892
+    second: defaultman drinks_24
+  - first:
+      213: 6140004352575368366
+    second: defaultman drinks_25
+  - first:
+      213: 3030817158759843888
+    second: defaultman drinks_26
+  - first:
+      213: -4314401169425939238
+    second: defaultman drinks_27
+  - first:
+      213: -3159742141382979563
+    second: defaultman drinks_28
+  - first:
+      213: 3491819887407786687
+    second: defaultman drinks_29
+  - first:
+      213: 2879946256602562433
+    second: defaultman drinks_30
+  - first:
+      213: 7193218915181394810
+    second: defaultman drinks_31
+  - first:
+      213: 589561801345031914
+    second: defaultman drinks_32
+  - first:
+      213: 6834782590326746897
+    second: defaultman drinks_33
+  - first:
+      213: 8438438901990083415
+    second: defaultman drinks_34
+  - first:
+      213: 8061750913494368269
+    second: defaultman drinks_35
+  - first:
+      213: -2827695890251935773
+    second: defaultman drinks_36
+  - first:
+      213: -7958785739641919694
+    second: defaultman drinks_37
+  - first:
+      213: 6854470014542994190
+    second: defaultman drinks_38
+  - first:
+      213: 3733966163693210196
+    second: defaultman drinks_39
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: defaultman drinks_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2730
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cef4d04beb9c6f60800000000000000
+      internalID: 8028963670402072259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_1
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2730
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb665b69ce3bad00800000000000000
+      internalID: 984949978320759786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_2
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2730
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 275847964702a0670800000000000000
+      internalID: 8505646530600142194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_3
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2730
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e184b0f2a3fa1580800000000000000
+      internalID: -8855497836122045984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_4
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2730
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 100cdb9c094c6c540800000000000000
+      internalID: 5027922160144728065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_5
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 2730
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78f55d67aa51658d0800000000000000
+      internalID: -2858073091637682297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2184
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11b26228ef69a6f10800000000000000
+      internalID: 2263787782556494609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_7
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 2184
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9ad98afc06a06e0800000000000000
+      internalID: -1870576250215618067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_8
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 2184
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc337861a10e4db60800000000000000
+      internalID: 7770081659772679117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_9
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 2184
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52368dea79a270810800000000000000
+      internalID: 1731399412709090085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_10
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 2184
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9210c4960da3ccd0800000000000000
+      internalID: -2538995521129803109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_11
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 2184
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c867138a709cfd0800000000000000
+      internalID: -2321315713967027080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1638
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 023e468c331b0e090800000000000000
+      internalID: -8007205301501238496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_13
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1638
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c2805477b5de2210800000000000000
+      internalID: 1310219525518557896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_14
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1638
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fc68f5cd23c84f20800000000000000
+      internalID: 3407187719468117240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_15
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1638
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 667feb1dfe2089f40800000000000000
+      internalID: 5735337354495719270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_16
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1638
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74185ee0d4667b5d0800000000000000
+      internalID: -3046854141744414393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_17
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1638
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0c18094b86024880800000000000000
+      internalID: -8628326740792959989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1092
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da3f1429a30d7590800000000000000
+      internalID: -7674974164979074348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_19
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 1092
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767ea9099a709da80800000000000000
+      internalID: -8441707601672345753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_20
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1092
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5719b870692598220800000000000000
+      internalID: 2488611073424068981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_21
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 1092
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f795391228843d70800000000000000
+      internalID: 9021985633563154424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_22
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 1092
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17bd2dbdd0b0701f0800000000000000
+      internalID: -1078881431581435023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_23
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 1092
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03d2c34abb7169980800000000000000
+      internalID: -8532606349325095632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 546
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4023cec455c4f5410800000000000000
+      internalID: 1467975932792549892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_25
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 546
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac6b927d6da53550800000000000000
+      internalID: 6140004352575368366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_26
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 546
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0380a0fd520af0a20800000000000000
+      internalID: 3030817158759843888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_27
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 546
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad446ddbefa2024c0800000000000000
+      internalID: -4314401169425939238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_28
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 546
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 510190173475624d0800000000000000
+      internalID: -3159742141382979563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_29
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 546
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbae598efaf657030800000000000000
+      internalID: 3491819887407786687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18ff20d9cdf97f720800000000000000
+      internalID: 2879946256602562433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_31
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 0
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7bf107fd7273d360800000000000000
+      internalID: 7193218915181394810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_32
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 0
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aee5f4ea55b8e2800800000000000000
+      internalID: 589561801345031914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_33
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11f237dbd860ade50800000000000000
+      internalID: 6834782590326746897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_34
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 0
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bc4fbf87b5b1570800000000000000
+      internalID: 8438438901990083415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defaultman drinks_35
+      rect:
+        serializedVersion: 2
+        x: 1700
+        y: 0
+        width: 340
+        height: 546
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00438a2eb711ef60800000000000000
+      internalID: 8061750913494368269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 75a986c2e5b939e459b14226b63885d6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":340.0,"y":546.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      defaultman drinks_0: 8028963670402072259
+      defaultman drinks_1: 984949978320759786
+      defaultman drinks_10: -2538995521129803109
+      defaultman drinks_11: -2321315713967027080
+      defaultman drinks_12: -8007205301501238496
+      defaultman drinks_13: 1310219525518557896
+      defaultman drinks_14: 3407187719468117240
+      defaultman drinks_15: 5735337354495719270
+      defaultman drinks_16: -3046854141744414393
+      defaultman drinks_17: -8628326740792959989
+      defaultman drinks_18: -7674974164979074348
+      defaultman drinks_19: -8441707601672345753
+      defaultman drinks_2: 8505646530600142194
+      defaultman drinks_20: 2488611073424068981
+      defaultman drinks_21: 9021985633563154424
+      defaultman drinks_22: -1078881431581435023
+      defaultman drinks_23: -8532606349325095632
+      defaultman drinks_24: 1467975932792549892
+      defaultman drinks_25: 6140004352575368366
+      defaultman drinks_26: 3030817158759843888
+      defaultman drinks_27: -4314401169425939238
+      defaultman drinks_28: -3159742141382979563
+      defaultman drinks_29: 3491819887407786687
+      defaultman drinks_3: -8855497836122045984
+      defaultman drinks_30: 2879946256602562433
+      defaultman drinks_31: 7193218915181394810
+      defaultman drinks_32: 589561801345031914
+      defaultman drinks_33: 6834782590326746897
+      defaultman drinks_34: 8438438901990083415
+      defaultman drinks_35: 8061750913494368269
+      defaultman drinks_4: 5027922160144728065
+      defaultman drinks_5: -2858073091637682297
+      defaultman drinks_6: 2263787782556494609
+      defaultman drinks_7: -1870576250215618067
+      defaultman drinks_8: 7770081659772679117
+      defaultman drinks_9: 1731399412709090085
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

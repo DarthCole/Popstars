@@ -1,0 +1,1077 @@
+fileFormatVersion: 2
+guid: 647c9e520621ea049be182516bf7adb3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7706560372179757578
+    second: space-woman_0
+  - first:
+      213: -8526202322107248463
+    second: space-woman_1
+  - first:
+      213: -9222880223092279609
+    second: space-woman_2
+  - first:
+      213: 4514874070901020889
+    second: space-woman_3
+  - first:
+      213: -441137341298943376
+    second: space-woman_4
+  - first:
+      213: -8631513910018407507
+    second: space-woman_5
+  - first:
+      213: 950938448575243759
+    second: space-woman_6
+  - first:
+      213: -3933584920811204477
+    second: space-woman_7
+  - first:
+      213: 5881592238163799477
+    second: space-woman_8
+  - first:
+      213: -53180381500144655
+    second: space-woman_9
+  - first:
+      213: 2890835538337625616
+    second: space-woman_10
+  - first:
+      213: -3360756079012605494
+    second: space-woman_11
+  - first:
+      213: 7578789851996202427
+    second: space-woman_12
+  - first:
+      213: -8131523913385918999
+    second: space-woman_13
+  - first:
+      213: -6503946477045416694
+    second: space-woman_14
+  - first:
+      213: -2157430143179462903
+    second: space-woman_15
+  - first:
+      213: -2978832861125264907
+    second: space-woman_16
+  - first:
+      213: -7230456583602129398
+    second: space-woman_17
+  - first:
+      213: -3172538240171759501
+    second: space-woman_18
+  - first:
+      213: -4562281811842052936
+    second: space-woman_19
+  - first:
+      213: -2311723826644086721
+    second: space-woman_20
+  - first:
+      213: -2292004007982022214
+    second: space-woman_21
+  - first:
+      213: 8998015214421690315
+    second: space-woman_22
+  - first:
+      213: -8755295580944645283
+    second: space-woman_23
+  - first:
+      213: -9188833932201979233
+    second: space-woman_24
+  - first:
+      213: 8986412077115276581
+    second: space-woman_25
+  - first:
+      213: -3169631916821809570
+    second: space-woman_26
+  - first:
+      213: 7953898685573578153
+    second: space-woman_27
+  - first:
+      213: 4297413337403980504
+    second: space-woman_28
+  - first:
+      213: 4575729065404640108
+    second: space-woman_29
+  - first:
+      213: -4282239665068699745
+    second: space-woman_30
+  - first:
+      213: -3622950161601604220
+    second: space-woman_31
+  - first:
+      213: 4965355031988719658
+    second: space-woman_32
+  - first:
+      213: -2215351799401726865
+    second: space-woman_33
+  - first:
+      213: -2396714527675674933
+    second: space-woman_34
+  - first:
+      213: -8483459906431559336
+    second: space-woman_35
+  - first:
+      213: 3087630184388374421
+    second: space-woman_36
+  - first:
+      213: 8100516321841119146
+    second: space-woman_37
+  - first:
+      213: -4148300143567007923
+    second: space-woman_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: space-woman_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3130
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f59f103c2ccc0590800000000000000
+      internalID: -7706560372179757578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3130
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0dfab6928dca980800000000000000
+      internalID: -8526202322107248463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3130
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c6fb905d4fb10080800000000000000
+      internalID: -9222880223092279609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3130
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d85da1fb0e08ae30800000000000000
+      internalID: 4514874070901020889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3130
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07a57b2ece3c0e9f0800000000000000
+      internalID: -441137341298943376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3130
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da3828f94d3b63880800000000000000
+      internalID: -8631513910018407507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2504
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe5a69e0b79623d00800000000000000
+      internalID: 950938448575243759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2504
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38017350b591969c0800000000000000
+      internalID: -3933584920811204477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2504
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bda2758afc9f9150800000000000000
+      internalID: 5881592238163799477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2504
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f30aab89b0134ff0800000000000000
+      internalID: -53180381500144655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2504
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01670b61b9f4e1820800000000000000
+      internalID: 2890835538337625616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2504
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac118b5f6223c51d0800000000000000
+      internalID: -3360756079012605494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1878
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5a19b57354d2960800000000000000
+      internalID: 7578789851996202427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1878
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edb90c5516072f80800000000000000
+      internalID: -8131523913385918999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_14
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1878
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0dfd8573275db5a0800000000000000
+      internalID: -6503946477045416694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_15
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1878
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 907611027b44f02e0800000000000000
+      internalID: -2157430143179462903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_16
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1878
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f93e5b9b4f09a6d0800000000000000
+      internalID: -2978832861125264907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_17
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1878
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06b28abb0248ab90800000000000000
+      internalID: -7230456583602129398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1252
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37828368741e8f3d0800000000000000
+      internalID: -3172538240171759501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1252
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bccde73dd48fa0c0800000000000000
+      internalID: -4562281811842052936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1252
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30921e7d6b1befd0800000000000000
+      internalID: -2311723826644086721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_21
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1252
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1c5709f7a2130e0800000000000000
+      internalID: -2292004007982022214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_22
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1252
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc74a2bf92f5fdc70800000000000000
+      internalID: 8998015214421690315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_23
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1252
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d534f328e01fe7680800000000000000
+      internalID: -8755295580944645283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f929b032934ba7080800000000000000
+      internalID: -9188833932201979233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 626
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52d7cbd0c2626bc70800000000000000
+      internalID: 8986412077115276581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_26
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 626
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e567819a0943304d0800000000000000
+      internalID: -3169631916821809570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_27
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 626
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ad3f0586bce16e60800000000000000
+      internalID: 7953898685573578153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_28
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 626
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da7df469aa73ab30800000000000000
+      internalID: 4297413337403980504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_29
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 626
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6bafdb7751408f30800000000000000
+      internalID: 4575729065404640108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f0e7086bd6294c0800000000000000
+      internalID: -4282239665068699745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 485dac2f502b8bdc0800000000000000
+      internalID: -3622950161601604220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_32
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a20d261181c78e440800000000000000
+      internalID: 4965355031988719658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_33
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6c3320a64d7141e0800000000000000
+      internalID: -2215351799401726865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_34
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce8fddd5d82dbed0800000000000000
+      internalID: -2396714527675674933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: space-woman_35
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 480
+        height: 626
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 859d0e29922b44a80800000000000000
+      internalID: -8483459906431559336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cc7dbf8a7625c23439f49ad6b4cb2770
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":480.0,"y":626.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      space-woman_0: -7706560372179757578
+      space-woman_1: -8526202322107248463
+      space-woman_10: 2890835538337625616
+      space-woman_11: -3360756079012605494
+      space-woman_12: 7578789851996202427
+      space-woman_13: -8131523913385918999
+      space-woman_14: -6503946477045416694
+      space-woman_15: -2157430143179462903
+      space-woman_16: -2978832861125264907
+      space-woman_17: -7230456583602129398
+      space-woman_18: -3172538240171759501
+      space-woman_19: -4562281811842052936
+      space-woman_2: -9222880223092279609
+      space-woman_20: -2311723826644086721
+      space-woman_21: -2292004007982022214
+      space-woman_22: 8998015214421690315
+      space-woman_23: -8755295580944645283
+      space-woman_24: -9188833932201979233
+      space-woman_25: 8986412077115276581
+      space-woman_26: -3169631916821809570
+      space-woman_27: 7953898685573578153
+      space-woman_28: 4297413337403980504
+      space-woman_29: 4575729065404640108
+      space-woman_3: 4514874070901020889
+      space-woman_30: -4282239665068699745
+      space-woman_31: -3622950161601604220
+      space-woman_32: 4965355031988719658
+      space-woman_33: -2215351799401726865
+      space-woman_34: -2396714527675674933
+      space-woman_35: -8483459906431559336
+      space-woman_4: -441137341298943376
+      space-woman_5: -8631513910018407507
+      space-woman_6: 950938448575243759
+      space-woman_7: -3933584920811204477
+      space-woman_8: 5881592238163799477
+      space-woman_9: -53180381500144655
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

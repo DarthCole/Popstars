@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6124667f41cb5314a94cc791f7c3af1a, type: 3}
+  m_Name: Woman Suit
+  m_EditorClassIdentifier: Assembly-CSharp::OutfitData
+  outfitID: 6
+  outfitName: Suit Female
+  previewIcon: {fileID: -350637840784910261, guid: c86d592e077a20f4ba1c48bb59d844ad, type: 3}
+  characterSprite: {fileID: 9118546052680379567, guid: 53f858e32c749c74db1662b7b6a90a43, type: 3}
+  animatorController: {fileID: 9100000, guid: 2655d120934ce364c8c55a773d68137a, type: 2}
+  price: 500
+  isDefault: 0

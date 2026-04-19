@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6124667f41cb5314a94cc791f7c3af1a, type: 3}
+  m_Name: Swim wear Man
+  m_EditorClassIdentifier: Assembly-CSharp::OutfitData
+  outfitID: 11
+  outfitName: Swim wear Male
+  previewIcon: {fileID: -3110835841972943744, guid: 47acc9d2cc20672488a082b3c976d25d, type: 3}
+  characterSprite: {fileID: -5307838424486559666, guid: 83a927c21be7d8f4582b42a74f0b394a, type: 3}
+  animatorController: {fileID: 0}
+  price: 700
+  isDefault: 0

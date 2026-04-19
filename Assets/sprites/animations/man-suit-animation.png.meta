@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: cd8c72fd215d338419f59e851172e5b6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3745415680868275226
+    second: man-suit-animation_0
+  - first:
+      213: 3218171813654501327
+    second: man-suit-animation_1
+  - first:
+      213: 5202035531900395157
+    second: man-suit-animation_2
+  - first:
+      213: -5260123620699797007
+    second: man-suit-animation_3
+  - first:
+      213: 1611220953152497811
+    second: man-suit-animation_4
+  - first:
+      213: 7845167673189809580
+    second: man-suit-animation_5
+  - first:
+      213: -7780845155308760493
+    second: man-suit-animation_6
+  - first:
+      213: -513892149619690320
+    second: man-suit-animation_7
+  - first:
+      213: -8278105566328358996
+    second: man-suit-animation_8
+  - first:
+      213: 7050285467552967189
+    second: man-suit-animation_9
+  - first:
+      213: -7162966638139155429
+    second: man-suit-animation_10
+  - first:
+      213: 4950508245641691160
+    second: man-suit-animation_11
+  - first:
+      213: -1858336423346057098
+    second: man-suit-animation_12
+  - first:
+      213: -3208904813119628307
+    second: man-suit-animation_13
+  - first:
+      213: -5315732755086298741
+    second: man-suit-animation_14
+  - first:
+      213: -5934420608448812051
+    second: man-suit-animation_15
+  - first:
+      213: -4406431993113831277
+    second: man-suit-animation_16
+  - first:
+      213: -7059377831077325569
+    second: man-suit-animation_17
+  - first:
+      213: 7236026630104245800
+    second: man-suit-animation_18
+  - first:
+      213: -7902796671993586882
+    second: man-suit-animation_19
+  - first:
+      213: -8776725226603159596
+    second: man-suit-animation_20
+  - first:
+      213: 5856627085861457779
+    second: man-suit-animation_21
+  - first:
+      213: 5433808992279247214
+    second: man-suit-animation_22
+  - first:
+      213: 5407099048944235119
+    second: man-suit-animation_23
+  - first:
+      213: 4799799089422844157
+    second: man-suit-animation_24
+  - first:
+      213: -4104579647575646884
+    second: man-suit-animation_25
+  - first:
+      213: -5795054608225602137
+    second: man-suit-animation_26
+  - first:
+      213: 48495412703179546
+    second: man-suit-animation_27
+  - first:
+      213: -7274858354659312806
+    second: man-suit-animation_28
+  - first:
+      213: -7850477606199984581
+    second: man-suit-animation_29
+  - first:
+      213: -4531043683607257688
+    second: man-suit-animation_30
+  - first:
+      213: -555602395338609460
+    second: man-suit-animation_31
+  - first:
+      213: 4291946540587766074
+    second: man-suit-animation_32
+  - first:
+      213: 683645288686702130
+    second: man-suit-animation_33
+  - first:
+      213: 7240388025519561973
+    second: man-suit-animation_34
+  - first:
+      213: -5477545237625034831
+    second: man-suit-animation_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: man-suit-animation_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3310
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eb2ba5484c950cc0800000000000000
+      internalID: -3745415680868275226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 3310
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc71d03c63e39ac20800000000000000
+      internalID: 3218171813654501327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 3310
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59e12e331c7513840800000000000000
+      internalID: 5202035531900395157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 3310
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f90c81bf694007b0800000000000000
+      internalID: -5260123620699797007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_4
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 3310
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39822579be43c5610800000000000000
+      internalID: 1611220953152497811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_5
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 3310
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cad3bdbee62afdc60800000000000000
+      internalID: 7845167673189809580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2648
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35290815e82e40490800000000000000
+      internalID: -7780845155308760493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 2648
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b47e0900d94ed8f0800000000000000
+      internalID: -513892149619690320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 2648
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca770d1c8d24e1d80800000000000000
+      internalID: -8278105566328358996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_9
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 2648
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51ae79a5745a7d160800000000000000
+      internalID: 7050285467552967189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_10
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 2648
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cddbb2bc7089c90800000000000000
+      internalID: -7162966638139155429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_11
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 2648
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8108d1f350db3b440800000000000000
+      internalID: 4950508245641691160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1986
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 670d94d6edcd536e0800000000000000
+      internalID: -1858336423346057098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1986
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb96ffe21ea773d0800000000000000
+      internalID: -3208904813119628307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_14
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1986
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b813c242939ba36b0800000000000000
+      internalID: -5315732755086298741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_15
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1986
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deba6a506e3b4ada0800000000000000
+      internalID: -5934420608448812051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_16
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1986
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3989883d27539d2c0800000000000000
+      internalID: -4406431993113831277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_17
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1986
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff45e5bc34d080e90800000000000000
+      internalID: -7059377831077325569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1324
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82661a8c1e78b6460800000000000000
+      internalID: 7236026630104245800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1324
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3bdea13c40a35290800000000000000
+      internalID: -7902796671993586882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_20
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1324
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfdb1158eec23680800000000000000
+      internalID: -8776725226603159596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_21
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1324
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f04ba0e4be64150800000000000000
+      internalID: 5856627085861457779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_22
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1324
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69b02a2d74c86b40800000000000000
+      internalID: 5433808992279247214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_23
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1324
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f627caddfefd90b40800000000000000
+      internalID: 5407099048944235119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 662
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df0ca4667df4c9240800000000000000
+      internalID: 4799799089422844157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 662
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d94f9be8a9907c0800000000000000
+      internalID: -4104579647575646884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_26
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 662
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5f8be8984d39fa0800000000000000
+      internalID: -5795054608225602137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_27
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 662
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13b867225a4ca000800000000000000
+      internalID: 48495412703179546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_28
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 662
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5bbf3bced28a0b90800000000000000
+      internalID: -7274858354659312806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_29
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 662
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e7a45f5308d0390800000000000000
+      internalID: -7850477606199984581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8addfc8b6cf7e11c0800000000000000
+      internalID: -4531043683607257688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_31
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccc6c7da09a1a48f0800000000000000
+      internalID: -555602395338609460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_32
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3153b293ae009b30800000000000000
+      internalID: 4291946540587766074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_33
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 0
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23e4a8894cbcc7900800000000000000
+      internalID: 683645288686702130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_34
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 0
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fcd5194c860b7460800000000000000
+      internalID: 7240388025519561973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: man-suit-animation_35
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 0
+        width: 258
+        height: 662
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b72a3ea0a9dbf3b0800000000000000
+      internalID: -5477545237625034831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 61ee3c70daadbd44f847f414ae196388
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":258.0,"y":662.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      man-suit-animation_0: -3745415680868275226
+      man-suit-animation_1: 3218171813654501327
+      man-suit-animation_10: -7162966638139155429
+      man-suit-animation_11: 4950508245641691160
+      man-suit-animation_12: -1858336423346057098
+      man-suit-animation_13: -3208904813119628307
+      man-suit-animation_14: -5315732755086298741
+      man-suit-animation_15: -5934420608448812051
+      man-suit-animation_16: -4406431993113831277
+      man-suit-animation_17: -7059377831077325569
+      man-suit-animation_18: 7236026630104245800
+      man-suit-animation_19: -7902796671993586882
+      man-suit-animation_2: 5202035531900395157
+      man-suit-animation_20: -8776725226603159596
+      man-suit-animation_21: 5856627085861457779
+      man-suit-animation_22: 5433808992279247214
+      man-suit-animation_23: 5407099048944235119
+      man-suit-animation_24: 4799799089422844157
+      man-suit-animation_25: -4104579647575646884
+      man-suit-animation_26: -5795054608225602137
+      man-suit-animation_27: 48495412703179546
+      man-suit-animation_28: -7274858354659312806
+      man-suit-animation_29: -7850477606199984581
+      man-suit-animation_3: -5260123620699797007
+      man-suit-animation_30: -4531043683607257688
+      man-suit-animation_31: -555602395338609460
+      man-suit-animation_32: 4291946540587766074
+      man-suit-animation_33: 683645288686702130
+      man-suit-animation_34: 7240388025519561973
+      man-suit-animation_35: -5477545237625034831
+      man-suit-animation_4: 1611220953152497811
+      man-suit-animation_5: 7845167673189809580
+      man-suit-animation_6: -7780845155308760493
+      man-suit-animation_7: -513892149619690320
+      man-suit-animation_8: -8278105566328358996
+      man-suit-animation_9: 7050285467552967189
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

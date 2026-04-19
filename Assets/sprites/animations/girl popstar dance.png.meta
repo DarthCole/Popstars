@@ -1,0 +1,1098 @@
+fileFormatVersion: 2
+guid: d768e08adbc2e3548bcca691ad0e9675
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1663536408386257199
+    second: girl popstar dance_0
+  - first:
+      213: 2668144312230920884
+    second: girl popstar dance_1
+  - first:
+      213: 1449893227465027351
+    second: girl popstar dance_2
+  - first:
+      213: -451882691276154128
+    second: girl popstar dance_3
+  - first:
+      213: -494962628833823826
+    second: girl popstar dance_4
+  - first:
+      213: -4842876509190118020
+    second: girl popstar dance_5
+  - first:
+      213: 2919737144085974214
+    second: girl popstar dance_6
+  - first:
+      213: -5270034252662945784
+    second: girl popstar dance_7
+  - first:
+      213: 5071874586943013033
+    second: girl popstar dance_8
+  - first:
+      213: -3817206458349036573
+    second: girl popstar dance_9
+  - first:
+      213: 8243246671359298895
+    second: girl popstar dance_10
+  - first:
+      213: -408904381351800045
+    second: girl popstar dance_11
+  - first:
+      213: -8414951985441900417
+    second: girl popstar dance_12
+  - first:
+      213: -8199989367076146284
+    second: girl popstar dance_13
+  - first:
+      213: -5567478861907107334
+    second: girl popstar dance_14
+  - first:
+      213: -4747155554489745649
+    second: girl popstar dance_15
+  - first:
+      213: -8009548865658835063
+    second: girl popstar dance_16
+  - first:
+      213: -906723150690856404
+    second: girl popstar dance_17
+  - first:
+      213: 7199849802845382056
+    second: girl popstar dance_18
+  - first:
+      213: 271245851468772095
+    second: girl popstar dance_19
+  - first:
+      213: -193223467660413468
+    second: girl popstar dance_20
+  - first:
+      213: 3446172050890736851
+    second: girl popstar dance_21
+  - first:
+      213: 8301987180253058711
+    second: girl popstar dance_22
+  - first:
+      213: -8114769337973615289
+    second: girl popstar dance_23
+  - first:
+      213: -2284922419713615334
+    second: girl popstar dance_24
+  - first:
+      213: 4811331342296764261
+    second: girl popstar dance_25
+  - first:
+      213: 5881299881206670680
+    second: girl popstar dance_26
+  - first:
+      213: 4603639196059364763
+    second: girl popstar dance_27
+  - first:
+      213: 8766247763856657702
+    second: girl popstar dance_28
+  - first:
+      213: 6913004711033068080
+    second: girl popstar dance_29
+  - first:
+      213: -8176810237177241992
+    second: girl popstar dance_30
+  - first:
+      213: 1277304226235967854
+    second: girl popstar dance_31
+  - first:
+      213: 750711033743145776
+    second: girl popstar dance_32
+  - first:
+      213: 1217412803469387551
+    second: girl popstar dance_33
+  - first:
+      213: 2785385607444921488
+    second: girl popstar dance_34
+  - first:
+      213: -654468991914489463
+    second: girl popstar dance_35
+  - first:
+      213: 6541224640146588337
+    second: girl popstar dance_36
+  - first:
+      213: 4368170047579643114
+    second: girl popstar dance_37
+  - first:
+      213: -4934004164467401802
+    second: girl popstar dance_38
+  - first:
+      213: 5505308802974094
+    second: girl popstar dance_39
+  - first:
+      213: -6519675596772581526
+    second: girl popstar dance_40
+  - first:
+      213: 7277765402734879741
+    second: girl popstar dance_41
+  - first:
+      213: -1217091304892094378
+    second: girl popstar dance_42
+  - first:
+      213: 2640685572741188731
+    second: girl popstar dance_43
+  - first:
+      213: -6143018415749507669
+    second: girl popstar dance_44
+  - first:
+      213: -9039095747123008075
+    second: girl popstar dance_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: girl popstar dance_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3360
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de353b437ee9e8e0800000000000000
+      internalID: -1663536408386257199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_1
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 3360
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2c0049d17270520800000000000000
+      internalID: 2668144312230920884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_2
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 3360
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f2c41653e0f1410800000000000000
+      internalID: 1449893227465027351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_3
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 3360
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa565226179ab9f0800000000000000
+      internalID: -451882691276154128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_4
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 3360
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3344b8c1a8129f0800000000000000
+      internalID: -494962628833823826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_5
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3360
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c75a3aa3975aaccb0800000000000000
+      internalID: -4842876509190118020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2688
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc02ce867df48820800000000000000
+      internalID: 2919737144085974214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_7
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2688
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80842efd4c31dd6b0800000000000000
+      internalID: -5270034252662945784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_8
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 2688
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a0c11c901be26640800000000000000
+      internalID: 5071874586943013033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2688
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb57c753fe860bc0800000000000000
+      internalID: -3817206458349036573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_10
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2688
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4dca4a4c25e56270800000000000000
+      internalID: 8243246671359298895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2688
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 313dc62b1a7435af0800000000000000
+      internalID: -408904381351800045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2016
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7874c9e0c5183b80800000000000000
+      internalID: -8414951985441900417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_13
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 2016
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4933275bd19c33e80800000000000000
+      internalID: -8199989367076146284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_14
+      rect:
+        serializedVersion: 2
+        x: 983
+        y: 1993
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af1e78d09775cb2b0800000000000000
+      internalID: -5567478861907107334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_15
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 2016
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0fbd19bc27be1eb0800000000000000
+      internalID: -4747155554489745649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_16
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 2016
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98fa54b3ebd58d090800000000000000
+      internalID: -8009548865658835063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_17
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2016
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c22d275391caa63f0800000000000000
+      internalID: -906723150690856404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1344
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5e3cecf310be360800000000000000
+      internalID: 7199849802845382056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 1344
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2389f2aa8a3c300800000000000000
+      internalID: 271245851468772095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_20
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 1344
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5f4d7a748815df0800000000000000
+      internalID: -193223467660413468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_21
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1344
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4c830c83343df20800000000000000
+      internalID: 3446172050890736851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_22
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 1344
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79694d8ca55963370800000000000000
+      internalID: 8301987180253058711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_23
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1344
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 745d9dfe74c826f80800000000000000
+      internalID: -8114769337973615289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 672
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1ad4a15a235a40e0800000000000000
+      internalID: -2284922419713615334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_25
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 672
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f4d424d5845c240800000000000000
+      internalID: 4811331342296764261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_26
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 672
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 855eedcd4139e9150800000000000000
+      internalID: 5881299881206670680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_27
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 672
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9dee2b257963ef30800000000000000
+      internalID: 4603639196059364763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_28
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 672
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d0db945e7f7a970800000000000000
+      internalID: 8766247763856657702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_29
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 672
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03a5ab3782defef50800000000000000
+      internalID: 6913004711033068080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ed5417962268e80800000000000000
+      internalID: -8176810237177241992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_31
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6966e22d65e9b110800000000000000
+      internalID: 1277304226235967854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_32
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 0
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03bf93f25bf0b6a00800000000000000
+      internalID: 750711033743145776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_33
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 0
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f172ecf9e7e15e010800000000000000
+      internalID: 1217412803469387551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_34
+      rect:
+        serializedVersion: 2
+        x: 1920
+        y: 0
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c7d3ec37da7a620800000000000000
+      internalID: 2785385607444921488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: girl popstar dance_35
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 480
+        height: 672
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989cd6c5bebdae6f0800000000000000
+      internalID: -654468991914489463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c055778e17b0da348bcb98dab4c9ca3e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":480.0,"y":672.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      girl popstar dance_0: -1663536408386257199
+      girl popstar dance_1: 2668144312230920884
+      girl popstar dance_10: 8243246671359298895
+      girl popstar dance_11: -408904381351800045
+      girl popstar dance_12: -8414951985441900417
+      girl popstar dance_13: -8199989367076146284
+      girl popstar dance_14: -5567478861907107334
+      girl popstar dance_15: -4747155554489745649
+      girl popstar dance_16: -8009548865658835063
+      girl popstar dance_17: -906723150690856404
+      girl popstar dance_18: 7199849802845382056
+      girl popstar dance_19: 271245851468772095
+      girl popstar dance_2: 1449893227465027351
+      girl popstar dance_20: -193223467660413468
+      girl popstar dance_21: 3446172050890736851
+      girl popstar dance_22: 8301987180253058711
+      girl popstar dance_23: -8114769337973615289
+      girl popstar dance_24: -2284922419713615334
+      girl popstar dance_25: 4811331342296764261
+      girl popstar dance_26: 5881299881206670680
+      girl popstar dance_27: 4603639196059364763
+      girl popstar dance_28: 8766247763856657702
+      girl popstar dance_29: 6913004711033068080
+      girl popstar dance_3: -451882691276154128
+      girl popstar dance_30: -8176810237177241992
+      girl popstar dance_31: 1277304226235967854
+      girl popstar dance_32: 750711033743145776
+      girl popstar dance_33: 1217412803469387551
+      girl popstar dance_34: 2785385607444921488
+      girl popstar dance_35: -654468991914489463
+      girl popstar dance_4: -494962628833823826
+      girl popstar dance_5: -4842876509190118020
+      girl popstar dance_6: 2919737144085974214
+      girl popstar dance_7: -5270034252662945784
+      girl popstar dance_8: 5071874586943013033
+      girl popstar dance_9: -3817206458349036573
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

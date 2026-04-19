@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6124667f41cb5314a94cc791f7c3af1a, type: 3}
+  m_Name: Casual-male
+  m_EditorClassIdentifier: Assembly-CSharp::OutfitData
+  outfitID: 13
+  outfitName: Casual Male
+  previewIcon: {fileID: -8860156524251604771, guid: 6d29d3eef48b5664c892880fa7987bc2, type: 3}
+  characterSprite: {fileID: 2780725913630095945, guid: e2e8e5e4d6b830b46a3231fddcad10ae, type: 3}
+  animatorController: {fileID: 0}
+  price: 200
+  isDefault: 0

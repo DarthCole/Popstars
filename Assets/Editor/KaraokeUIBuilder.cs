@@ -1,4 +1,4 @@
-﻿using System.IO;
+using System.IO;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
@@ -229,13 +229,13 @@ public class KaraokeUIBuilder : EditorWindow
 
     static void BuildControls(RectTransform p)
     {
-        // Restart  — ↺
+        // Restart  � ?
         MkRoundBtn(p,"RestartButton","\u21ba",32,BTN,new Vector2(.5f,.5f),new Vector2(-115,-320),new Vector2(72,72));
-        // Record  — ● (filled circle icon; swap for mic sprite in Inspector)
+        // Record  � ? (filled circle icon; swap for mic sprite in Inspector)
         MkRoundBtn(p,"RecordButton","\u25CF",38,BTN_BIG,new Vector2(.5f,.5f),new Vector2(0,-320),new Vector2(92,92));
-        // Skip  — ⏭
+        // Skip  � ?
         MkRoundBtn(p,"SkipButton","\u23ED",28,BTN,new Vector2(.5f,.5f),new Vector2(115,-320),new Vector2(72,72));
-        // Down arrow  — ↓
+        // Down arrow  � ?
         MkRoundBtn(p,"DownloadButton","\u2193",26,BTN,new Vector2(.5f,0),new Vector2(0,22),new Vector2(58,58));
     }
 
@@ -273,7 +273,7 @@ public class KaraokeUIBuilder : EditorWindow
         r.gameObject.SetActive(false);
     }
 
-    // ── Helpers ───────────────────────────────────────────────────────────────
+    // -- Helpers ---------------------------------------------------------------
 
     static RectTransform E(RectTransform parent, string name) {
         var go = new GameObject(name,typeof(RectTransform));
@@ -305,7 +305,7 @@ public class KaraokeUIBuilder : EditorWindow
         rt.offsetMin = Vector2.zero; rt.offsetMax = Vector2.zero;
     }
 
-    // Flat rectangle button — used for results panel text buttons
+    // Flat rectangle button � used for results panel text buttons
     static void MkBtn(RectTransform parent, string name, string label,
                       float fontSize, Color bg, Vector2 anchor, Vector2 pos, Vector2 size) {
         var go = new GameObject(name,typeof(RectTransform),typeof(Image),typeof(Button));
@@ -321,7 +321,7 @@ public class KaraokeUIBuilder : EditorWindow
     // Circular button with white outline ring + centred icon label
     static void MkRoundBtn(RectTransform parent, string name, string icon,
                            float fontSize, Color bg, Vector2 anchor, Vector2 pos, Vector2 size) {
-        var knob = Resources.GetBuiltinResource<Sprite>("UI/Skin/Knob.psd");
+        var knob = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Knob.psd");
 
         // White outline ring (slightly larger)
         var ringGO = new GameObject(name+"_Ring", typeof(RectTransform), typeof(Image));

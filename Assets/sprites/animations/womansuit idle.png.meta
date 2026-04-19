@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: 6560ee62142679f4e8bc1b79e4777496
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2919386490807460882
+    second: womansuit idle_0
+  - first:
+      213: 4642620248923281206
+    second: womansuit idle_1
+  - first:
+      213: 7954960546563394208
+    second: womansuit idle_2
+  - first:
+      213: -486813304237036212
+    second: womansuit idle_3
+  - first:
+      213: 8181044556695921511
+    second: womansuit idle_4
+  - first:
+      213: 3570402572688936765
+    second: womansuit idle_5
+  - first:
+      213: -3791711268951042505
+    second: womansuit idle_6
+  - first:
+      213: 2208765008969197220
+    second: womansuit idle_7
+  - first:
+      213: 1276244238201218157
+    second: womansuit idle_8
+  - first:
+      213: -7619120492233892784
+    second: womansuit idle_9
+  - first:
+      213: -6677100336197117345
+    second: womansuit idle_10
+  - first:
+      213: 9186533498402469708
+    second: womansuit idle_11
+  - first:
+      213: -7715896327600043962
+    second: womansuit idle_12
+  - first:
+      213: -3001693957743343117
+    second: womansuit idle_13
+  - first:
+      213: 2663516780081952339
+    second: womansuit idle_14
+  - first:
+      213: 7412071572572885071
+    second: womansuit idle_15
+  - first:
+      213: 329252379870629158
+    second: womansuit idle_16
+  - first:
+      213: -327809761626356054
+    second: womansuit idle_17
+  - first:
+      213: -476887016188959134
+    second: womansuit idle_18
+  - first:
+      213: -5383797440686393608
+    second: womansuit idle_19
+  - first:
+      213: 2919234673916983173
+    second: womansuit idle_20
+  - first:
+      213: 5759613164962248832
+    second: womansuit idle_21
+  - first:
+      213: 2757434500027006207
+    second: womansuit idle_22
+  - first:
+      213: -2627624720165005927
+    second: womansuit idle_23
+  - first:
+      213: 2089080185660363636
+    second: womansuit idle_24
+  - first:
+      213: -4102558492928712489
+    second: womansuit idle_25
+  - first:
+      213: 3681570780962370975
+    second: womansuit idle_26
+  - first:
+      213: 2300207664581726270
+    second: womansuit idle_27
+  - first:
+      213: 7565533696983576681
+    second: womansuit idle_28
+  - first:
+      213: -1783332657135946409
+    second: womansuit idle_29
+  - first:
+      213: 5786571332120752937
+    second: womansuit idle_30
+  - first:
+      213: -7016318963353115925
+    second: womansuit idle_31
+  - first:
+      213: -6962726094418003319
+    second: womansuit idle_32
+  - first:
+      213: -7391728081496837988
+    second: womansuit idle_33
+  - first:
+      213: 3992297788756994959
+    second: womansuit idle_34
+  - first:
+      213: -7963081332298882259
+    second: womansuit idle_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: womansuit idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3480
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebd85544714c77d0800000000000000
+      internalID: -2919386490807460882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 3480
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6379b1cc486ed6040800000000000000
+      internalID: 4642620248923281206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 3480
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa882c4872b56e60800000000000000
+      internalID: 7954960546563394208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 3480
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d640901ed7e39f0800000000000000
+      internalID: -486813304237036212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 3480
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 763e085eda8e88170800000000000000
+      internalID: 8181044556695921511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 3480
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fc34a193e9c8130800000000000000
+      internalID: 3570402572688936765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2784
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736d353b0b2216bc0800000000000000
+      internalID: -3791711268951042505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2784
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6ebe7b21c17ae10800000000000000
+      internalID: 2208765008969197220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2784
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d646f907f5126b110800000000000000
+      internalID: 1276244238201218157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_9
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2784
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05cdf77b742734690800000000000000
+      internalID: -7619120492233892784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2784
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a545bfe9c2653a0800000000000000
+      internalID: -6677100336197117345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_11
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2784
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4771816b8f1d7f70800000000000000
+      internalID: 9186533498402469708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2088
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64888adab21abe490800000000000000
+      internalID: -7715896327600043962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2088
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f98544cf37d756d0800000000000000
+      internalID: -3001693957743343117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_14
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2088
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 356b31a4666b6f420800000000000000
+      internalID: 2663516780081952339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_15
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 2088
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f405afc03d7fcd660800000000000000
+      internalID: 7412071572572885071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_16
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 2088
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d04a78b4db19400800000000000000
+      internalID: 329252379870629158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_17
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 2088
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa60b5432c2637bf0800000000000000
+      internalID: -327809761626356054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1392
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 266af0219c1c169f0800000000000000
+      internalID: -476887016188959134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1392
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f6fa3590c8e845b0800000000000000
+      internalID: -5383797440686393608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1392
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58733da1874338820800000000000000
+      internalID: 2919234673916983173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_21
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1392
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088fc3568a14eef40800000000000000
+      internalID: 5759613164962248832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_22
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1392
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc34897110644620800000000000000
+      internalID: 2757434500027006207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_23
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1392
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995978f1d3dc88bd0800000000000000
+      internalID: -2627624720165005927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 696
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 473d7954c57edfc10800000000000000
+      internalID: 2089080185660363636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_25
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 696
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0e8b679c8c017c0800000000000000
+      internalID: -4102558492928712489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 696
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9538b69e11971330800000000000000
+      internalID: 3681570780962370975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 696
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3056051faafbef10800000000000000
+      internalID: 2300207664581726270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_28
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 696
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96034f040dc2ef860800000000000000
+      internalID: 7565533696983576681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_29
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 696
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 755fe0795645047e0800000000000000
+      internalID: -1783332657135946409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 923348ec7f70e4050800000000000000
+      internalID: 5786571332120752937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_31
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be2208ea31701ae90800000000000000
+      internalID: -7016318963353115925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_32
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98a3fd9d18d6f5f90800000000000000
+      internalID: -6962726094418003319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_33
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90f912197e4b6990800000000000000
+      internalID: -7391728081496837988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_34
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8b2070dfad776730800000000000000
+      internalID: 3992297788756994959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: womansuit idle_35
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 696
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23e7cee7b37d7190800000000000000
+      internalID: -7963081332298882259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 9596602a892f1a24b9879e4515e7a952
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":256.0,"y":696.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      womansuit idle_0: -2919386490807460882
+      womansuit idle_1: 4642620248923281206
+      womansuit idle_10: -6677100336197117345
+      womansuit idle_11: 9186533498402469708
+      womansuit idle_12: -7715896327600043962
+      womansuit idle_13: -3001693957743343117
+      womansuit idle_14: 2663516780081952339
+      womansuit idle_15: 7412071572572885071
+      womansuit idle_16: 329252379870629158
+      womansuit idle_17: -327809761626356054
+      womansuit idle_18: -476887016188959134
+      womansuit idle_19: -5383797440686393608
+      womansuit idle_2: 7954960546563394208
+      womansuit idle_20: 2919234673916983173
+      womansuit idle_21: 5759613164962248832
+      womansuit idle_22: 2757434500027006207
+      womansuit idle_23: -2627624720165005927
+      womansuit idle_24: 2089080185660363636
+      womansuit idle_25: -4102558492928712489
+      womansuit idle_26: 3681570780962370975
+      womansuit idle_27: 2300207664581726270
+      womansuit idle_28: 7565533696983576681
+      womansuit idle_29: -1783332657135946409
+      womansuit idle_3: -486813304237036212
+      womansuit idle_30: 5786571332120752937
+      womansuit idle_31: -7016318963353115925
+      womansuit idle_32: -6962726094418003319
+      womansuit idle_33: -7391728081496837988
+      womansuit idle_34: 3992297788756994959
+      womansuit idle_35: -7963081332298882259
+      womansuit idle_4: 8181044556695921511
+      womansuit idle_5: 3570402572688936765
+      womansuit idle_6: -3791711268951042505
+      womansuit idle_7: 2208765008969197220
+      womansuit idle_8: 1276244238201218157
+      womansuit idle_9: -7619120492233892784
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -104,7 +104,7 @@ public class SongSelectUIBuilder : EditorWindow
 
     static void BuildHeader(RectTransform p)
     {
-        var uiSpr = Resources.GetBuiltinResource<Sprite>("UI/Skin/UISprite.psd");
+        var uiSpr = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
 
         // "NOW SELECTING" pill  ────────────────────────────────────────────────
         var outerGO = new GameObject("PillBorder", typeof(RectTransform), typeof(Image));
@@ -196,7 +196,7 @@ public class SongSelectUIBuilder : EditorWindow
     static void BuildSongCard(RectTransform parent, int index,
                                string icon, string songName, string artist)
     {
-        var uiSpr = Resources.GetBuiltinResource<Sprite>("UI/Skin/UISprite.psd");
+        var uiSpr = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
 
         // Outer container — direct child of GridLayoutGroup
         var outer = new GameObject($"SongCard_{index}",

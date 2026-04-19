@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6124667f41cb5314a94cc791f7c3af1a, type: 3}
+  m_Name: Defaut-man outfit
+  m_EditorClassIdentifier: Assembly-CSharp::OutfitData
+  outfitID: 2
+  outfitName: Default-man
+  previewIcon: {fileID: 7086902143849809076, guid: 552fd07c65a73eb4a8f251351bb4dc00, type: 3}
+  characterSprite: {fileID: 7086902143849809076, guid: 62429ea6e50ee5d4595f4b2343945160, type: 3}
+  animatorController: {fileID: 9100000, guid: 7fec852d2c3312149a5eb670455035b2, type: 2}
+  price: 0
+  isDefault: 1
