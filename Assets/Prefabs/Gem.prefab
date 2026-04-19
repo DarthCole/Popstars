@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5172820187283069065}
   - component: {fileID: 1852738912218699356}
   m_Layer: 5
-  m_Name: Gem
+  m_Name: GemPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 449707411893355697}
   - component: {fileID: 2746074976198353140}
   m_Layer: 5
-  m_Name: IconText
+  m_Name: GemIconText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
