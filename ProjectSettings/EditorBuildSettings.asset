@@ -6,13 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
+    path: Assets/Scenes/MainMenuScene.unity
+    guid: 28431cfd44780d44e968c75835846b95
   - enabled: 1
-    path: Assets/Scenes/ShopScene.unity
+    path: Assets/Scenes/KaraokeScene.unity
+    guid: 15f1f26fe8222f845bf2a4a9bf75cf97
   - enabled: 1
-    path: Assets/Landing page.unity
-    guid: 1c60d4bb4bedff24db94f8f5e86df499
+    path: Assets/Scenes/CharacterCustomisation.unity
+    guid: c7f95ce257af0e940822325fdadce300
+  - enabled: 1
+    path: Assets/Scenes/Shop.unity
+    guid: ce29959a419aef74482099053e78d6eb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

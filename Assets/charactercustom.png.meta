@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: a1abb14ebf41e46479df014a230bf7ba
+guid: ad83ef218dd5d76439945b322797e961
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8063678894234164357
-    second: music-note_0
+      213: 2999544094922212613
+    second: charactercustom_0
   - first:
-      213: -6257447286747635074
-    second: music-note_1
+      213: 5584484219253949039
+    second: charactercustom_1
   - first:
-      213: -7638336235284480710
-    second: music-note_2
+      213: -7537874272886856452
+    second: charactercustom_2
   - first:
-      213: 3347203240228647860
-    second: music-note_3
+      213: -8729181463893602520
+    second: charactercustom_3
   - first:
-      213: 6665049312550201551
-    second: music-note_4
+      213: -960805731222354646
+    second: charactercustom_4
   - first:
-      213: 1339453128285885680
-    second: music-note_5
+      213: 8824072377800602056
+    second: charactercustom_5
+  - first:
+      213: -2058475581600555873
+    second: charactercustom_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: music-note_0
+      name: charactercustom_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 397
-        width: 112
-        height: 115
+        x: 7
+        y: 323
+        width: 140
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58c54a92b31f7ef60800000000000000
-      internalID: 8063678894234164357
+      spriteID: 50585f9467580a920800000000000000
+      internalID: 2999544094922212613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_1
+      name: charactercustom_1
       rect:
         serializedVersion: 2
-        x: 177
-        y: 371
-        width: 113
-        height: 97
+        x: 186
+        y: 323
+        width: 140
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e72eca898d41929a0800000000000000
-      internalID: -6257447286747635074
+      spriteID: f62086e3fc2108d40800000000000000
+      internalID: 5584484219253949039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_2
+      name: charactercustom_2
       rect:
         serializedVersion: 2
-        x: 263
-        y: 215
-        width: 249
-        height: 297
+        x: 357
+        y: 323
+        width: 148
+        height: 182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3dbfd4e9ad2ff590800000000000000
-      internalID: -7638336235284480710
+      spriteID: cf4e5034947146790800000000000000
+      internalID: -7537874272886856452
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_3
+      name: charactercustom_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 269
-        height: 326
+        x: 7
+        y: 101
+        width: 140
+        height: 165
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b37ddcdc97a37e20800000000000000
-      internalID: 3347203240228647860
+      spriteID: 82f82b035b7bbd680800000000000000
+      internalID: -8729181463893602520
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_4
+      name: charactercustom_4
       rect:
         serializedVersion: 2
-        x: 417
-        y: 124
-        width: 95
-        height: 100
+        x: 186
+        y: 101
+        width: 140
+        height: 174
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc8240d69030f7c50800000000000000
-      internalID: 6665049312550201551
+      spriteID: a25055c27488aa2f0800000000000000
+      internalID: -960805731222354646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_5
+      name: charactercustom_5
       rect:
         serializedVersion: 2
-        x: 298
-        y: 0
-        width: 122
-        height: 106
+        x: 365
+        y: 92
+        width: 140
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +256,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f414c00681b69210800000000000000
-      internalID: 1339453128285885680
+      spriteID: 8c1342f5317657a70800000000000000
+      internalID: 8824072377800602056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: charactercustom_6
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 7
+        width: 54
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c12e36d53de63e0800000000000000
+      internalID: -2058475581600555873
       vertices: []
       indices: 
       edges: []
@@ -273,12 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      music-note_0: 8063678894234164357
-      music-note_1: -6257447286747635074
-      music-note_2: -7638336235284480710
-      music-note_3: 3347203240228647860
-      music-note_4: 6665049312550201551
-      music-note_5: 1339453128285885680
+      charactercustom_0: 2999544094922212613
+      charactercustom_1: 5584484219253949039
+      charactercustom_2: -7537874272886856452
+      charactercustom_3: -8729181463893602520
+      charactercustom_4: -960805731222354646
+      charactercustom_5: 8824072377800602056
+      charactercustom_6: -2058475581600555873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

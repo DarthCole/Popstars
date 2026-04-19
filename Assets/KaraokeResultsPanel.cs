@@ -131,6 +131,6 @@ public class KaraokeResultsPanel : MonoBehaviour
 
     private void OnBackToHub()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Hub");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenuScene");
     }
 }

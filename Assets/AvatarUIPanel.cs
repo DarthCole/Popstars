@@ -82,7 +82,7 @@ public class AvatarUIPanel : MonoBehaviour
             var outfit = outfits[i];
             if (outfit == null) continue;
 
-            bool owned = unlockAllForTesting || outfit.isDefault || IsOwned(outfit.outfitID);
+            bool owned = unlockAllForTesting || outfit.isDefault || outfit.price <= 0 || IsOwned(outfit.outfitID);
             CreateCard(i, outfit, owned, uiSpr);
         }
     }

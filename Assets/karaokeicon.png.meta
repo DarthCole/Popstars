@@ -1,25 +1,28 @@
 fileFormatVersion: 2
-guid: a1abb14ebf41e46479df014a230bf7ba
+guid: 6e656ea2976e4254db4341708c17f37c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8063678894234164357
-    second: music-note_0
+      213: -3796614446764869732
+    second: karaokeicon_0
   - first:
-      213: -6257447286747635074
-    second: music-note_1
+      213: 1060405269446878919
+    second: karaokeicon_1
   - first:
-      213: -7638336235284480710
-    second: music-note_2
+      213: -553947321421174881
+    second: karaokeicon_2
   - first:
-      213: 3347203240228647860
-    second: music-note_3
+      213: -7839605217846270278
+    second: karaokeicon_3
   - first:
-      213: 6665049312550201551
-    second: music-note_4
+      213: -9033855324321523220
+    second: karaokeicon_4
   - first:
-      213: 1339453128285885680
-    second: music-note_5
+      213: 7371991409881722735
+    second: karaokeicon_5
+  - first:
+      213: 1890120743052450764
+    second: karaokeicon_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -128,13 +131,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: music-note_0
+      name: karaokeicon_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 397
-        width: 112
-        height: 115
+        x: 90
+        y: 431
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 58c54a92b31f7ef60800000000000000
-      internalID: 8063678894234164357
+      spriteID: c97b677a647bf4bc0800000000000000
+      internalID: -3796614446764869732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_1
+      name: karaokeicon_1
       rect:
         serializedVersion: 2
-        x: 177
-        y: 371
-        width: 113
-        height: 97
+        x: 190
+        y: 356
+        width: 137
+        height: 152
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -165,20 +168,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e72eca898d41929a0800000000000000
-      internalID: -6257447286747635074
+      spriteID: 7c6655b69f057be00800000000000000
+      internalID: 1060405269446878919
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_2
+      name: karaokeicon_2
       rect:
         serializedVersion: 2
-        x: 263
-        y: 215
-        width: 249
-        height: 297
+        x: 426
+        y: 451
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,20 +190,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a3dbfd4e9ad2ff590800000000000000
-      internalID: -7638336235284480710
+      spriteID: f97696a98dbff48f0800000000000000
+      internalID: -553947321421174881
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_3
+      name: karaokeicon_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 269
-        height: 326
+        x: 4
+        y: 4
+        width: 221
+        height: 392
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4b37ddcdc97a37e20800000000000000
-      internalID: 3347203240228647860
+      spriteID: ab669f22790243390800000000000000
+      internalID: -7839605217846270278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_4
+      name: karaokeicon_4
       rect:
         serializedVersion: 2
-        x: 417
-        y: 124
-        width: 95
-        height: 100
+        x: 205
+        y: 44
+        width: 102
+        height: 107
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,20 +234,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fc8240d69030f7c50800000000000000
-      internalID: 6665049312550201551
+      spriteID: ce95b89227c41a280800000000000000
+      internalID: -9033855324321523220
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: music-note_5
+      name: karaokeicon_5
       rect:
         serializedVersion: 2
-        x: 298
-        y: 0
-        width: 122
-        height: 106
+        x: 285
+        y: 25
+        width: 42
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,8 +256,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0f414c00681b69210800000000000000
-      internalID: 1339453128285885680
+      spriteID: f6f2b39f0239e4660800000000000000
+      internalID: 7371991409881722735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: karaokeicon_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 4
+        width: 221
+        height: 392
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb1d303dce0b3a10800000000000000
+      internalID: 1890120743052450764
       vertices: []
       indices: 
       edges: []
@@ -273,12 +298,13 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      music-note_0: 8063678894234164357
-      music-note_1: -6257447286747635074
-      music-note_2: -7638336235284480710
-      music-note_3: 3347203240228647860
-      music-note_4: 6665049312550201551
-      music-note_5: 1339453128285885680
+      karaokeicon_0: -3796614446764869732
+      karaokeicon_1: 1060405269446878919
+      karaokeicon_2: -553947321421174881
+      karaokeicon_3: -7839605217846270278
+      karaokeicon_4: -9033855324321523220
+      karaokeicon_5: 7371991409881722735
+      karaokeicon_6: 1890120743052450764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
