@@ -17,6 +17,9 @@ MonoBehaviour:
   BPM: 0
   backingTrack: {fileID: 8300000, guid: d3097da9e7c60c342b36d2c60c70b798, type: 3}
   coverArt: {fileID: 5458508558293845083, guid: 37d8fa8884dd8f740986fc8cfc6b60ea, type: 3}
+  songID: 0
+  price: 0
+  isDefault: 1
   lines:
   - timestamp: 13.11
     text: I used to rule the world

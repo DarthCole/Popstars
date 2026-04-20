@@ -17,6 +17,9 @@ MonoBehaviour:
   BPM: 0
   backingTrack: {fileID: 8300000, guid: da099c7ab0b2c244197cf4b4a01b2b64, type: 3}
   coverArt: {fileID: 4255539788136337988, guid: 97ffb26aac416724c87a9c1f22fb1566, type: 3}
+  songID: 2
+  price: 0
+  isDefault: 1
   lines:
   - timestamp: 13.32
     text: Yeah

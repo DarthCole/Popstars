@@ -16,7 +16,10 @@ SONGS = [
     ("Beat It",         "Michael Jackson",                  "BeatIt.csv",        "Beat It - Michael Jackson.lrc"),
     ("Dance Monkey",    "Tones And I",                      "DanceMonkey.csv",   "Dance Monkey - Tones And I.lrc"),
     ("Mofe",            "Mavo",                             "Mofe.csv",          "Mofe - Mavo.lrc"),
-    ("HOW FAR",         "NO11, Ayjay bobo, Monochrome",     "HowFar.csv",        "HOW FAR - NO11, Ayjay bobo, Monochrome.lrc"),
+    ("HOW FAR",              "NO11, Ayjay bobo, Monochrome",  "HowFar.csv",              "HOW FAR - NO11, Ayjay bobo, Monochrome.lrc"),
+    ("Poker Face",            "Lady Gaga",                     "PokerFace.csv",            "Poker Face - Lady Gaga.lrc"),
+    ("Somebody That I Used To Know", "Gotye ft. Kimbra",       "SomebodyThatIUsedToKnow.csv", "Somebody That I Used To Know - Gotye, Kimbra.lrc"),
+    ("Someone Like You",      "Adele",                         "SomeoneLikeYou.csv",       "Someone Like You - Adele.lrc"),
 ]
 
 # ── Helpers ───────────────────────────────────────────────────────────────────

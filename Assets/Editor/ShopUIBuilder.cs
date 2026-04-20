@@ -110,13 +110,16 @@ public class ShopUIBuilder : EditorWindow
 
         var nav = panel.gameObject.AddComponent<ShopPageNavigator>();
 
-        // Load all OutfitData assets
+        // Load all OutfitData and StageData assets
         var outfitAssets = LoadAllOutfitData();
+        var stageAssets  = LoadAllStageData();
 
-        var landing = BuildLandingPage(panel, outfitAssets.Length);
+        var songAssets = LoadAllSongData();
+
+        var landing = BuildLandingPage(panel, outfitAssets.Length, stageAssets.Length);
         var outfits = BuildOutfitsPageFromData(panel, outfitAssets);
-        var songs   = BuildCategoryPage(panel, "SongsPage",   "SONGS",   SONGS,   1);
-        var stages  = BuildCategoryPage(panel, "StagesPage",  "STAGES",  STAGES,  2);
+        var songs   = BuildSongsPageFromData(panel, songAssets);
+        var stages  = BuildStagesPageFromData(panel, stageAssets);
 
         outfits.SetActive(false);
         songs.SetActive(false);
@@ -134,7 +137,7 @@ public class ShopUIBuilder : EditorWindow
         WireAllTabBars(outfits, songs, stages, nav);
 
         EditorUtility.SetDirty(canvas.gameObject);
-        Debug.Log($"[ShopUIBuilder] Shop built with {outfitAssets.Length} real outfit cards.");
+        Debug.Log($"[ShopUIBuilder] Shop built — {outfitAssets.Length} outfits, {songAssets.Length} songs, {stageAssets.Length} stages.");
     }
 
     static OutfitData[] LoadAllOutfitData()
@@ -156,8 +159,340 @@ public class ShopUIBuilder : EditorWindow
         return list.ToArray();
     }
 
-    // ── Landing page ──────────────────────────────────────────────────────────
-    static GameObject BuildLandingPage(RectTransform panel, int outfitCount)
+    static SongData[] LoadAllSongData()
+    {
+        var guids = AssetDatabase.FindAssets("t:SongData");
+        var list  = new System.Collections.Generic.List<SongData>();
+        foreach (var guid in guids)
+        {
+            var path = AssetDatabase.GUIDToAssetPath(guid);
+            var data = AssetDatabase.LoadAssetAtPath<SongData>(path);
+            if (data != null) list.Add(data);
+        }
+        // Defaults first, then by price ascending
+        list.Sort((a, b) =>
+        {
+            if (a.isDefault != b.isDefault) return a.isDefault ? -1 : 1;
+            return a.price.CompareTo(b.price);
+        });
+        return list.ToArray();
+    }
+
+    static StageData[] LoadAllStageData()
+    {
+        var guids = AssetDatabase.FindAssets("t:StageData");
+        var list  = new System.Collections.Generic.List<StageData>();
+        foreach (var guid in guids)
+        {
+            var path = AssetDatabase.GUIDToAssetPath(guid);
+            var data = AssetDatabase.LoadAssetAtPath<StageData>(path);
+            if (data != null) list.Add(data);
+        }
+        list.Sort((a, b) =>
+        {
+            if (a.isDefault != b.isDefault) return a.isDefault ? -1 : 1;
+            return a.price.CompareTo(b.price);
+        });
+        return list.ToArray();
+    }
+
+    // ── Songs page (data-driven from SongData assets) ────────────────────────
+    static GameObject BuildSongsPageFromData(RectTransform panel, SongData[] songAssets)
+    {
+        var page = MakeRect(panel, "SongsPage");
+        Stretch(page);
+        BuildBackground(page);
+        BuildTopBar(page);
+        BuildCategoryTitle(page, "SONGS");
+        BuildTabBar(page, 1);
+        BuildSongScrollView(page, songAssets);
+        return page.gameObject;
+    }
+
+    static void BuildSongScrollView(RectTransform page, SongData[] songAssets)
+    {
+        var scrollGO = new GameObject("ScrollView", typeof(RectTransform), typeof(Image), typeof(ScrollRect));
+        scrollGO.transform.SetParent(page, false);
+        var scrollRT  = scrollGO.GetComponent<RectTransform>();
+        scrollRT.anchorMin = new Vector2(0f, 0f);
+        scrollRT.anchorMax = new Vector2(1f, 1f);
+        scrollRT.offsetMin = new Vector2(40f, 60f);
+        scrollRT.offsetMax = new Vector2(-40f, -296f);
+        scrollGO.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
+        var scrollRect  = scrollGO.GetComponent<ScrollRect>();
+        scrollRect.horizontal        = false;
+        scrollRect.scrollSensitivity = 30f;
+        scrollRect.movementType      = ScrollRect.MovementType.Elastic;
+
+        var vpGO = new GameObject("Viewport", typeof(RectTransform), typeof(Image), typeof(Mask));
+        vpGO.transform.SetParent(scrollRT, false);
+        var vpRT  = vpGO.GetComponent<RectTransform>();
+        Stretch(vpRT);
+        vpGO.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.01f);
+        vpGO.GetComponent<Mask>().showMaskGraphic = false;
+        scrollRect.viewport = vpRT;
+
+        var contentGO = new GameObject("Content", typeof(RectTransform));
+        contentGO.transform.SetParent(vpRT, false);
+        var contentRT  = contentGO.GetComponent<RectTransform>();
+        contentRT.anchorMin = new Vector2(0f, 1f);
+        contentRT.anchorMax = new Vector2(1f, 1f);
+        contentRT.pivot     = new Vector2(0f, 1f);
+        contentRT.sizeDelta = new Vector2(0f, 600f);
+        contentRT.anchoredPosition = Vector2.zero;
+        scrollRect.content = contentRT;
+
+        var grid = contentGO.AddComponent<DynamicShopGridLayout>();
+        grid.content     = contentRT;
+        grid.viewport    = vpRT;
+        grid.columns     = 4;
+        grid.cellSize    = new Vector2(380f, 290f);
+        grid.horizontalSpacing = 24f;
+        grid.verticalSpacing   = 24f;
+        grid.leftPadding  = 50f;
+        grid.rightPadding = 50f;
+        grid.topPadding   = 24f;
+        grid.bottomPadding = 40f;
+        grid.controlChildSize       = true;
+        grid.clampContentToViewport = true;
+
+        foreach (var song in songAssets)
+            BuildSongDataCard(contentRT, song);
+
+        grid.RebuildNow();
+        BuildScrollArrow(page);
+    }
+
+    static void BuildSongDataCard(RectTransform content, SongData song)
+    {
+        var spr  = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
+        var knob = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Knob.psd");
+
+        string safeName = song.songName.Replace(" ", "").Replace("'", "");
+        bool isFree = song.isDefault || song.price <= 0;
+
+        var borderGO = new GameObject(safeName + "_Border", typeof(RectTransform), typeof(Image));
+        borderGO.transform.SetParent(content, false);
+        var borderRT  = borderGO.GetComponent<RectTransform>();
+        borderRT.anchorMin = borderRT.anchorMax = new Vector2(0f, 1f);
+        borderRT.pivot     = new Vector2(0f, 1f);
+        borderRT.sizeDelta = new Vector2(380f, 290f);
+        var bImg = borderGO.GetComponent<Image>();
+        bImg.sprite = spr; bImg.color = ITEM_BORDER; bImg.type = Image.Type.Sliced;
+
+        var cardGO = new GameObject(safeName, typeof(RectTransform), typeof(Image));
+        cardGO.transform.SetParent(borderRT, false);
+        var cardRT  = cardGO.GetComponent<RectTransform>();
+        cardRT.anchorMin = Vector2.zero; cardRT.anchorMax = Vector2.one;
+        cardRT.offsetMin = new Vector2(2f, 2f); cardRT.offsetMax = new Vector2(-2f, -2f);
+        var cImg = cardGO.GetComponent<Image>();
+        cImg.sprite = spr; cImg.color = ITEM_BG; cImg.type = Image.Type.Sliced;
+
+        // Cover art area (top ~58%)
+        var iconAreaGO = new GameObject("IconArea", typeof(RectTransform), typeof(Image));
+        iconAreaGO.transform.SetParent(cardRT, false);
+        var iconAreaRT  = iconAreaGO.GetComponent<RectTransform>();
+        iconAreaRT.anchorMin = new Vector2(0.08f, 0.38f);
+        iconAreaRT.anchorMax = new Vector2(0.92f, 0.94f);
+        iconAreaRT.offsetMin = iconAreaRT.offsetMax = Vector2.zero;
+        var iconAreaImg  = iconAreaGO.GetComponent<Image>();
+        iconAreaImg.sprite = knob; iconAreaImg.color = ICON_SONGS;
+
+        Image coverImg = null;
+        if (song.coverArt != null)
+        {
+            var coverGO = new GameObject("CoverArt", typeof(RectTransform), typeof(Image));
+            coverGO.transform.SetParent(iconAreaRT, false);
+            Stretch(coverGO.GetComponent<RectTransform>());
+            coverImg = coverGO.GetComponent<Image>();
+            coverImg.sprite         = song.coverArt;
+            coverImg.preserveAspect = true;
+            coverImg.color          = isFree ? W100 : new Color(1f, 1f, 1f, 0.55f);
+        }
+
+        // Song name
+        var nameRT = MakeTMP(cardRT, "ItemName", song.songName, 14f, W100, TextAlignmentOptions.Center, true);
+        nameRT.anchorMin = new Vector2(0.05f, 0.24f);
+        nameRT.anchorMax = new Vector2(0.95f, 0.38f);
+        nameRT.offsetMin = nameRT.offsetMax = Vector2.zero;
+        nameRT.GetComponent<TextMeshProUGUI>().enableWordWrapping = false;
+
+        // Action button (BUY / OWNED — handled at runtime by ShopSongButton)
+        var btnGO = new GameObject("ActionButton", typeof(RectTransform), typeof(Image), typeof(Button));
+        btnGO.transform.SetParent(cardRT, false);
+        var btnRT  = btnGO.GetComponent<RectTransform>();
+        btnRT.anchorMin = new Vector2(0.06f, 0.04f);
+        btnRT.anchorMax = new Vector2(0.94f, 0.24f);
+        btnRT.offsetMin = btnRT.offsetMax = Vector2.zero;
+        var btnImg  = btnGO.GetComponent<Image>();
+        btnImg.sprite = spr;
+        btnImg.color  = isFree ? new Color(0.047f, 0.180f, 0.090f, 1f) : BUY_BG;
+        btnImg.type   = Image.Type.Sliced;
+        btnGO.AddComponent<ButtonHoverEffect>();
+
+        string initialLabel = isFree ? "OWNED" : $"\u2605 {song.price}";
+        var btnTxtRT = MakeTMP(btnRT, "Label", initialLabel, 13f, isFree ? W65 : W100, TextAlignmentOptions.Center, true);
+        Stretch(btnTxtRT);
+
+        var shopBtn = btnGO.AddComponent<ShopSongButton>();
+        shopBtn.song        = song;
+        shopBtn.buttonImage = btnImg;
+        shopBtn.buttonLabel = btnTxtRT.GetComponent<TextMeshProUGUI>();
+        shopBtn.coverImage  = coverImg;
+
+        var btn = btnGO.GetComponent<Button>();
+        UnityEventTools.AddPersistentListener(btn.onClick, shopBtn.OnActionPressed);
+    }
+
+    // ── Stages page (data-driven from StageData assets) ───────────────────────
+    static GameObject BuildStagesPageFromData(RectTransform panel, StageData[] stageAssets)
+    {
+        var page = MakeRect(panel, "StagesPage");
+        Stretch(page);
+        BuildBackground(page);
+        BuildTopBar(page);
+        BuildCategoryTitle(page, "STAGES");
+        BuildTabBar(page, 2);
+        BuildStageScrollView(page, stageAssets);
+        return page.gameObject;
+    }
+
+    static void BuildStageScrollView(RectTransform page, StageData[] stageAssets)
+    {
+        var scrollGO = new GameObject("ScrollView", typeof(RectTransform), typeof(Image), typeof(ScrollRect));
+        scrollGO.transform.SetParent(page, false);
+        var scrollRT  = scrollGO.GetComponent<RectTransform>();
+        scrollRT.anchorMin = new Vector2(0f, 0f);
+        scrollRT.anchorMax = new Vector2(1f, 1f);
+        scrollRT.offsetMin = new Vector2(40f, 60f);
+        scrollRT.offsetMax = new Vector2(-40f, -296f);
+        scrollGO.GetComponent<Image>().color = new Color(0f, 0f, 0f, 0f);
+        var scrollRect  = scrollGO.GetComponent<ScrollRect>();
+        scrollRect.horizontal        = false;
+        scrollRect.scrollSensitivity = 30f;
+        scrollRect.movementType      = ScrollRect.MovementType.Elastic;
+
+        var vpGO = new GameObject("Viewport", typeof(RectTransform), typeof(Image), typeof(Mask));
+        vpGO.transform.SetParent(scrollRT, false);
+        var vpRT  = vpGO.GetComponent<RectTransform>();
+        Stretch(vpRT);
+        vpGO.GetComponent<Image>().color = new Color(1f, 1f, 1f, 0.01f);
+        vpGO.GetComponent<Mask>().showMaskGraphic = false;
+        scrollRect.viewport = vpRT;
+
+        var contentGO = new GameObject("Content", typeof(RectTransform));
+        contentGO.transform.SetParent(vpRT, false);
+        var contentRT  = contentGO.GetComponent<RectTransform>();
+        contentRT.anchorMin = new Vector2(0f, 1f);
+        contentRT.anchorMax = new Vector2(1f, 1f);
+        contentRT.pivot     = new Vector2(0f, 1f);
+        contentRT.sizeDelta = new Vector2(0f, 600f);
+        contentRT.anchoredPosition = Vector2.zero;
+        scrollRect.content = contentRT;
+
+        var grid = contentGO.AddComponent<DynamicShopGridLayout>();
+        grid.content     = contentRT;
+        grid.viewport    = vpRT;
+        grid.columns     = 4;
+        grid.cellSize    = new Vector2(380f, 290f);
+        grid.horizontalSpacing = 24f;
+        grid.verticalSpacing   = 24f;
+        grid.leftPadding  = 50f;
+        grid.rightPadding = 50f;
+        grid.topPadding   = 24f;
+        grid.bottomPadding = 40f;
+        grid.controlChildSize       = true;
+        grid.clampContentToViewport = true;
+
+        foreach (var stage in stageAssets)
+            BuildStageDataCard(contentRT, stage);
+
+        grid.RebuildNow();
+        BuildScrollArrow(page);
+    }
+
+    static void BuildStageDataCard(RectTransform content, StageData stage)
+    {
+        var spr  = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
+        var knob = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Knob.psd");
+
+        string safeName = stage.stageName.Replace(" ", "").Replace("'", "");
+        bool isFree = stage.isDefault || stage.price <= 0;
+
+        var borderGO = new GameObject(safeName + "_Border", typeof(RectTransform), typeof(Image));
+        borderGO.transform.SetParent(content, false);
+        var borderRT  = borderGO.GetComponent<RectTransform>();
+        borderRT.anchorMin = borderRT.anchorMax = new Vector2(0f, 1f);
+        borderRT.pivot     = new Vector2(0f, 1f);
+        borderRT.sizeDelta = new Vector2(380f, 290f);
+        var bImg = borderGO.GetComponent<Image>();
+        bImg.sprite = spr; bImg.color = ITEM_BORDER; bImg.type = Image.Type.Sliced;
+
+        var cardGO = new GameObject(safeName, typeof(RectTransform), typeof(Image));
+        cardGO.transform.SetParent(borderRT, false);
+        var cardRT  = cardGO.GetComponent<RectTransform>();
+        cardRT.anchorMin = Vector2.zero; cardRT.anchorMax = Vector2.one;
+        cardRT.offsetMin = new Vector2(2f, 2f); cardRT.offsetMax = new Vector2(-2f, -2f);
+        var cImg = cardGO.GetComponent<Image>();
+        cImg.sprite = spr; cImg.color = ITEM_BG; cImg.type = Image.Type.Sliced;
+
+        // Preview icon area (top ~58%)
+        var iconAreaGO = new GameObject("IconArea", typeof(RectTransform), typeof(Image));
+        iconAreaGO.transform.SetParent(cardRT, false);
+        var iconAreaRT  = iconAreaGO.GetComponent<RectTransform>();
+        iconAreaRT.anchorMin = new Vector2(0.08f, 0.38f);
+        iconAreaRT.anchorMax = new Vector2(0.92f, 0.94f);
+        iconAreaRT.offsetMin = iconAreaRT.offsetMax = Vector2.zero;
+        var iconAreaImg  = iconAreaGO.GetComponent<Image>();
+        iconAreaImg.sprite = knob; iconAreaImg.color = ICON_AREA;
+
+        Image previewImg = null;
+        if (stage.previewIcon != null)
+        {
+            var previewGO = new GameObject("PreviewIcon", typeof(RectTransform), typeof(Image));
+            previewGO.transform.SetParent(iconAreaRT, false);
+            Stretch(previewGO.GetComponent<RectTransform>());
+            previewImg = previewGO.GetComponent<Image>();
+            previewImg.sprite         = stage.previewIcon;
+            previewImg.preserveAspect = true;
+            previewImg.color          = isFree ? W100 : new Color(1f, 1f, 1f, 0.55f);
+        }
+
+        // Name label
+        var nameRT = MakeTMP(cardRT, "ItemName", stage.stageName, 14f, W100, TextAlignmentOptions.Center, true);
+        nameRT.anchorMin = new Vector2(0.05f, 0.24f);
+        nameRT.anchorMax = new Vector2(0.95f, 0.38f);
+        nameRT.offsetMin = nameRT.offsetMax = Vector2.zero;
+        nameRT.GetComponent<TextMeshProUGUI>().enableWordWrapping = false;
+
+        // Action button (BUY / EQUIP / EQUIPPED — handled at runtime by ShopStageButton)
+        var btnGO = new GameObject("ActionButton", typeof(RectTransform), typeof(Image), typeof(Button));
+        btnGO.transform.SetParent(cardRT, false);
+        var btnRT  = btnGO.GetComponent<RectTransform>();
+        btnRT.anchorMin = new Vector2(0.06f, 0.04f);
+        btnRT.anchorMax = new Vector2(0.94f, 0.24f);
+        btnRT.offsetMin = btnRT.offsetMax = Vector2.zero;
+        var btnImg  = btnGO.GetComponent<Image>();
+        btnImg.sprite = spr;
+        btnImg.color  = isFree ? new Color(0.047f, 0.180f, 0.090f, 1f) : BUY_BG;
+        btnImg.type   = Image.Type.Sliced;
+        btnGO.AddComponent<ButtonHoverEffect>();
+
+        string initialLabel = isFree ? "EQUIP" : $"\u2605 {stage.price}";
+        var btnTxtRT = MakeTMP(btnRT, "Label", initialLabel, 13f, isFree ? W65 : W100, TextAlignmentOptions.Center, true);
+        Stretch(btnTxtRT);
+
+        var shopBtn = btnGO.AddComponent<ShopStageButton>();
+        shopBtn.stage       = stage;
+        shopBtn.buttonImage = btnImg;
+        shopBtn.buttonLabel = btnTxtRT.GetComponent<TextMeshProUGUI>();
+        shopBtn.iconImage   = previewImg;
+
+        var btn = btnGO.GetComponent<Button>();
+        UnityEventTools.AddPersistentListener(btn.onClick, shopBtn.OnActionPressed);
+    }
+
+    static GameObject BuildLandingPage(RectTransform panel, int outfitCount, int stageCount)
     {
         var page = MakeRect(panel, "LandingPage");
         Stretch(page);
@@ -181,9 +516,9 @@ public class ShopUIBuilder : EditorWindow
         subRT.anchoredPosition = new Vector2(0f, -262f);
         subRT.GetComponent<TextMeshProUGUI>().characterSpacing = 4f;
         // Three category cards
-        BuildLandingCard(page, "OutfitsCard", "OUTFITS", "Dress your popstar",     $"{outfitCount} items", "\U0001F457", ICON_OUTFITS, -360f);
-        BuildLandingCard(page, "SongsCard",   "SONGS",   "Unlock new tracks",      "6 tracks",            "\U0001F3B5", ICON_SONGS,     0f);
-        BuildLandingCard(page, "StagesCard",  "STAGES",  "New performance venues", "4 venues",            "\U0001F3DF", ICON_STAGES,  360f);
+        BuildLandingCard(page, "OutfitsCard", "OUTFITS", "Dress your popstar",     $"{outfitCount} items",  "\U0001F457", ICON_OUTFITS, -360f);
+        BuildLandingCard(page, "SongsCard",   "SONGS",   "Unlock new tracks",      "6 tracks",             "\U0001F3B5", ICON_SONGS,     0f);
+        BuildLandingCard(page, "StagesCard",  "STAGES",  "New performance venues", $"{stageCount} venues", "\U0001F3DF", ICON_STAGES,  360f);
         return page.gameObject;
     }
 

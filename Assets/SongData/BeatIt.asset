@@ -17,6 +17,9 @@ MonoBehaviour:
   BPM: 0
   backingTrack: {fileID: 8300000, guid: af885bbe277bd9649884fae59df7a493, type: 3}
   coverArt: {fileID: 9034613832369730741, guid: c4b51a3b106cac14f91dfe3888054984, type: 3}
+  songID: 1
+  price: 0
+  isDefault: 1
   lines:
   - timestamp: 38.12
     text: They told him, "Don't you ever come around here"

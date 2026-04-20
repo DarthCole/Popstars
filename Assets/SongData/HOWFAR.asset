@@ -17,6 +17,9 @@ MonoBehaviour:
   BPM: 0
   backingTrack: {fileID: 8300000, guid: 5de79b70ccda8484e9e779daa08a8348, type: 3}
   coverArt: {fileID: 3101412685761286921, guid: c10548e4973ce1b4da7aaae3ee45b728, type: 3}
+  songID: 4
+  price: 0
+  isDefault: 1
   lines:
   - timestamp: 15.55
     text: Oh, yeah-yeah

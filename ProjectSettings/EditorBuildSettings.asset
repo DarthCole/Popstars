@@ -17,6 +17,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Shop.unity
     guid: ce29959a419aef74482099053e78d6eb
+  - enabled: 1
+    path: Assets/Scenes/Gem.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Stage.unity
+    guid: 9dd5afe85171f7e459f5c41455fa5f04
+  - enabled: 1
+    path: Assets/Scenes/StageScene.unity
+    guid: 4fa1bc44bcd7b994ab3ca5790d2150ca
+  - enabled: 1
+    path: Assets/Scenes/TriviaScene.unity
+    guid: 00248c29433e980449500c3e048cad31
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

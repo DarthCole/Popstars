@@ -852,7 +852,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 255153946}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 729377120}
+        m_TargetAssemblyTypeName: LandingPageManager, Assembly-CSharp
+        m_MethodName: LoadMode
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Gem
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &255153946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1749,6 +1761,7 @@ GameObject:
   - component: {fileID: 523602907}
   - component: {fileID: 523602906}
   - component: {fileID: 523602905}
+  - component: {fileID: 523602908}
   m_Layer: 0
   m_Name: Managers
   m_TagString: Untagged
@@ -1795,6 +1808,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &523602908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523602903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2901b494a1487448e53025378c6547, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StageOwnershipManager
+  allStages:
+  - {fileID: 11400000, guid: 92468a3454d4bc7419f58095aea4b088, type: 2}
+  - {fileID: 11400000, guid: 77e757725fdde0d4f822bddd9341624c, type: 2}
+  - {fileID: 11400000, guid: 438532d614066b846b3d68642c4945ed, type: 2}
+  - {fileID: 11400000, guid: cfe19bd7abc7ea24b8cf177c46dc6d83, type: 2}
 --- !u!1 &552403557
 GameObject:
   m_ObjectHideFlags: 0
@@ -2944,7 +2974,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 952763609}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 729377120}
+        m_TargetAssemblyTypeName: LandingPageManager, Assembly-CSharp
+        m_MethodName: LoadMode
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TriviaScene
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &952763609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5598,6 +5640,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996399826}
   m_CullTransparentMesh: 1
+--- !u!1 &2016730053
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2016730055}
+  - component: {fileID: 2016730054}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2016730054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016730053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 880db01c8eb3ed44fad3654b5f8a40a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BackgroundMusicManager
+  musicClip: {fileID: 8300000, guid: 8c9885e8aa145de43b54ec108a4d5650, type: 3}
+  volume: 0.4
+--- !u!4 &2016730055
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2016730053}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 613.7114, y: 753.6554, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2101890980
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,3 +6048,4 @@ SceneRoots:
   - {fileID: 1603187568}
   - {fileID: 1188188998}
   - {fileID: 523602907}
+  - {fileID: 2016730055}

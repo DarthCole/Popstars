@@ -75,6 +75,24 @@ public class SongSelectUI : MonoBehaviour
                 cardImg.color = new Color(cardImg.color.r, cardImg.color.g,
                                           cardImg.color.b, cardImg.color.a * 0.5f);
 
+            // Lock card if not owned (only applies when SongOwnershipManager is present)
+            bool owned = song.isDefault || song.price <= 0
+                         || SongOwnershipManager.Instance == null
+                         || SongOwnershipManager.Instance.IsOwned(song.songID);
+
+            if (!owned)
+            {
+                // Dim the card and disable the button — song must be bought in shop first
+                if (cardImg != null)
+                    cardImg.color = new Color(cardImg.color.r, cardImg.color.g,
+                                              cardImg.color.b, cardImg.color.a * 0.4f);
+                var lockLabel = searchRoot.Find("SongName")?.GetComponent<TextMeshProUGUI>();
+                if (lockLabel != null) lockLabel.text = "\U0001F512 " + song.songName.ToUpper();
+                var lockBtn = cardRoot.GetComponent<Button>();
+                if (lockBtn != null) lockBtn.interactable = false;
+                continue;
+            }
+
             // Wire click — capture index to avoid closure issue
             int idx = i;
             var btn = cardRoot.GetComponent<Button>();

@@ -38,6 +38,8 @@ public class KaraokeResultsPanel : MonoBehaviour
         _stars      = Mathf.Clamp(stars, 0, 3);
         _coins      = coins;
 
+        BackgroundMusicManager.Instance?.Play();
+
         gameObject.SetActive(true);
         StartCoroutine(AnimateIn());
     }

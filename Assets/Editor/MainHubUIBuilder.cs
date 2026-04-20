@@ -162,14 +162,18 @@ public class MainHubUIBuilder : EditorWindow
         // 4 cards × 352 px + 3 gaps × 26 px = 1486 px total
         // Centers relative to screen center (x): -564, -188, 188, 564
         const float Y = -72f;
-        BuildCard(p, "KaraokeCard",  "\U0001F3A4", "Karaoke",      "Sing your heart out",    false, -564f, Y);
-        BuildCard(p, "DanceCard",    "\U0001F483", "Dance Battle", "Challenge the crowd",    true,  -188f, Y);
-        BuildCard(p, "TalentCard",   "\u2728",     "Talent Show",  "Show off your skills",   false,  188f, Y);
-        BuildCard(p, "ShopCard",     "\U0001F6CD", "Shop",         "Browse outfits & more",  false,  564f, Y);
+        // 5 cards × 306 px + 4 gaps × 24 px = 1626 px total, centred at 0
+        // x positions: -648, -324, 0, 324, 648
+        BuildCard(p, "KaraokeCard",  "\U0001F3A4", "Karaoke",      "Sing your heart out",    false, -648f, Y, 306f);
+        BuildCard(p, "DanceCard",    "\U0001F483", "Dance Battle", "Challenge the crowd",    true,  -324f, Y, 306f);
+        BuildCard(p, "TriviaCard",   "\U0001F3B2", "Trivia",       "Test your music knowledge", false,  0f,    Y, 306f);
+        BuildCard(p, "TalentCard",   "\u2728",     "Talent Show",  "Show off your skills",   false,  324f, Y, 306f);
+        BuildCard(p, "ShopCard",     "\U0001F6CD", "Shop",         "Browse outfits & more",  false,  648f, Y, 306f);
     }
 
     static void BuildCard(RectTransform p, string id, string emoji,
-                          string title, string desc, bool hotBadge, float x, float y)
+                          string title, string desc, bool hotBadge, float x, float y,
+                          float cardWidth = 356f)
     {
         var uiSpr  = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
         var knobSpr = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/Knob.psd");
@@ -180,7 +184,7 @@ public class MainHubUIBuilder : EditorWindow
         var borderRT = borderGO.GetComponent<RectTransform>();
         borderRT.anchorMin = borderRT.anchorMax = new Vector2(0.5f, 0.5f);
         borderRT.pivot     = new Vector2(0.5f, 0.5f);
-        borderRT.sizeDelta = new Vector2(356f, 268f);
+        borderRT.sizeDelta = new Vector2(cardWidth, 268f);
         borderRT.anchoredPosition = new Vector2(x, y);
         var borderImg = borderGO.GetComponent<Image>();
         borderImg.sprite = uiSpr;

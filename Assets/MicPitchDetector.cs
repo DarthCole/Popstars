@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Runtime.InteropServices;
 
 public class MicPitchDetector : MonoBehaviour
 {
@@ -18,8 +19,20 @@ public class MicPitchDetector : MonoBehaviour
     public float CurrentVolume  { get; private set; }
     public bool  IsVoiceDetected => CurrentVolume >= NOISE_GATE;
 
+#if UNITY_WEBGL && !UNITY_EDITOR
+    [DllImport("__Internal")] static extern void  MicBridge_Start();
+    [DllImport("__Internal")] static extern float MicBridge_GetPitch();
+    [DllImport("__Internal")] static extern float MicBridge_GetVolume();
+    [DllImport("__Internal")] static extern int   MicBridge_IsReady();
+    [DllImport("__Internal")] static extern void  MicBridge_Stop();
+#endif
+
     private void Start()
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        MicBridge_Start();
+        Debug.Log("[MicPitchDetector] WebGL mic bridge started.");
+#else
         if (Microphone.devices.Length == 0)
         {
             Debug.LogError("[MicPitchDetector] No microphone found.");
@@ -27,10 +40,16 @@ public class MicPitchDetector : MonoBehaviour
         }
         _micClip = Microphone.Start(null, true, 10, SAMPLE_RATE);
         Debug.Log($"[MicPitchDetector] Started: {Microphone.devices[0]}");
+#endif
     }
 
     private void Update()
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        if (MicBridge_IsReady() == 0) return;
+        CurrentVolume = MicBridge_GetVolume();
+        CurrentPitch  = MicBridge_GetPitch();
+#else
         if (_micClip == null) return;
 
         int pos = Microphone.GetPosition(null) - BUFFER_SIZE;
@@ -55,6 +74,7 @@ public class MicPitchDetector : MonoBehaviour
 
         _smoothedPitch = _smoothedPitch * SMOOTHING + raw * (1f - SMOOTHING);
         CurrentPitch   = _smoothedPitch;
+#endif
     }
 
     private float AutoCorrelate(float[] buf)
@@ -71,8 +91,8 @@ public class MicPitchDetector : MonoBehaviour
 
         if (variance < 0.00001f) return 0f;
 
-        int minLag    = SAMPLE_RATE / MAX_PITCH;
-        int maxLag    = Mathf.Min(SAMPLE_RATE / MIN_PITCH, n / 2);
+        int minLag     = SAMPLE_RATE / MAX_PITCH;
+        int maxLag     = Mathf.Min(SAMPLE_RATE / MIN_PITCH, n / 2);
         float bestCorr = -1f;
         int   bestLag  = 0;
 
@@ -105,6 +125,10 @@ public class MicPitchDetector : MonoBehaviour
 
     private void OnDestroy()
     {
+#if UNITY_WEBGL && !UNITY_EDITOR
+        MicBridge_Stop();
+#else
         if (Microphone.IsRecording(null)) Microphone.End(null);
+#endif
     }
 }

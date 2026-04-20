@@ -1,0 +1,1071 @@
+fileFormatVersion: 2
+guid: d2bc5230e08926e48994f88d1f197aa8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5512172360380406901
+    second: default woman walking back_0
+  - first:
+      213: 7575639849602976689
+    second: default woman walking back_1
+  - first:
+      213: -4628663329407773988
+    second: default woman walking back_2
+  - first:
+      213: 8088523882227958314
+    second: default woman walking back_3
+  - first:
+      213: -246732296820549187
+    second: default woman walking back_4
+  - first:
+      213: 8613170736837987660
+    second: default woman walking back_5
+  - first:
+      213: 2910734352863154351
+    second: default woman walking back_6
+  - first:
+      213: -82870189731495995
+    second: default woman walking back_7
+  - first:
+      213: -4847477504324592735
+    second: default woman walking back_8
+  - first:
+      213: -3733542997657613919
+    second: default woman walking back_9
+  - first:
+      213: 6368196142082674643
+    second: default woman walking back_10
+  - first:
+      213: 2942220608570884449
+    second: default woman walking back_11
+  - first:
+      213: -660930125305207516
+    second: default woman walking back_12
+  - first:
+      213: -8052374639027279315
+    second: default woman walking back_13
+  - first:
+      213: -4989884140861064917
+    second: default woman walking back_14
+  - first:
+      213: -2165486740004337404
+    second: default woman walking back_15
+  - first:
+      213: 7097852279239058136
+    second: default woman walking back_16
+  - first:
+      213: 2052441639317238287
+    second: default woman walking back_17
+  - first:
+      213: 2823596972745329837
+    second: default woman walking back_18
+  - first:
+      213: -5231884964297364125
+    second: default woman walking back_19
+  - first:
+      213: -971712411682449001
+    second: default woman walking back_20
+  - first:
+      213: 7646524160864183169
+    second: default woman walking back_21
+  - first:
+      213: -9218979119017519276
+    second: default woman walking back_22
+  - first:
+      213: 5944660424347617489
+    second: default woman walking back_23
+  - first:
+      213: -320212552017033404
+    second: default woman walking back_24
+  - first:
+      213: 7244155346371832780
+    second: default woman walking back_25
+  - first:
+      213: 7819435132668893205
+    second: default woman walking back_26
+  - first:
+      213: -4164412453066584020
+    second: default woman walking back_27
+  - first:
+      213: 3236518759293074831
+    second: default woman walking back_28
+  - first:
+      213: -3123781183969424052
+    second: default woman walking back_29
+  - first:
+      213: -7284625671941032431
+    second: default woman walking back_30
+  - first:
+      213: -2459338523197366306
+    second: default woman walking back_31
+  - first:
+      213: -3965406994465845954
+    second: default woman walking back_32
+  - first:
+      213: 3054452873075555610
+    second: default woman walking back_33
+  - first:
+      213: 2014188305456544354
+    second: default woman walking back_34
+  - first:
+      213: -7022036837756825048
+    second: default woman walking back_35
+  - first:
+      213: -2146486548591438943
+    second: default woman walking back_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: default woman walking back_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3070
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57c53399e8b2f7c40800000000000000
+      internalID: 5512172360380406901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_1
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 3070
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb01e54e44122960800000000000000
+      internalID: 7575639849602976689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_2
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 3070
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd2d5c1c93fa3cfb0800000000000000
+      internalID: -4628663329407773988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_3
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 3070
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a220675bd95304070800000000000000
+      internalID: 8088523882227958314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_4
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 3070
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db91565884e639cf0800000000000000
+      internalID: -246732296820549187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_5
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3070
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d840f8621288770800000000000000
+      internalID: 8613170736837987660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2456
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa05fe1e871056820800000000000000
+      internalID: 2910734352863154351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_7
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 2456
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfb592600699def0800000000000000
+      internalID: -82870189731495995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_8
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 2456
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab190294ec4abcb0800000000000000
+      internalID: -4847477504324592735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_9
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 2456
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a988febc6acf2cc0800000000000000
+      internalID: -3733542997657613919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_10
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 2456
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dfc9dca6a0606850800000000000000
+      internalID: 6368196142082674643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_11
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 2456
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16183b01e0ed4d820800000000000000
+      internalID: 2942220608570884449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1842
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42524d38d87e3d6f0800000000000000
+      internalID: -660930125305207516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_13
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1842
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2a2a6adde7304090800000000000000
+      internalID: -8052374639027279315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_14
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1842
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29fe99bfce50cab0800000000000000
+      internalID: -4989884140861064917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_15
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1842
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40909308845a2f1e0800000000000000
+      internalID: -2165486740004337404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_16
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1842
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d2ad3cba03a08260800000000000000
+      internalID: 7097852279239058136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_17
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1842
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0279b1fbccbb7c10800000000000000
+      internalID: 2052441639317238287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1228
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dac8a559c7e6f2720800000000000000
+      internalID: 2823596972745329837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_19
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 1228
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d295d385c9467b0800000000000000
+      internalID: -5231884964297364125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_20
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 1228
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79954ddb5b8c382f0800000000000000
+      internalID: -971712411682449001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_21
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 1228
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18360c61639ed1a60800000000000000
+      internalID: 7646524160864183169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_22
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1228
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4579733e55b9f0080800000000000000
+      internalID: -9218979119017519276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_23
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 1228
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d80097e82daf7250800000000000000
+      internalID: 5944660424347617489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 447476861606e8bf0800000000000000
+      internalID: -320212552017033404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_25
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 614
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb6d3608e8688460800000000000000
+      internalID: 7244155346371832780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_26
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 614
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51850f2f2d6348c60800000000000000
+      internalID: 7819435132668893205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_27
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 614
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c20d0cc10f80536c0800000000000000
+      internalID: -4164412453066584020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_28
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 614
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8d3d8ce9ac6aec20800000000000000
+      internalID: 3236518759293074831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_29
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 614
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4d047d409916a4d0800000000000000
+      internalID: -3123781183969424052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11673460c8fc7ea90800000000000000
+      internalID: -7284625671941032431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_31
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 0
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edf136ea4acaeddd0800000000000000
+      internalID: -2459338523197366306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_32
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 0
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d8301295b08f8c0800000000000000
+      internalID: -3965406994465845954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_33
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 0
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1df6d274b8936a20800000000000000
+      internalID: 3054452873075555610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_34
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26abb799795d3fb10800000000000000
+      internalID: 2014188305456544354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: default woman walking back_35
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 252
+        height: 614
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8221ccd43b6bc8e90800000000000000
+      internalID: -7022036837756825048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f63c8767b555167419659792a96e1733
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":252.0,"y":614.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      default woman walking back_0: 5512172360380406901
+      default woman walking back_1: 7575639849602976689
+      default woman walking back_10: 6368196142082674643
+      default woman walking back_11: 2942220608570884449
+      default woman walking back_12: -660930125305207516
+      default woman walking back_13: -8052374639027279315
+      default woman walking back_14: -4989884140861064917
+      default woman walking back_15: -2165486740004337404
+      default woman walking back_16: 7097852279239058136
+      default woman walking back_17: 2052441639317238287
+      default woman walking back_18: 2823596972745329837
+      default woman walking back_19: -5231884964297364125
+      default woman walking back_2: -4628663329407773988
+      default woman walking back_20: -971712411682449001
+      default woman walking back_21: 7646524160864183169
+      default woman walking back_22: -9218979119017519276
+      default woman walking back_23: 5944660424347617489
+      default woman walking back_24: -320212552017033404
+      default woman walking back_25: 7244155346371832780
+      default woman walking back_26: 7819435132668893205
+      default woman walking back_27: -4164412453066584020
+      default woman walking back_28: 3236518759293074831
+      default woman walking back_29: -3123781183969424052
+      default woman walking back_3: 8088523882227958314
+      default woman walking back_30: -7284625671941032431
+      default woman walking back_31: -2459338523197366306
+      default woman walking back_32: -3965406994465845954
+      default woman walking back_33: 3054452873075555610
+      default woman walking back_34: 2014188305456544354
+      default woman walking back_35: -7022036837756825048
+      default woman walking back_4: -246732296820549187
+      default woman walking back_5: 8613170736837987660
+      default woman walking back_6: 2910734352863154351
+      default woman walking back_7: -82870189731495995
+      default woman walking back_8: -4847477504324592735
+      default woman walking back_9: -3733542997657613919
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

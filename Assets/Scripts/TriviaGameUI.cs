@@ -1,219 +1,178 @@
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Trivia game runtime logic.
+/// Canvas is built by the editor script: PopstarHub > Build Trivia UI
+/// This script finds the pre-built elements by name and wires all game logic.
+/// No building or destroying happens at runtime.
+/// </summary>
 public class TriviaGameUI : MonoBehaviour
 {
-    // ── colours ──────────────────────────────────────────────
-    private Color bgPurple    = new Color(0.42f, 0.10f, 0.82f, 1f);
-    private Color cardPurple  = new Color(0.55f, 0.25f, 0.90f, 0.55f);
-    private Color inputBorder = new Color(1f,    1f,    1f,    0.35f);
-    private Color yellowBtn   = new Color(1f,    0.87f, 0.12f, 1f);
-    private Color darkText    = new Color(0.14f, 0.05f, 0.28f, 1f);
-    private Color whiteCard   = new Color(1f,    1f,    1f,    0.97f);
-    private Color fadedWhite  = new Color(1f,    1f,    1f,    0.60f);
-    private Color greenCircle = new Color(0.52f, 0.82f, 0.24f, 1f);
-    private Color greenCheck  = new Color(0.18f, 0.85f, 0.38f, 1f);
-    private Color pillDark    = new Color(0.22f, 0.10f, 0.40f, 0.95f);
+    // ── Palette (used for dynamically created elements at runtime) ────────────
+    static readonly Color CARD_COL   = new Color(0.085f, 0.040f, 0.160f, 0.90f);
+    static readonly Color YELLOW     = new Color(1f,    0.87f, 0.12f, 1f);
+    static readonly Color DARK_TEXT  = new Color(0.14f, 0.05f, 0.28f, 1f);
+    static readonly Color FADED      = new Color(1f, 1f, 1f, 0.55f);
+    static readonly Color WHITE      = Color.white;
+    static readonly Color GREEN_BG   = new Color(0.10f, 0.70f, 0.30f, 0.90f);
+    static readonly Color RED_BG     = new Color(0.80f, 0.10f, 0.10f, 0.90f);
+    static readonly Color ANS_NORMAL = new Color(0.16f, 0.07f, 0.32f, 0.95f);
+    static readonly Color INPUT_COL  = new Color(1f, 1f, 1f, 0.10f);
+    static readonly Color PLAYER_BTN = new Color(0.22f, 0.10f, 0.44f, 0.95f);
 
-    [Header("Font — drag Nunito-Bold SDF here")]
-    public TMP_FontAsset nunitoBold;
+    [Header("Optional: drag a TMP Font Asset here")]
+    public TMP_FontAsset font;
 
-    // ── generated audio clips ─────────────────────────────────
-    private AudioClip correctSFX;
-    private AudioClip drumrollSFX;
-    private AudioClip victorySFX;
-    private AudioSource audioSource;
+    // ── Sprites (generated at runtime for dynamic elements) ───────────────────
+    Sprite sRound, sMed, sSmall, sCircle;
 
-    // ── sprites ───────────────────────────────────────────────
-    private Sprite roundLg, roundMd, roundSm, circleSprite;
+    // ── Audio ─────────────────────────────────────────────────────────────────
+    AudioSource audio;
+    AudioClip   sfxCorrect, sfxWrong, sfxVictory, sfxDrumroll;
 
-    // ── panels ────────────────────────────────────────────────
-    private GameObject setupPanel, countPanel, gamePanel, revealPanel, resultsPanel;
+    // ── Panels ────────────────────────────────────────────────────────────────
+    [Header("Panels")]
+    [SerializeField] GameObject panelMode;
+    [SerializeField] GameObject panelPartySetup;
+    [SerializeField] GameObject panelPartyCount;
+    [SerializeField] GameObject panelPartyGame;
+    [SerializeField] GameObject panelPartyReveal;
+    [SerializeField] GameObject panelSoloGame;
+    [SerializeField] GameObject panelResults;
 
-    // ── setup ─────────────────────────────────────────────────
-    private Transform playerListParent;
-    private List<TMP_InputField> playerInputs = new List<TMP_InputField>();
+    // ── Party refs ────────────────────────────────────────────────────────────
+    [Header("Party Setup")]
+    [SerializeField] Transform  nameListRT;
 
-    // ── count ─────────────────────────────────────────────────
-    private Slider   questionSlider;
-    private TMP_Text sliderLabel;
-    private int      totalQuestions = 10;
+    [Header("Party Count")]
+    [SerializeField] Slider     countSlider;
+    [SerializeField] TMP_Text   countLabel;
 
-    // ── game ──────────────────────────────────────────────────
-    private TMP_Text questionTxt, questionNumTxt;
+    [Header("Party Game")]
+    [SerializeField] TMP_Text   partyQNumTxt;
+    [SerializeField] TMP_Text   partyQuestionTxt;
 
-    // ── reveal ────────────────────────────────────────────────
-    private TMP_Text  revealQTxt, answerTxt, scoreboardTxt;
-    private Transform checkListParent;
+    [Header("Party Reveal")]
+    [SerializeField] TMP_Text   revealQTxt;
+    [SerializeField] TMP_Text   revealAnsTxt;
+    [SerializeField] Transform  checkListRT;
+    [SerializeField] TMP_Text   boardTxt;
 
-    // ── results ───────────────────────────────────────────────
-    private Transform resultsListParent;
-    private TMP_Text  winnerTxt;
+    // ── Solo refs ─────────────────────────────────────────────────────────────
+    [Header("Solo Game")]
+    [SerializeField] TMP_Text     soloQNumTxt;
+    [SerializeField] TMP_Text     soloStreakTxt;
+    [SerializeField] TMP_Text     soloQTxt;
+    [SerializeField] GameObject[] answerBtns = new GameObject[4];
+    TMP_Text[]   answerTxts = new TMP_Text[4];
+    Image[]      answerImgs = new Image[4];
 
-    // ── state ─────────────────────────────────────────────────
-    private List<string>         playerNames  = new List<string>();
-    private List<int>            playerScores = new List<int>();
-    private List<TriviaQuestion> allQ, gameQ;
-    private int currentQ = 0;
+    // ── Results refs ──────────────────────────────────────────────────────────
+    [Header("Results")]
+    [SerializeField] GameObject resultsListGO;
+    [SerializeField] TMP_Text   resultsTitleTxt;
+    [SerializeField] TMP_Text   resultsSubTxt;
+    [SerializeField] TMP_Text   resultsCoinsTxt;
 
-    private Canvas canvas;
+    // ── Game state ────────────────────────────────────────────────────────────
+    const int SOLO_Q_COUNT = 15;
+    const int COINS_PER_Q  = 10;
 
-    // ═══════════════════════════════════════════════════════════
+    List<string>         playerNames  = new List<string>();
+    List<int>            playerScores = new List<int>();
+    List<TMP_InputField> nameInputs   = new List<TMP_InputField>();
+
+    int  partyQCount    = 10;
+    int  soloCorrect;
+    int  soloCoinsEarned;
+    bool soloAnswered;
+    bool isPartyMode;
+    int  _soloCorrectIdx;
+
+    List<TriviaQuestion> allQ;
+    List<TriviaQuestion> gameQ;
+    int                  currentQ;
+
+    // ════════════════════════════════════════════════════════════════════════
     void Start()
     {
-        audioSource  = gameObject.AddComponent<AudioSource>();
-        correctSFX   = GenerateCorrectSound();
-        drumrollSFX  = GenerateDrumroll();
-        victorySFX   = GenerateVictory();
-
-        allQ = TriviaQuestionBank.GetAllQuestions();
+        audio       = gameObject.AddComponent<AudioSource>();
+        sfxCorrect  = MakeCorrectSound();
+        sfxWrong    = MakeWrongSound();
+        sfxVictory  = MakeVictorySound();
+        sfxDrumroll = MakeDrumroll();
+        allQ        = TriviaQuestionBank.GetAllQuestions();
         BuildSprites();
-        BuildCanvas();
-        BuildBackground();
-        BuildSetupPanel();
-        BuildCountPanel();
-        BuildGamePanel();
-        BuildRevealPanel();
-        BuildResultsPanel();
-        Show(setupPanel);
-    }
 
-    // ═══════════════════════════════════════════════════════════
-    // SOUND GENERATORS
-    // ═══════════════════════════════════════════════════════════
-
-    // Happy rising chime — plays when a correct player is ticked
-    private AudioClip GenerateCorrectSound()
-    {
-        int sampleRate = 44100;
-        float duration = 0.6f;
-        int samples    = Mathf.RoundToInt(sampleRate * duration);
-        float[] data   = new float[samples];
-
-        float[] notes = { 523.25f, 659.25f, 783.99f, 1046.50f }; // C5 E5 G5 C6
-        int noteSamples = samples / notes.Length;
-
-        for (int n = 0; n < notes.Length; n++)
+        // ── Validate pre-wired refs (set by TriviaUIBuilder) ───────────────
+        if (panelMode == null)
         {
-            float freq = notes[n];
-            int start  = n * noteSamples;
-            int end    = Mathf.Min(start + noteSamples, samples);
-            for (int i = start; i < end; i++)
-            {
-                float t       = (float)(i - start) / noteSamples;
-                float env     = Mathf.Sin(t * Mathf.PI);          // bell envelope
-                data[i]      += 0.4f * env * Mathf.Sin(2f * Mathf.PI * freq * i / sampleRate);
-                data[i]      += 0.15f * env * Mathf.Sin(4f * Mathf.PI * freq * i / sampleRate);
-            }
+            Debug.LogError("[TriviaGameUI] Panels not wired. Run PopstarHub > Build Trivia UI first.");
+            return;
         }
 
-        var clip = AudioClip.Create("Correct", samples, 1, sampleRate, false);
-        clip.SetData(data, 0);
-        return clip;
-    }
-
-    // Snare drum roll that builds — plays before winner is shown
-    private AudioClip GenerateDrumroll()
-    {
-        int   sampleRate = 44100;
-        float duration   = 3.0f;
-        int   samples    = Mathf.RoundToInt(sampleRate * duration);
-        float[] data     = new float[samples];
-
-        // start slow (every 0.2s), accelerate to every 0.04s
-        float beatInterval = 0.2f;
-        float time         = 0f;
-
-        while (time < duration)
+        // ── Derive answer text/image refs from pre-wired answer buttons ───────
+        for (int i = 0; i < 4; i++)
         {
-            float progress = time / duration;
-            // snare hit: white noise burst with fast decay
-            int hitStart = Mathf.Min((int)(time * sampleRate), samples - 1);
-            float hitDuration = 0.025f;
-            int hitSamples    = Mathf.RoundToInt(sampleRate * hitDuration);
-            float vol = 0.3f + 0.5f * progress;      // gets louder
-
-            for (int i = 0; i < hitSamples && hitStart + i < samples; i++)
-            {
-                float env  = Mathf.Exp(-i / (hitSamples * 0.4f));
-                data[hitStart + i] += vol * env * (Random.value * 2f - 1f);
-            }
-
-            beatInterval = Mathf.Lerp(0.2f, 0.04f, progress);
-            time        += beatInterval;
+            if (answerBtns[i] == null) continue;
+            answerTxts[i] = answerBtns[i].transform.Find("AnsLbl")?.GetComponent<TMP_Text>();
+            answerImgs[i] = answerBtns[i].GetComponent<Image>();
         }
 
-        var clip = AudioClip.Create("Drumroll", samples, 1, sampleRate, false);
-        clip.SetData(data, 0);
-        return clip;
+        // ── Wire answer buttons (closure indices require runtime binding) ─────
+        for (int i = 0; i < 4; i++)
+        { int idx = i; answerBtns[i]?.GetComponent<Button>().onClick.AddListener(() => OnSoloAnswer(idx)); }
+
+        // ── Wire slider (UnityAction<float> — kept at runtime) ────────────────
+        if (countSlider != null)
+            countSlider.onValueChanged.AddListener(v => {
+                partyQCount = Mathf.RoundToInt(v);
+                if (countLabel != null) countLabel.text = partyQCount.ToString();
+            });
+
+        // ── Clear editor placeholder rows ─────────────────────────────────────
+        if (nameListRT  != null) foreach (Transform child in nameListRT)  Destroy(child.gameObject);
+        if (checkListRT != null) foreach (Transform child in checkListRT) Destroy(child.gameObject);
+
+        Show(panelMode);
     }
 
-    // Victory fanfare — ascending triumphant notes
-    private AudioClip GenerateVictory()
+    // ── Public button targets ─────────────────────────────────────────────────
+    // Navigation buttons are wired persistently by TriviaUIBuilder via
+    // UnityEventTools.AddPersistentListener — these must be public.
+    public void OnPartyPlayPressed()    { isPartyMode = true; ResetParty(); Show(panelPartySetup); }
+    public void OnSoloPlayPressed()     { isPartyMode = false; StartSolo(); }
+    public void BackToHub()             { SceneManager.LoadScene("MainMenuScene"); }
+    public void OnAddPlayerPressed()    { AddNameInput(); }
+    public void OnPartyContinue()       { PartySetupDone(); }
+    public void ShowModePanel()         { Show(panelMode); }
+    public void ShowPartySetupPanel()   { Show(panelPartySetup); }
+    public void OnLetsGoPressed()       { StartParty(); }
+    public void OnRevealPressed()       { RevealParty(); }
+    public void OnNextQPressed()        { NextPartyQ(); }
+    public void OnPlayAgainPressed()    { PlayAgain(); }
+
+    // ════════════════════════════════════════════════════════════
+    // SPRITES — needed for player buttons, result rows etc.
+    // ════════════════════════════════════════════════════════════
+    void BuildSprites()
     {
-        int   sampleRate = 44100;
-        float duration   = 2.5f;
-        int   samples    = Mathf.RoundToInt(sampleRate * duration);
-        float[] data     = new float[samples];
-
-        // fanfare melody: short punchy notes
-        (float freq, float start, float len)[] notes =
-        {
-            (392.00f, 0.00f, 0.12f),   // G4
-            (523.25f, 0.12f, 0.12f),   // C5
-            (659.25f, 0.24f, 0.12f),   // E5
-            (783.99f, 0.36f, 0.30f),   // G5  (held)
-            (659.25f, 0.66f, 0.12f),   // E5
-            (783.99f, 0.78f, 0.12f),   // G5
-            (1046.5f, 0.90f, 0.60f),   // C6  (long held)
-        };
-
-        foreach (var (freq, startT, len) in notes)
-        {
-            int s = Mathf.RoundToInt(startT * sampleRate);
-            int e = Mathf.Min(s + Mathf.RoundToInt(len * sampleRate), samples);
-            int n = e - s;
-            for (int i = 0; i < n; i++)
-            {
-                float t   = (float)i / n;
-                float env = t < 0.1f ? t / 0.1f :
-                            t > 0.7f ? (1f - t) / 0.3f : 1f;
-                float sample = 0.35f * env * Mathf.Sin(2f * Mathf.PI * freq * (s + i) / sampleRate)
-                             + 0.10f * env * Mathf.Sin(4f * Mathf.PI * freq * (s + i) / sampleRate)
-                             + 0.05f * env * Mathf.Sin(6f * Mathf.PI * freq * (s + i) / sampleRate);
-                data[s + i] += sample;
-            }
-        }
-
-        // Normalize
-        float max = 0f;
-        foreach (var s in data) if (Mathf.Abs(s) > max) max = Mathf.Abs(s);
-        if (max > 0.01f) for (int i = 0; i < data.Length; i++) data[i] /= max * 1.1f;
-
-        var clip = AudioClip.Create("Victory", samples, 1, sampleRate, false);
-        clip.SetData(data, 0);
-        return clip;
+        sRound  = MakeRounded(256, 256, 50);
+        sMed    = MakeRounded(128, 128, 30);
+        sSmall  = MakeRounded(64,  64,  20);
+        sCircle = MakeRounded(64,  64,  32);
     }
 
-    // ═══════════════════════════════════════════════════════════
-    // SPRITE FACTORY
-    // ═══════════════════════════════════════════════════════════
-    private void BuildSprites()
+    Sprite MakeRounded(int w, int h, int r)
     {
-        roundLg      = MakeRoundedSprite(256, 256, 60);
-        roundMd      = MakeRoundedSprite(128, 128, 36);
-        roundSm      = MakeRoundedSprite(64,  64,  22);
-        circleSprite = MakeRoundedSprite(64,  64,  32);
-    }
-
-    private Sprite MakeRoundedSprite(int w, int h, int r)
-    {
-        Texture2D t = new Texture2D(w, h);
+        var t  = new Texture2D(w, h);
         t.filterMode = FilterMode.Bilinear;
-        Color[] px = new Color[w * h];
+        var px = new Color[w * h];
         for (int y = 0; y < h; y++)
         for (int x = 0; x < w; x++)
         {
@@ -222,478 +181,417 @@ public class TriviaGameUI : MonoBehaviour
             else if (x > w-r-1) dx = x - (w-r-1);
             if (y < r)          dy = r - y;
             else if (y > h-r-1) dy = y - (h-r-1);
-            float a = 1f - Mathf.Clamp01((Mathf.Sqrt(dx*dx+dy*dy)-r+1.5f)/1.5f);
+            float a = 1f - Mathf.Clamp01((Mathf.Sqrt(dx*dx+dy*dy) - r + 1.5f) / 1.5f);
             px[y*w+x] = new Color(1,1,1,a);
         }
         t.SetPixels(px); t.Apply();
-        Vector4 b = new Vector4(r+4, r+4, r+4, r+4);
+        var b = new Vector4(r+4, r+4, r+4, r+4);
         return Sprite.Create(t, new Rect(0,0,w,h), new Vector2(.5f,.5f), 100, 0,
                              SpriteMeshType.FullRect, b);
     }
 
-    // ═══════════════════════════════════════════════════════════
-    // CANVAS
-    // ═══════════════════════════════════════════════════════════
-    private void BuildCanvas()
+    // ════════════════════════════════════════════════════════════
+    // PARTY LOGIC
+    // ════════════════════════════════════════════════════════════
+    void ResetParty()
     {
-        var go = new GameObject("TriviaCanvas");
-        canvas = go.AddComponent<Canvas>();
-        canvas.renderMode   = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = 10;
-        var cs = go.AddComponent<CanvasScaler>();
-        cs.uiScaleMode         = CanvasScaler.ScaleMode.ScaleWithScreenSize;
-        cs.referenceResolution = new Vector2(1920, 1080);
-        cs.matchWidthOrHeight  = 0.5f;
-        go.AddComponent<GraphicRaycaster>();
-        if (!FindFirstObjectByType<UnityEngine.EventSystems.EventSystem>())
-        {
-            var es = new GameObject("ES");
-            es.AddComponent<UnityEngine.EventSystems.EventSystem>();
-            es.AddComponent<UnityEngine.InputSystem.UI.InputSystemUIInputModule>();
-        }
+        foreach (Transform child in nameListRT) Destroy(child.gameObject);
+        nameInputs.Clear();
+        AddNameInput(); AddNameInput();
     }
 
-    // ═══════════════════════════════════════════════════════════
-    // BACKGROUND
-    // ═══════════════════════════════════════════════════════════
-    private void BuildBackground()
+    void AddNameInput()
     {
-        var bg = Img("BG", canvas.transform, Vector2.zero, Vector2.zero, bgPurple, null, true);
-        Blob(bg.transform, new Vector2(-550,  280), 480, new Color(0.7f,0.2f,1f,0.09f));
-        Blob(bg.transform, new Vector2( 580, -220), 540, new Color(0.3f,0.1f,1f,0.07f));
-        Blob(bg.transform, new Vector2( 300,  380), 300, new Color(1f,0.5f,0.8f,0.06f));
-        for (int i=0;i<18;i++)
-            StarDot(bg.transform,
-                new Vector2(Random.Range(-900f,900f), Random.Range(-490f,490f)),
-                Random.Range(3f,9f), Random.Range(0.15f,0.45f));
-    }
+        int n = nameInputs.Count + 1;
+        var row = MakeBox("Row"+n, nameListRT, new Vector2(640, 66), Vector2.zero, INPUT_COL, sMed);
+        var border = MakeImg("Border", row.transform, new Color(1,1,1,0.28f), sMed, stretch:true);
+        border.raycastTarget = false;
 
-    private void Blob(Transform p, Vector2 pos, float s, Color c)
-    { var g=Img("Blob",p,new Vector2(s,s),pos,c,circleSprite); g.GetComponent<Image>().raycastTarget=false; }
-
-    private void StarDot(Transform p, Vector2 pos, float s, float a)
-    { var g=Img("Star",p,new Vector2(s,s),pos,new Color(1,1,1,a),circleSprite); g.GetComponent<Image>().raycastTarget=false; }
-
-    // ═══════════════════════════════════════════════════════════
-    // PANEL 1 — PLAYER SETUP
-    // ═══════════════════════════════════════════════════════════
-    private void BuildSetupPanel()
-    {
-        setupPanel = Panel("SetupPanel");
-        Lbl(setupPanel,"Players",70,Color.white,new Vector2(0,390),FontStyles.Bold);
-        Lbl(setupPanel,"Enter names below. Play one-on-one or\nteam vs. team. Highest score wins!",
-            22,fadedWhite,new Vector2(0,310),FontStyles.Normal);
-
-        var list = new GameObject("PlayerList"); list.transform.SetParent(setupPanel.transform,false);
-        var lRT  = list.AddComponent<RectTransform>();
-        lRT.sizeDelta=new Vector2(620,300); lRT.anchoredPosition=new Vector2(0,80);
-        var vlg  = list.AddComponent<VerticalLayoutGroup>();
-        vlg.spacing=16; vlg.childAlignment=TextAnchor.UpperCenter;
-        vlg.childControlWidth=true; vlg.childControlHeight=false;
-        vlg.childForceExpandWidth=true; vlg.childForceExpandHeight=false;
-        playerListParent=list.transform;
-
-        AddInput(); AddInput();
-
-        Btn(setupPanel.transform,"Add Player",new Color(1,1,1,0.18f),Color.white,
-            new Vector2(0,-80),new Vector2(620,62),()=>AddInput());
-        Btn(setupPanel.transform,"Continue",yellowBtn,darkText,
-            new Vector2(0,-370),new Vector2(620,70),()=>GoToCount());
-    }
-
-    private void AddInput()
-    {
-        int n = playerInputs.Count+1;
-        var obj    = Img("Input"+n,playerListParent,new Vector2(620,66),
-                         Vector2.zero,new Color(1,1,1,0.10f),roundLg);
-        var border = Img("Border",obj.transform,Vector2.zero,Vector2.zero,
-                         inputBorder,roundLg,true);
-        border.GetComponent<Image>().raycastTarget=false;
-
-        var field = obj.AddComponent<TMP_InputField>();
-        var area  = new GameObject("Area"); area.transform.SetParent(obj.transform,false);
+        var field = row.AddComponent<TMP_InputField>();
+        var area  = new GameObject("Area"); area.transform.SetParent(row.transform, false);
         var aRT   = area.AddComponent<RectTransform>();
-        aRT.anchorMin=Vector2.zero; aRT.anchorMax=Vector2.one;
-        aRT.offsetMin=new Vector2(22,5); aRT.offsetMax=new Vector2(-22,-5);
+        aRT.anchorMin = Vector2.zero; aRT.anchorMax = Vector2.one;
+        aRT.offsetMin = new Vector2(20, 4); aRT.offsetMax = new Vector2(-20, -4);
         area.AddComponent<RectMask2D>();
 
-        var ph = TMPChild(area.transform,"Player or team name #"+n,22,new Color(1,1,1,.35f));
-        var tx = TMPChild(area.transform,"",22,Color.white);
-        field.textViewport=aRT; field.textComponent=tx;
-        field.placeholder=ph;  field.pointSize=22;
-        if (nunitoBold){ tx.font=nunitoBold; ph.font=nunitoBold; }
-        playerInputs.Add(field);
+        var ph = ChildTMP(area.transform, "Player "+n+"...", 22, new Color(1,1,1,0.35f));
+        var tx = ChildTMP(area.transform, "", 22, WHITE);
+        field.textViewport = aRT; field.textComponent = tx; field.placeholder = ph;
+        if (font) { tx.font = font; ph.font = font; }
+        nameInputs.Add(field);
     }
 
-    // ═══════════════════════════════════════════════════════════
-    // PANEL 2 — QUESTION COUNT
-    // ═══════════════════════════════════════════════════════════
-    private void BuildCountPanel()
-    {
-        countPanel = Panel("CountPanel");
-        Lbl(countPanel,"How many\nquestions?",66,Color.white,new Vector2(0,360),FontStyles.Bold);
-        Lbl(countPanel,"Set the stage — choose the amount of\nquestions before the game ends.",
-            22,fadedWhite,new Vector2(0,255),FontStyles.Normal);
-        Lbl(countPanel,"Number of questions",19,fadedWhite,new Vector2(0,105),FontStyles.Normal);
-
-        var pill   = Img("Pill",countPanel.transform,new Vector2(620,82),
-                         new Vector2(0,38),whiteCard,roundLg);
-        var knob   = Img("Knob",pill.transform,new Vector2(62,62),
-                         new Vector2(-220,0),greenCircle,circleSprite);
-        sliderLabel = TMPInside(knob,"10",26,darkText,FontStyles.Bold);
-
-        var slObj = new GameObject("Slider"); slObj.transform.SetParent(pill.transform,false);
-        var slRT  = slObj.AddComponent<RectTransform>();
-        slRT.anchorMin=Vector2.zero; slRT.anchorMax=Vector2.one;
-        slRT.offsetMin=new Vector2(30,10); slRT.offsetMax=new Vector2(-30,-10);
-
-        var fa   = new GameObject("FA"); fa.transform.SetParent(slObj.transform,false);
-        var faRT = fa.AddComponent<RectTransform>();
-        faRT.anchorMin=new Vector2(0,.35f); faRT.anchorMax=new Vector2(1,.65f);
-        faRT.offsetMin=faRT.offsetMax=Vector2.zero;
-        var fill = new GameObject("Fill"); fill.transform.SetParent(fa.transform,false);
-        fill.AddComponent<Image>().color=new Color(0,0,0,0);
-        var fRT  = fill.GetComponent<RectTransform>();
-        fRT.anchorMin=Vector2.zero; fRT.anchorMax=Vector2.one;
-        fRT.offsetMin=fRT.offsetMax=Vector2.zero;
-
-        var ha   = new GameObject("HA"); ha.transform.SetParent(slObj.transform,false);
-        var haRT = ha.AddComponent<RectTransform>();
-        haRT.anchorMin=Vector2.zero; haRT.anchorMax=Vector2.one;
-        haRT.offsetMin=new Vector2(10,0); haRT.offsetMax=new Vector2(-10,0);
-        var h    = new GameObject("Handle"); h.transform.SetParent(ha.transform,false);
-        h.AddComponent<Image>().color=new Color(0,0,0,0);
-        var hRT  = h.GetComponent<RectTransform>(); hRT.sizeDelta=new Vector2(62,62);
-
-        questionSlider = slObj.AddComponent<Slider>();
-        questionSlider.fillRect=fRT; questionSlider.handleRect=hRT;
-        questionSlider.minValue=5; questionSlider.maxValue=20;
-        questionSlider.value=10;   questionSlider.wholeNumbers=true;
-        questionSlider.direction=Slider.Direction.LeftToRight;
-
-        var knobRT = knob.GetComponent<RectTransform>();
-        questionSlider.onValueChanged.AddListener(v=>{
-            totalQuestions=Mathf.RoundToInt(v);
-            sliderLabel.text=totalQuestions.ToString();
-            float t=(v-5f)/15f;
-            float half=620f/2f-40f;
-            knobRT.anchoredPosition=new Vector2(Mathf.Lerp(-half,half,t),0);
-        });
-
-        Btn(countPanel.transform,"Start Game!",yellowBtn,darkText,
-            new Vector2(0,-360),new Vector2(620,70),()=>StartGame());
-    }
-
-    // ═══════════════════════════════════════════════════════════
-    // PANEL 3 — GAME
-    // ═══════════════════════════════════════════════════════════
-    private void BuildGamePanel()
-    {
-        gamePanel = Panel("GamePanel");
-        Lbl(gamePanel,"Read this question aloud:",21,fadedWhite,new Vector2(0,430),FontStyles.Normal);
-
-        var card = Img("Card",gamePanel.transform,new Vector2(820,360),
-                       new Vector2(0,110),whiteCard,roundLg);
-        var pill = Img("Pill",card.transform,new Vector2(160,38),
-                       new Vector2(0,152),pillDark,roundSm);
-        TMPInside(pill,"♫  Music",16,Color.white,FontStyles.Bold);
-
-        questionTxt = TMPInside(card,"Question",38,darkText,FontStyles.Bold);
-        questionTxt.enableWordWrapping=true;
-        var qRT = questionTxt.GetComponent<RectTransform>();
-        qRT.anchorMin=new Vector2(.05f,.08f); qRT.anchorMax=new Vector2(.95f,.78f);
-        qRT.offsetMin=qRT.offsetMax=Vector2.zero;
-
-        questionNumTxt = Lbl(gamePanel,"Question 1 of 10",17,fadedWhite,
-                             new Vector2(0,-85),FontStyles.Normal).GetComponent<TMP_Text>();
-
-        Btn(gamePanel.transform,"Reveal Answer",yellowBtn,darkText,
-            new Vector2(0,-350),new Vector2(480,68),()=>RevealAnswer());
-    }
-
-    // ═══════════════════════════════════════════════════════════
-    // PANEL 4 — ANSWER REVEAL
-    // ═══════════════════════════════════════════════════════════
-    private void BuildRevealPanel()
-    {
-        revealPanel = Panel("RevealPanel");
-
-        revealQTxt = Lbl(revealPanel,"Q",22,fadedWhite,
-                         new Vector2(0,440),FontStyles.Normal).GetComponent<TMP_Text>();
-        revealQTxt.GetComponent<RectTransform>().sizeDelta=new Vector2(860,44);
-
-        answerTxt = Lbl(revealPanel,"Answer:",40,yellowBtn,
-                        new Vector2(0,374),FontStyles.Bold).GetComponent<TMP_Text>();
-        answerTxt.GetComponent<RectTransform>().sizeDelta=new Vector2(860,52);
-
-        Lbl(revealPanel,"Who got the answer right?",19,fadedWhite,
-            new Vector2(0,308),FontStyles.Normal);
-
-        var list = new GameObject("CheckList"); list.transform.SetParent(revealPanel.transform,false);
-        var lRT  = list.AddComponent<RectTransform>();
-        lRT.sizeDelta=new Vector2(620,280); lRT.anchoredPosition=new Vector2(0,90);
-        var vlg  = list.AddComponent<VerticalLayoutGroup>();
-        vlg.spacing=10; vlg.childAlignment=TextAnchor.UpperCenter;
-        vlg.childControlWidth=true; vlg.childControlHeight=false;
-        vlg.childForceExpandWidth=true; vlg.childForceExpandHeight=false;
-        checkListParent=list.transform;
-
-        scoreboardTxt = Lbl(revealPanel,"",16,fadedWhite,
-                            new Vector2(0,-108),FontStyles.Normal).GetComponent<TMP_Text>();
-        scoreboardTxt.GetComponent<RectTransform>().sizeDelta=new Vector2(920,30);
-
-        Btn(revealPanel.transform,"Next Question",yellowBtn,darkText,
-            new Vector2(0,-350),new Vector2(480,68),()=>NextQ());
-    }
-
-    // ═══════════════════════════════════════════════════════════
-    // PANEL 5 — RESULTS
-    // ═══════════════════════════════════════════════════════════
-    private void BuildResultsPanel()
-    {
-        resultsPanel = Panel("ResultsPanel");
-        Lbl(resultsPanel,"WINNER",19,fadedWhite,new Vector2(0,445),FontStyles.Normal);
-        winnerTxt = Lbl(resultsPanel,"?",60,yellowBtn,
-                        new Vector2(0,375),FontStyles.Bold).GetComponent<TMP_Text>();
-        Lbl(resultsPanel,"Final Scores",21,fadedWhite,new Vector2(0,305),FontStyles.Normal);
-
-        var list = new GameObject("Results"); list.transform.SetParent(resultsPanel.transform,false);
-        var lRT  = list.AddComponent<RectTransform>();
-        lRT.sizeDelta=new Vector2(620,360); lRT.anchoredPosition=new Vector2(0,40);
-        var vlg  = list.AddComponent<VerticalLayoutGroup>();
-        vlg.spacing=10; vlg.childAlignment=TextAnchor.UpperCenter;
-        vlg.childControlWidth=true; vlg.childControlHeight=false;
-        vlg.childForceExpandWidth=true; vlg.childForceExpandHeight=false;
-        resultsListParent=list.transform;
-
-        Btn(resultsPanel.transform,"Play Again",yellowBtn,darkText,
-            new Vector2(0,-370),new Vector2(480,68),()=>PlayAgain());
-    }
-
-    // ═══════════════════════════════════════════════════════════
-    // GAME LOGIC
-    // ═══════════════════════════════════════════════════════════
-    private void GoToCount()
+    void PartySetupDone()
     {
         playerNames.Clear(); playerScores.Clear();
-        foreach (var f in playerInputs)
-            if (f && f.text.Trim()!="") { playerNames.Add(f.text.Trim()); playerScores.Add(0); }
-        if (playerNames.Count<2){ Debug.Log("Need 2+ players"); return; }
-        Show(countPanel);
+        foreach (var f in nameInputs)
+            if (f && f.text.Trim() != "") { playerNames.Add(f.text.Trim()); playerScores.Add(0); }
+        if (playerNames.Count < 2) { Debug.Log("[Trivia] Need at least 2 players."); return; }
+        countLabel.text = partyQCount.ToString();
+        Show(panelPartyCount);
     }
 
-    private void StartGame()
+    void StartParty()
     {
-        totalQuestions=Mathf.RoundToInt(questionSlider.value);
-        gameQ=Shuffle(allQ).GetRange(0,Mathf.Min(totalQuestions,allQ.Count));
-        currentQ=0;
-        for (int i=0;i<playerScores.Count;i++) playerScores[i]=0;
-        ShowQ();
+        partyQCount = Mathf.RoundToInt(countSlider.value);
+        gameQ = Shuffled(allQ).GetRange(0, Mathf.Min(partyQCount, allQ.Count));
+        currentQ = 0;
+        for (int i = 0; i < playerScores.Count; i++) playerScores[i] = 0;
+        ShowPartyQ();
     }
 
-    private void ShowQ()
+    void ShowPartyQ()
     {
-        if (currentQ>=gameQ.Count){ ShowResults(); return; }
-        questionTxt.text    = gameQ[currentQ].question;
-        questionNumTxt.text = $"Question {currentQ+1} of {gameQ.Count}";
-        Show(gamePanel);
+        if (currentQ >= gameQ.Count) { ShowPartyResults(); return; }
+        var q = gameQ[currentQ];
+        partyQuestionTxt.text = q.question;
+        partyQNumTxt.text = $"Question {currentQ+1} of {gameQ.Count}";
+        Show(panelPartyGame);
     }
 
-    private void RevealAnswer()
+    void RevealParty()
     {
         var q = gameQ[currentQ];
-        revealQTxt.text = q.question;
-        answerTxt.text  = "Answer: "+q.answers[q.correctIndex];
-        foreach (Transform c in checkListParent) Destroy(c.gameObject);
+        revealQTxt.text   = q.question;
+        revealAnsTxt.text = "✅  " + q.answers[q.correctIndex];
 
-        for (int i=0;i<playerNames.Count;i++)
+        foreach (Transform c in checkListRT) Destroy(c.gameObject);
+
+        for (int i = 0; i < playerNames.Count; i++)
         {
-            int pi=i;
-            var row = Img("Row"+i,checkListParent,new Vector2(620,64),
-                          Vector2.zero,cardPurple,roundMd);
-            var hlg = row.AddComponent<HorizontalLayoutGroup>();
-            hlg.spacing=15; hlg.padding=new RectOffset(24,24,10,10);
-            hlg.childAlignment=TextAnchor.MiddleLeft;
-            hlg.childControlWidth=false; hlg.childForceExpandWidth=false;
+            int pi = i;
+            var row = MakeBox("P"+i, checkListRT, new Vector2(360, 70), Vector2.zero, PLAYER_BTN, sMed);
+            var lbl = ChildTMP(row.transform,
+                               playerNames[i] + "  —  " + playerScores[i] + " pts",
+                               24, WHITE, FontStyles.Normal);
+            lbl.alignment = TextAlignmentOptions.Center;
+            var lrt = lbl.GetComponent<RectTransform>();
+            lrt.anchorMin = Vector2.zero; lrt.anchorMax = Vector2.one;
+            lrt.offsetMin = new Vector2(12,0); lrt.offsetMax = new Vector2(-12,0);
 
-            var nGO  = new GameObject("N"); nGO.transform.SetParent(row.transform,false);
-            var nTxt = nGO.AddComponent<TextMeshProUGUI>();
-            nTxt.text=playerNames[i]; nTxt.fontSize=23;
-            nTxt.fontStyle=FontStyles.Bold; nTxt.color=Color.white;
-            if (nunitoBold) nTxt.font=nunitoBold;
-            nGO.GetComponent<RectTransform>().sizeDelta=new Vector2(440,44);
-
-            var tGO  = new GameObject("Tog"); tGO.transform.SetParent(row.transform,false);
-            tGO.AddComponent<RectTransform>().sizeDelta=new Vector2(44,44);
-            var bgImg = Img("BG",tGO.transform,new Vector2(44,44),Vector2.zero,
-                            new Color(1,1,1,.22f),circleSprite).GetComponent<Image>();
-            var ckImg = Img("Ck",tGO.transform,new Vector2(32,32),Vector2.zero,
-                            greenCheck,circleSprite).GetComponent<Image>();
-            var ckRT  = ckImg.GetComponent<RectTransform>();
-            ckRT.anchorMin=new Vector2(.14f,.14f); ckRT.anchorMax=new Vector2(.86f,.86f);
-            ckRT.offsetMin=ckRT.offsetMax=Vector2.zero; ckRT.sizeDelta=Vector2.zero;
-
-            var tog = tGO.AddComponent<Toggle>();
-            tog.targetGraphic=bgImg; tog.graphic=ckImg; tog.isOn=false;
-            tog.onValueChanged.AddListener(on=>{
-                playerScores[pi]=Mathf.Max(0,playerScores[pi]+(on?1:-1));
-                UpdateBoard();
-                if (on) audioSource.PlayOneShot(correctSFX);   // ← correct chime
+            var btn = row.AddComponent<Button>();
+            btn.targetGraphic = row.GetComponent<Image>();
+            var bc = btn.colors;
+            bc.highlightedColor = new Color(0.3f, 0.8f, 0.4f, 0.95f);
+            bc.pressedColor     = new Color(0.15f, 0.70f, 0.3f, 1f);
+            btn.colors = bc;
+            btn.onClick.AddListener(() => {
+                playerScores[pi]++;
+                audio.PlayOneShot(sfxCorrect);
+                lbl.text = playerNames[pi] + "  —  " + playerScores[pi] + " pts ✅";
+                RefreshBoard();
             });
         }
-        UpdateBoard();
-        Show(revealPanel);
+        RefreshBoard();
+        Show(panelPartyReveal);
     }
 
-    private void UpdateBoard()
+    void RefreshBoard()
     {
-        var sb=new System.Text.StringBuilder();
-        for (int i=0;i<playerNames.Count;i++)
+        var sb = new System.Text.StringBuilder();
+        for (int i = 0; i < playerNames.Count; i++)
         {
             sb.Append(playerNames[i]).Append(": ").Append(playerScores[i]).Append(" pts");
-            if (i<playerNames.Count-1) sb.Append("   |   ");
+            if (i < playerNames.Count-1) sb.Append("   |   ");
         }
-        scoreboardTxt.text=sb.ToString();
+        boardTxt.text = sb.ToString();
     }
 
-    private void NextQ(){ currentQ++; ShowQ(); }
+    void NextPartyQ() { currentQ++; ShowPartyQ(); }
 
-    private void ShowResults()
+    void ShowPartyResults()
     {
-        foreach (Transform c in resultsListParent) Destroy(c.gameObject);
+        foreach (Transform c in resultsListGO.transform) Destroy(c.gameObject);
 
-        int best=0; string winner="";
-        for (int i=0;i<playerNames.Count;i++)
-            if (playerScores[i]>best){ best=playerScores[i]; winner=playerNames[i]; }
+        int best = 0; string winner = "";
+        for (int i = 0; i < playerNames.Count; i++)
+            if (playerScores[i] > best) { best = playerScores[i]; winner = playerNames[i]; }
 
-        var idx=new List<int>(); for(int i=0;i<playerNames.Count;i++) idx.Add(i);
-        idx.Sort((a,b)=>playerScores[b].CompareTo(playerScores[a]));
+        var sorted = new List<int>();
+        for (int i = 0; i < playerNames.Count; i++) sorted.Add(i);
+        sorted.Sort((a,b) => playerScores[b].CompareTo(playerScores[a]));
 
-        int rank=1;
-        foreach (int i in idx)
+        resultsTitleTxt.text = "🏆 Game Over!";
+        resultsSubTxt.text   = winner + " wins with " + best + " points!";
+        resultsCoinsTxt.text = "";
+
+        int rank = 1;
+        foreach (int i in sorted)
         {
-            bool top=rank==1;
-            var row=Img("R"+rank,resultsListParent,new Vector2(620,60),
-                        Vector2.zero,top?new Color(1f,.87f,.12f,.35f):cardPurple,roundMd);
-            TMPInside(row,$"#{rank}   {playerNames[i]}   —   {playerScores[i]} pts",
-                      top?28:22,Color.white,top?FontStyles.Bold:FontStyles.Normal);
+            bool top = rank == 1;
+            var row = MakeBox("R"+rank, resultsListGO.transform, new Vector2(700, 66), Vector2.zero,
+                              top ? new Color(1f,.87f,.12f,.30f) : CARD_COL, sMed);
+            var t = ChildTMP(row.transform,
+                             $"#{rank}   {playerNames[i]}   —   {playerScores[i]} pts",
+                             top ? 28 : 22, WHITE, top ? FontStyles.Bold : FontStyles.Normal);
+            t.alignment = TextAlignmentOptions.Center;
+            var tRT = t.GetComponent<RectTransform>();
+            tRT.anchorMin = Vector2.zero; tRT.anchorMax = Vector2.one;
+            tRT.offsetMin = new Vector2(16,0); tRT.offsetMax = new Vector2(-16,0);
             rank++;
         }
-        winnerTxt.text=winner+" wins!";
-
-        StartCoroutine(DrumrollThenVictory());  // ← drumroll + fanfare
-        Show(resultsPanel);
+        StartCoroutine(PlayResultsSFX());
+        Show(panelResults);
     }
 
-    private IEnumerator DrumrollThenVictory()
+    // ════════════════════════════════════════════════════════════
+    // SOLO LOGIC
+    // ════════════════════════════════════════════════════════════
+    void StartSolo()
     {
-        audioSource.PlayOneShot(drumrollSFX);
-        yield return new WaitForSeconds(drumrollSFX.length);
-        audioSource.PlayOneShot(victorySFX);
+        gameQ           = Shuffled(allQ).GetRange(0, Mathf.Min(SOLO_Q_COUNT, allQ.Count));
+        currentQ        = 0;
+        soloCorrect     = 0;
+        soloCoinsEarned = 0;
+        ShowSoloQ();
     }
 
-    private void PlayAgain()
+    void ShowSoloQ()
     {
-        playerInputs.Clear();
-        foreach (Transform c in playerListParent) Destroy(c.gameObject);
-        AddInput(); AddInput();
-        Show(setupPanel);
+        if (currentQ >= gameQ.Count) { ShowSoloResults(); return; }
+        soloAnswered = false;
+        var q = gameQ[currentQ];
+
+        soloQNumTxt.text  = $"Question {currentQ+1} of {gameQ.Count}";
+        soloStreakTxt.text = $"⭐ {soloCoinsEarned} coins";
+        soloQTxt.text     = q.question;
+
+        string correct = q.answers[q.correctIndex];
+        var choices = new List<string> { correct };
+        if (q.wrongAnswers != null)
+            foreach (var w in q.wrongAnswers) choices.Add(w);
+        while (choices.Count < 4) choices.Add("?");
+
+        for (int i = choices.Count - 1; i > 0; i--)
+        {
+            int j = Random.Range(0, i + 1);
+            var tmp = choices[i]; choices[i] = choices[j]; choices[j] = tmp;
+        }
+        _soloCorrectIdx = choices.IndexOf(correct);
+
+        for (int i = 0; i < 4; i++)
+        {
+            answerTxts[i].text = choices[i];
+            answerImgs[i].color = ANS_NORMAL;
+            answerBtns[i].GetComponent<Button>().interactable = true;
+        }
+        Show(panelSoloGame);
     }
 
-    // ═══════════════════════════════════════════════════════════
-    // UI HELPERS
-    // ═══════════════════════════════════════════════════════════
-    private void Show(GameObject p)
+    void OnSoloAnswer(int chosen)
     {
-        foreach (var go in new[]{setupPanel,countPanel,gamePanel,revealPanel,resultsPanel})
-            if (go) go.SetActive(false);
-        p.SetActive(true);
+        if (soloAnswered) return;
+        soloAnswered = true;
+        for (int i = 0; i < 4; i++)
+            answerBtns[i].GetComponent<Button>().interactable = false;
+
+        if (chosen == _soloCorrectIdx)
+        {
+            answerImgs[chosen].color = GREEN_BG;
+            soloCorrect++;
+            soloCoinsEarned += COINS_PER_Q;
+            audio.PlayOneShot(sfxCorrect);
+        }
+        else
+        {
+            answerImgs[chosen].color = RED_BG;
+            answerImgs[_soloCorrectIdx].color = GREEN_BG;
+            audio.PlayOneShot(sfxWrong);
+        }
+        StartCoroutine(AdvanceSoloAfterDelay(2f));
     }
 
-    private GameObject Panel(string name)
+    IEnumerator AdvanceSoloAfterDelay(float delay)
     {
-        var go=new GameObject(name); go.transform.SetParent(canvas.transform,false);
-        var rt=go.AddComponent<RectTransform>();
-        rt.anchorMin=Vector2.zero; rt.anchorMax=Vector2.one;
-        rt.offsetMin=rt.offsetMax=Vector2.zero;
-        return go;
+        yield return new WaitForSeconds(delay);
+        currentQ++;
+        ShowSoloQ();
     }
 
-    private GameObject Img(string name,Transform parent,Vector2 size,Vector2 pos,
-                           Color color,Sprite sprite,bool stretch=false)
+    void ShowSoloResults()
     {
-        var go=new GameObject(name); go.transform.SetParent(parent,false);
-        var rt=go.AddComponent<RectTransform>();
-        if (stretch){ rt.anchorMin=Vector2.zero; rt.anchorMax=Vector2.one;
-                      rt.offsetMin=rt.offsetMax=Vector2.zero; }
-        else{ rt.sizeDelta=size; rt.anchoredPosition=pos; }
-        var img=go.AddComponent<Image>(); img.color=color;
-        if (sprite){ img.sprite=sprite; img.type=Image.Type.Sliced; img.pixelsPerUnitMultiplier=1; }
-        return go;
+        if (CoinManager.Instance != null)
+            CoinManager.Instance.AddCoins(soloCoinsEarned);
+
+        foreach (Transform c in resultsListGO.transform) Destroy(c.gameObject);
+
+        resultsTitleTxt.text = "🎯 Solo Results!";
+        resultsSubTxt.text   = $"{soloCorrect} / {SOLO_Q_COUNT} correct!";
+        resultsCoinsTxt.text = $"⭐ +{soloCoinsEarned} StarCoins earned!";
+
+        var bar = MakeBox("Bar", resultsListGO.transform, new Vector2(700, 80), Vector2.zero, CARD_COL, sMed);
+        var bt  = ChildTMP(bar.transform,
+                           $"Correct: {soloCorrect}   |   Wrong: {SOLO_Q_COUNT - soloCorrect}",
+                           26, WHITE, FontStyles.Normal);
+        bt.alignment = TextAlignmentOptions.Center;
+        var bRT = bt.GetComponent<RectTransform>();
+        bRT.anchorMin = Vector2.zero; bRT.anchorMax = Vector2.one;
+        bRT.offsetMin = new Vector2(16,0); bRT.offsetMax = new Vector2(-16,0);
+
+        string grade =
+            soloCorrect == SOLO_Q_COUNT        ? "Perfect! 🌟" :
+            soloCorrect >= SOLO_Q_COUNT * 0.8f ? "Excellent! 🔥" :
+            soloCorrect >= SOLO_Q_COUNT * 0.6f ? "Good job! 👏" :
+            soloCorrect >= SOLO_Q_COUNT * 0.4f ? "Keep practising 📖" :
+                                                 "Better luck next time 💪";
+
+        var gbar = MakeBox("Grade", resultsListGO.transform, new Vector2(700, 70), Vector2.zero,
+                           new Color(1f,.87f,.12f,.22f), sMed);
+        var gt = ChildTMP(gbar.transform, grade, 28, YELLOW, FontStyles.Bold);
+        gt.alignment = TextAlignmentOptions.Center;
+        var gRT = gt.GetComponent<RectTransform>();
+        gRT.anchorMin = Vector2.zero; gRT.anchorMax = Vector2.one;
+        gRT.offsetMin = new Vector2(16,0); gRT.offsetMax = new Vector2(-16,0);
+
+        StartCoroutine(PlayResultsSFX());
+        Show(panelResults);
     }
 
-    private GameObject Lbl(GameObject parent,string text,int size,Color color,
-                           Vector2 pos,FontStyles style)
-        =>Lbl(parent.transform,text,size,color,pos,style);
-
-    private GameObject Lbl(Transform parent,string text,int size,Color color,
-                           Vector2 pos,FontStyles style)
+    // ════════════════════════════════════════════════════════════
+    // SHARED
+    // ════════════════════════════════════════════════════════════
+    void PlayAgain()
     {
-        var go=new GameObject("L"); go.transform.SetParent(parent,false);
-        var t=go.AddComponent<TextMeshProUGUI>();
-        t.text=text; t.fontSize=size; t.color=color; t.fontStyle=style;
-        t.alignment=TextAlignmentOptions.Center; t.enableWordWrapping=true;
-        t.raycastTarget=false;
-        if (nunitoBold) t.font=nunitoBold;
-        var rt=go.GetComponent<RectTransform>();
-        rt.sizeDelta=new Vector2(920,size*2+30); rt.anchoredPosition=pos;
-        return go;
+        if (isPartyMode) { ResetParty(); Show(panelPartySetup); }
+        else             { StartSolo(); }
     }
 
-    private TMP_Text TMPInside(GameObject parent,string text,int size,
-                               Color color,FontStyles style)
+    void Show(GameObject target)
     {
-        var go=new GameObject("T"); go.transform.SetParent(parent.transform,false);
-        var t=go.AddComponent<TextMeshProUGUI>();
-        t.text=text; t.fontSize=size; t.color=color; t.fontStyle=style;
-        t.alignment=TextAlignmentOptions.Center; t.enableWordWrapping=true;
-        t.raycastTarget=false;
-        if (nunitoBold) t.font=nunitoBold;
-        var rt=go.GetComponent<RectTransform>();
-        rt.anchorMin=Vector2.zero; rt.anchorMax=Vector2.one;
-        rt.offsetMin=rt.offsetMax=Vector2.zero;
-        return t;
+        foreach (var p in new[]{ panelMode, panelPartySetup, panelPartyCount,
+                                  panelPartyGame, panelPartyReveal, panelSoloGame, panelResults })
+            if (p) p.SetActive(false);
+        target.SetActive(true);
     }
 
-    private TMP_Text TMPChild(Transform parent,string text,int size,Color color)
+    IEnumerator PlayResultsSFX()
     {
-        var go=new GameObject("T"); go.transform.SetParent(parent,false);
-        var t=go.AddComponent<TextMeshProUGUI>();
-        t.text=text; t.fontSize=size; t.color=color;
-        t.alignment=TextAlignmentOptions.MidlineLeft;
-        if (nunitoBold) t.font=nunitoBold;
-        var rt=go.GetComponent<RectTransform>();
-        rt.anchorMin=Vector2.zero; rt.anchorMax=Vector2.one;
-        rt.offsetMin=rt.offsetMax=Vector2.zero;
-        return t;
+        audio.PlayOneShot(sfxDrumroll);
+        yield return new WaitForSeconds(sfxDrumroll.length);
+        audio.PlayOneShot(sfxVictory);
     }
 
-    private void Btn(Transform parent,string label,Color bg,Color txtCol,
-                     Vector2 pos,Vector2 size,UnityEngine.Events.UnityAction action)
+    List<TriviaQuestion> Shuffled(List<TriviaQuestion> src)
     {
-        var go=Img("Btn_"+label,parent,size,pos,bg,roundLg);
-        var btn=go.AddComponent<Button>();
-        var cb=btn.colors;
-        cb.highlightedColor=new Color(bg.r*.9f,bg.g*.9f,bg.b*.9f,1f);
-        cb.pressedColor=new Color(bg.r*.75f,bg.g*.75f,bg.b*.75f,1f);
-        btn.colors=cb; btn.onClick.AddListener(action);
-        TMPInside(go,label,26,txtCol,FontStyles.Bold);
-    }
-
-    private List<TriviaQuestion> Shuffle(List<TriviaQuestion> src)
-    {
-        var s=new List<TriviaQuestion>(src);
-        for(int i=s.Count-1;i>0;i--){int j=Random.Range(0,i+1);var t=s[i];s[i]=s[j];s[j]=t;}
+        var s = new List<TriviaQuestion>(src);
+        for (int i = s.Count-1; i > 0; i--)
+        {
+            int j = Random.Range(0, i+1);
+            var tmp = s[i]; s[i] = s[j]; s[j] = tmp;
+        }
         return s;
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // UI HELPERS (used only for dynamic runtime elements)
+    // ════════════════════════════════════════════════════════════
+    Image MakeImg(string name, Transform parent, Color color, Sprite sprite = null, bool stretch = false)
+    {
+        var go = new GameObject(name, typeof(RectTransform), typeof(Image));
+        go.transform.SetParent(parent, false);
+        var img = go.GetComponent<Image>();
+        img.color = color;
+        if (sprite != null) { img.sprite = sprite; img.type = Image.Type.Sliced; }
+        if (stretch)
+        {
+            var rt = go.GetComponent<RectTransform>();
+            rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
+            rt.offsetMin = rt.offsetMax = Vector2.zero;
+        }
+        return img;
+    }
+
+    GameObject MakeBox(string name, Transform parent, Vector2 size, Vector2 pos,
+                       Color color, Sprite sprite)
+    {
+        var go = new GameObject(name, typeof(RectTransform), typeof(Image));
+        go.transform.SetParent(parent, false);
+        var rt = go.GetComponent<RectTransform>();
+        rt.sizeDelta = size; rt.anchoredPosition = pos;
+        var img = go.GetComponent<Image>();
+        img.color = color; img.sprite = sprite; img.type = Image.Type.Sliced;
+        return go;
+    }
+
+    TMP_Text ChildTMP(Transform parent, string text, int size, Color color,
+                      FontStyles style = FontStyles.Normal)
+    {
+        var go = new GameObject("T", typeof(RectTransform), typeof(TextMeshProUGUI));
+        go.transform.SetParent(parent, false);
+        var t = go.GetComponent<TextMeshProUGUI>();
+        t.text = text; t.fontSize = size; t.color = color; t.fontStyle = style;
+        t.alignment = TextAlignmentOptions.Center; t.enableWordWrapping = false;
+        if (font) t.font = font;
+        var rt = go.GetComponent<RectTransform>();
+        rt.anchorMin = Vector2.zero; rt.anchorMax = Vector2.one;
+        rt.offsetMin = rt.offsetMax = Vector2.zero;
+        return t;
+    }
+
+    // ════════════════════════════════════════════════════════════
+    // AUDIO GENERATORS
+    // ════════════════════════════════════════════════════════════
+    AudioClip MakeCorrectSound()
+    {
+        int rate = 44100; int len = (int)(rate * 0.55f);
+        float[] d = new float[len];
+        float[] notes = { 523.25f, 659.25f, 783.99f, 1046.50f };
+        int n = len / notes.Length;
+        for (int ni = 0; ni < notes.Length; ni++)
+        {
+            float f = notes[ni]; int s = ni*n; int e = Mathf.Min(s+n,len);
+            for (int i=s;i<e;i++){ float t2=(float)(i-s)/n; float env=Mathf.Sin(t2*Mathf.PI);
+                d[i]+=0.40f*env*Mathf.Sin(2f*Mathf.PI*f*i/rate)+0.12f*env*Mathf.Sin(4f*Mathf.PI*f*i/rate); }
+        }
+        var c = AudioClip.Create("OK", len, 1, rate, false); c.SetData(d,0); return c;
+    }
+
+    AudioClip MakeWrongSound()
+    {
+        int rate = 44100; int len = (int)(rate * 0.45f);
+        float[] d = new float[len];
+        float[] notes = { 311.13f, 233.08f };
+        int n = len / notes.Length;
+        for (int ni = 0; ni < notes.Length; ni++)
+        {
+            float f = notes[ni]; int s = ni*n; int e = Mathf.Min(s+n,len);
+            for (int i=s;i<e;i++){ float t2=(float)(i-s)/n; float env=Mathf.Sin(t2*Mathf.PI);
+                d[i]+=0.45f*env*Mathf.Sin(2f*Mathf.PI*f*i/rate); }
+        }
+        var c = AudioClip.Create("Wrong", len, 1, rate, false); c.SetData(d,0); return c;
+    }
+
+    AudioClip MakeDrumroll()
+    {
+        int rate = 44100; float dur = 2.5f; int len = (int)(rate*dur);
+        float[] d = new float[len]; float beat = 0.18f; float t2 = 0f;
+        while (t2 < dur)
+        {
+            float prog = t2/dur; int hs = Mathf.Min((int)(t2*rate), len-1);
+            int hlen = (int)(rate*0.022f); float vol = 0.25f + 0.55f*prog;
+            for (int i=0;i<hlen&&hs+i<len;i++)
+            { float env=Mathf.Exp(-i/(hlen*0.4f)); d[hs+i]+=vol*env*(Random.value*2f-1f); }
+            beat = Mathf.Lerp(0.18f, 0.036f, prog); t2 += beat;
+        }
+        var c = AudioClip.Create("DR", len, 1, rate, false); c.SetData(d,0); return c;
+    }
+
+    AudioClip MakeVictorySound()
+    {
+        int rate = 44100; float dur = 2f; int len = (int)(rate*dur);
+        float[] d = new float[len];
+        (float f, float s, float l)[] n = {
+            (392f,.00f,.10f),(523f,.10f,.10f),(659f,.20f,.10f),(784f,.30f,.28f),
+            (659f,.58f,.10f),(784f,.68f,.10f),(1047f,.78f,.55f)
+        };
+        foreach (var (f,st,le) in n)
+        {
+            int s=(int)(st*rate); int e=Mathf.Min(s+(int)(le*rate),len);
+            for (int i=s;i<e;i++){ float t2=(float)(i-s)/(e-s); float env=t2<.1f?t2/.1f:t2>.7f?(1f-t2)/.3f:1f;
+                d[i]+=0.32f*env*Mathf.Sin(2f*Mathf.PI*f*i/rate)+0.08f*env*Mathf.Sin(4f*Mathf.PI*f*i/rate); }
+        }
+        float mx=0; foreach(var v in d) if(Mathf.Abs(v)>mx) mx=Mathf.Abs(v);
+        if(mx>0.01f) for(int i=0;i<d.Length;i++) d[i]/=mx*1.1f;
+        var c = AudioClip.Create("Win", len, 1, rate, false); c.SetData(d,0); return c;
     }
 }

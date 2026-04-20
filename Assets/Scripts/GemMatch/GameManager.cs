@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button nextLevelButton;
     [SerializeField] private Button levelSelectButton;
     [SerializeField] private Button backToHubButton;
+    [SerializeField] private Button quitLevelButton;
 
     private int lastEarnedCoins;
     private int lastStarRating;
@@ -48,6 +49,12 @@ public class GameManager : MonoBehaviour
 
         if (levelSelectUI != null)
             levelSelectUI.Show();
+
+        if (quitLevelButton != null)
+        {
+            quitLevelButton.onClick.AddListener(QuitLevel);
+            quitLevelButton.gameObject.SetActive(false);
+        }
     }
 
     /// <summary>
@@ -91,6 +98,9 @@ public class GameManager : MonoBehaviour
         // Hide level select, show game elements
         if (levelSelectUI != null)
             levelSelectUI.Hide();
+
+        if (quitLevelButton != null)
+            quitLevelButton.gameObject.SetActive(true);
 
         if (gameOverPanel != null)
             gameOverPanel.SetActive(false);
@@ -375,6 +385,32 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(delay);
         if (objectiveBannerText != null)
             objectiveBannerText.gameObject.SetActive(false);
+    }
+
+    /// <summary>
+    /// Quit the current level mid-game and return to level select.
+    /// </summary>
+    public void QuitLevel()
+    {
+        // Unsubscribe timer/move events
+        if (gameTimer != null)  gameTimer.OnTimeUp -= HandleLevelEnd;
+        if (moveCounter != null) moveCounter.OnMovesExhausted -= HandleLevelEnd;
+
+        if (gameTimer != null)  gameTimer.StopTimer();
+        if (inputHandler != null) inputHandler.SetInteractable(false);
+        if (soundManager != null) soundManager.StopMusic();
+        if (challengeMode != null) challengeMode.EndChallenge();
+
+        if (quitLevelButton != null)
+            quitLevelButton.gameObject.SetActive(false);
+
+        HideGameElements();
+
+        if (gameOverPanel != null)
+            gameOverPanel.SetActive(false);
+
+        if (levelSelectUI != null)
+            levelSelectUI.Show();
     }
 
     private void HideGameElements()

@@ -1,0 +1,1068 @@
+fileFormatVersion: 2
+guid: ca5fdc8c98e7aad468cb8f3110a85dc0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1217016117841251834
+    second: defualt man walking right_0
+  - first:
+      213: 8506956518646053370
+    second: defualt man walking right_1
+  - first:
+      213: -1411450552327989968
+    second: defualt man walking right_2
+  - first:
+      213: 3612749816103545595
+    second: defualt man walking right_3
+  - first:
+      213: 1837001102508934120
+    second: defualt man walking right_4
+  - first:
+      213: 7467421602776299544
+    second: defualt man walking right_5
+  - first:
+      213: 6121517909432877121
+    second: defualt man walking right_6
+  - first:
+      213: 4971726591306977482
+    second: defualt man walking right_7
+  - first:
+      213: 6350224534200438630
+    second: defualt man walking right_8
+  - first:
+      213: -3406302621616654022
+    second: defualt man walking right_9
+  - first:
+      213: 5613440832671887883
+    second: defualt man walking right_10
+  - first:
+      213: -9001276101585927293
+    second: defualt man walking right_11
+  - first:
+      213: -1368020273860796134
+    second: defualt man walking right_12
+  - first:
+      213: 3728846022614530882
+    second: defualt man walking right_13
+  - first:
+      213: -2179516146703389785
+    second: defualt man walking right_14
+  - first:
+      213: 5022070004463477498
+    second: defualt man walking right_15
+  - first:
+      213: -1823230457760986151
+    second: defualt man walking right_16
+  - first:
+      213: -7837444006439590599
+    second: defualt man walking right_17
+  - first:
+      213: 6887989908391624865
+    second: defualt man walking right_18
+  - first:
+      213: 4782055632282584556
+    second: defualt man walking right_19
+  - first:
+      213: -871872319122042665
+    second: defualt man walking right_20
+  - first:
+      213: 5542664508078636424
+    second: defualt man walking right_21
+  - first:
+      213: 2411678762780162620
+    second: defualt man walking right_22
+  - first:
+      213: -8168679431338737065
+    second: defualt man walking right_23
+  - first:
+      213: -6463084137894045687
+    second: defualt man walking right_24
+  - first:
+      213: -8860656901342295620
+    second: defualt man walking right_25
+  - first:
+      213: -4854689797811590390
+    second: defualt man walking right_26
+  - first:
+      213: 4962094072324488210
+    second: defualt man walking right_27
+  - first:
+      213: 4764041663454719894
+    second: defualt man walking right_28
+  - first:
+      213: -63184577065660555
+    second: defualt man walking right_29
+  - first:
+      213: 5013062175470137836
+    second: defualt man walking right_30
+  - first:
+      213: 4570013027128379218
+    second: defualt man walking right_31
+  - first:
+      213: 8780191610096012462
+    second: defualt man walking right_32
+  - first:
+      213: -1128808467331823192
+    second: defualt man walking right_33
+  - first:
+      213: -3111657882014513401
+    second: defualt man walking right_34
+  - first:
+      213: 1024509977767506357
+    second: defualt man walking right_35
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: defualt man walking right_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2830
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 602b522f94a4c1fe0800000000000000
+      internalID: -1217016117841251834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_1
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 2830
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af97795c1e7ce0670800000000000000
+      internalID: 8506956518646053370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_2
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 2830
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035167a6335896ce0800000000000000
+      internalID: -1411450552327989968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_3
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 2830
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaa53b01d0132230800000000000000
+      internalID: 3612749816103545595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_4
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2830
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e3cb0715c65e7910800000000000000
+      internalID: 1837001102508934120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_5
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 2830
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8183f85326c91a760800000000000000
+      internalID: 7467421602776299544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2264
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14040fdfa1004f450800000000000000
+      internalID: 6121517909432877121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_7
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 2264
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac057335efe1ff440800000000000000
+      internalID: 4971726591306977482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_8
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 2264
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66fccf4a197802850800000000000000
+      internalID: 6350224534200438630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_9
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 2264
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a39be0120d16ab0d0800000000000000
+      internalID: -3406302621616654022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_10
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 2264
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b02b41f22b2f6ed40800000000000000
+      internalID: 5613440832671887883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_11
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 2264
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38302cf831b051380800000000000000
+      internalID: -9001276101585927293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1698
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11aefa1fc0d30de0800000000000000
+      internalID: -1368020273860796134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_13
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1698
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24b311883b58fb330800000000000000
+      internalID: 3728846022614530882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_14
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1698
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab2485bc9dc0c1e0800000000000000
+      internalID: -2179516146703389785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_15
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1698
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af2a03d9f0af1b540800000000000000
+      internalID: 5022070004463477498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_16
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1698
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dbcb7dfe8592b6e0800000000000000
+      internalID: -1823230457760986151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_17
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 1698
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9356721633ecb3390800000000000000
+      internalID: -7837444006439590599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1132
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0882ad35e079f50800000000000000
+      internalID: 6887989908391624865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_19
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 1132
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce50c5ad2464d5240800000000000000
+      internalID: 4782055632282584556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_20
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 1132
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d01c31cebc76e3f0800000000000000
+      internalID: -871872319122042665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_21
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 1132
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88d3139f0008bec40800000000000000
+      internalID: 5542664508078636424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_22
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1132
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3a7ddf9e01087120800000000000000
+      internalID: 2411678762780162620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_23
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 1132
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752c303365503ae80800000000000000
+      internalID: -8168679431338737065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 566
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9081d5f28338e46a0800000000000000
+      internalID: -6463084137894045687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_25
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 566
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb901e67e7f980580800000000000000
+      internalID: -8860656901342295620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_26
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 566
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b2ab2a95da0acb0800000000000000
+      internalID: -4854689797811590390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_27
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 566
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21cf8fab446ecd440800000000000000
+      internalID: 4962094072324488210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_28
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 566
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69f2165e6a64d1240800000000000000
+      internalID: 4764041663454719894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_29
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 566
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fc7b046f58f1ff0800000000000000
+      internalID: -63184577065660555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce138ddfc79f19540800000000000000
+      internalID: 5013062175470137836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_31
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 0
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25705ec92a2fb6f30800000000000000
+      internalID: 4570013027128379218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_32
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 0
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eac43abffb189d970800000000000000
+      internalID: 8780191610096012462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_33
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 0
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a9cb3dfdaaa550f0800000000000000
+      internalID: -1128808467331823192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_34
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 0
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7070bff74ab21d4d0800000000000000
+      internalID: -3111657882014513401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: defualt man walking right_35
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 0
+        width: 302
+        height: 566
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b1fcad856ac73e00800000000000000
+      internalID: 1024509977767506357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 73449b526a606c84ba72498603cb5c31
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":6.0},"gridSpriteSize":{"x":302.0,"y":566.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      defualt man walking right_0: -1217016117841251834
+      defualt man walking right_1: 8506956518646053370
+      defualt man walking right_10: 5613440832671887883
+      defualt man walking right_11: -9001276101585927293
+      defualt man walking right_12: -1368020273860796134
+      defualt man walking right_13: 3728846022614530882
+      defualt man walking right_14: -2179516146703389785
+      defualt man walking right_15: 5022070004463477498
+      defualt man walking right_16: -1823230457760986151
+      defualt man walking right_17: -7837444006439590599
+      defualt man walking right_18: 6887989908391624865
+      defualt man walking right_19: 4782055632282584556
+      defualt man walking right_2: -1411450552327989968
+      defualt man walking right_20: -871872319122042665
+      defualt man walking right_21: 5542664508078636424
+      defualt man walking right_22: 2411678762780162620
+      defualt man walking right_23: -8168679431338737065
+      defualt man walking right_24: -6463084137894045687
+      defualt man walking right_25: -8860656901342295620
+      defualt man walking right_26: -4854689797811590390
+      defualt man walking right_27: 4962094072324488210
+      defualt man walking right_28: 4764041663454719894
+      defualt man walking right_29: -63184577065660555
+      defualt man walking right_3: 3612749816103545595
+      defualt man walking right_30: 5013062175470137836
+      defualt man walking right_31: 4570013027128379218
+      defualt man walking right_32: 8780191610096012462
+      defualt man walking right_33: -1128808467331823192
+      defualt man walking right_34: -3111657882014513401
+      defualt man walking right_35: 1024509977767506357
+      defualt man walking right_4: 1837001102508934120
+      defualt man walking right_5: 7467421602776299544
+      defualt man walking right_6: 6121517909432877121
+      defualt man walking right_7: 4971726591306977482
+      defualt man walking right_8: 6350224534200438630
+      defualt man walking right_9: -3406302621616654022
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

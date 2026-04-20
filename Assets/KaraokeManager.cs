@@ -65,6 +65,7 @@ public class KaraokeManager : MonoBehaviour
         _scorer.Initialize(_mic, _syncer);
 
         _audio.Play();
+        BackgroundMusicManager.Instance?.Stop();
         SetState(GameState.Playing);
     }
 

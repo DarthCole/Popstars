@@ -1,0 +1,201 @@
+{
+  "songName": "Someone Like You",
+  "artist": "Adele",
+  "lines": [
+    {
+      "timestamp": 13.9,
+      "text": "I heard that you're settled down",
+      "targetPitch": 277.8
+    },
+    {
+      "timestamp": 21.01,
+      "text": "That you found a girl and you're married now",
+      "targetPitch": 256.18
+    },
+    {
+      "timestamp": 29.62,
+      "text": "I heard that your dreams came true",
+      "targetPitch": 272.31
+    },
+    {
+      "timestamp": 35.52,
+      "text": "Guess she gave you things I didn't give to you",
+      "targetPitch": 231.54
+    },
+    {
+      "timestamp": 43.0,
+      "text": "Old friend, why are you so shy?",
+      "targetPitch": 299.4
+    },
+    {
+      "timestamp": 49.49,
+      "text": "Ain't like you to hold back or hide from the light",
+      "targetPitch": 220.94
+    },
+    {
+      "timestamp": 57.36,
+      "text": "I hate to turn up out of the blue, uninvited",
+      "targetPitch": 246.88
+    },
+    {
+      "timestamp": 60.66,
+      "text": "But I couldn't stay away, I couldn't fight it",
+      "targetPitch": 228.76
+    },
+    {
+      "timestamp": 64.24,
+      "text": "I had hoped you'd see my face and that you'd be reminded",
+      "targetPitch": 244.0
+    },
+    {
+      "timestamp": 67.71,
+      "text": "That, for me, it isn't over",
+      "targetPitch": 244.24
+    },
+    {
+      "timestamp": 73.88,
+      "text": "Never mind, I'll find someone like you",
+      "targetPitch": 395.84
+    },
+    {
+      "timestamp": 79.81,
+      "text": "I wish nothing but the best for you, too",
+      "targetPitch": 391.12
+    },
+    {
+      "timestamp": 86.92,
+      "text": "Don't forget me, I beg, I remember you said",
+      "targetPitch": 515.67
+    },
+    {
+      "timestamp": 93.94,
+      "text": "Sometimes it lasts in love, but sometimes it hurts instead",
+      "targetPitch": 366.23
+    },
+    {
+      "timestamp": 101.04,
+      "text": "Sometimes it lasts in love, but sometimes it hurts instead",
+      "targetPitch": 301.13
+    },
+    {
+      "timestamp": 111.61,
+      "text": "You know how the time flies",
+      "targetPitch": 277.25
+    },
+    {
+      "timestamp": 117.15,
+      "text": "Only yesterday was the time of our lives",
+      "targetPitch": 269.71
+    },
+    {
+      "timestamp": 124.28,
+      "text": "We were born and raised in a summer haze",
+      "targetPitch": 256.25
+    },
+    {
+      "timestamp": 131.34,
+      "text": "Bound by the surprise of our glory days",
+      "targetPitch": 243.67
+    },
+    {
+      "timestamp": 139.16,
+      "text": "I hate to turn up out of the blue, uninvited",
+      "targetPitch": 246.87
+    },
+    {
+      "timestamp": 142.55,
+      "text": "But I couldn't stay away, I couldn't fight it",
+      "targetPitch": 230.72
+    },
+    {
+      "timestamp": 146.09,
+      "text": "I had hoped you'd see my face and that you'd be reminded",
+      "targetPitch": 244.28
+    },
+    {
+      "timestamp": 149.52,
+      "text": "That, for me, it isn't over",
+      "targetPitch": 246.16
+    },
+    {
+      "timestamp": 157.36,
+      "text": "Never mind, I'll find someone like you",
+      "targetPitch": 391.66
+    },
+    {
+      "timestamp": 163.37,
+      "text": "I wish nothing but the best for you, too",
+      "targetPitch": 389.74
+    },
+    {
+      "timestamp": 170.45,
+      "text": "Don't forget me, I beg, I remember you said",
+      "targetPitch": 512.64
+    },
+    {
+      "timestamp": 177.46,
+      "text": "Sometimes it lasts in love, but sometimes it hurts instead",
+      "targetPitch": 294.63
+    },
+    {
+      "timestamp": 185.5,
+      "text": "Nothing compares, no worries or cares",
+      "targetPitch": 170.3
+    },
+    {
+      "timestamp": 188.97,
+      "text": "Regrets and mistakes, they're memories made",
+      "targetPitch": 237.76
+    },
+    {
+      "timestamp": 192.63,
+      "text": "Who would have known how bittersweet this would taste?",
+      "targetPitch": 218.46
+    },
+    {
+      "timestamp": 204.2,
+      "text": "Never mind, I'll find someone like you",
+      "targetPitch": 393.24
+    },
+    {
+      "timestamp": 210.17,
+      "text": "I wish nothing but the best for you",
+      "targetPitch": 390.75
+    },
+    {
+      "timestamp": 217.25,
+      "text": "Don't forget me, I beg, I remember you said",
+      "targetPitch": 522.92
+    },
+    {
+      "timestamp": 224.32,
+      "text": "Sometimes it lasts in love, but sometimes it hurts instead",
+      "targetPitch": 353.41
+    },
+    {
+      "timestamp": 232.4,
+      "text": "Never mind, I'll find someone like you",
+      "targetPitch": 396.19
+    },
+    {
+      "timestamp": 238.65,
+      "text": "I wish nothing but the best for you, too",
+      "targetPitch": 394.79
+    },
+    {
+      "timestamp": 245.81,
+      "text": "Don't forget me, I beg, I remember you said",
+      "targetPitch": 514.87
+    },
+    {
+      "timestamp": 252.77,
+      "text": "Sometimes it lasts in love, but sometimes it hurts instead",
+      "targetPitch": 367.21
+    },
+    {
+      "timestamp": 259.91,
+      "text": "Sometimes it lasts in love, but sometimes it hurts instead",
+      "targetPitch": 349.14
+    }
+  ]
+}

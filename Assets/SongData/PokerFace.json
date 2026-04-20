@@ -1,0 +1,301 @@
+{
+  "songName": "Poker Face",
+  "artist": "Lady Gaga",
+  "lines": [
+    {
+      "timestamp": 7.32,
+      "text": "Mum-mum-mum-mah",
+      "targetPitch": 206.84
+    },
+    {
+      "timestamp": 11.44,
+      "text": "Mum-mum-mum-mah",
+      "targetPitch": 163.77
+    },
+    {
+      "timestamp": 15.44,
+      "text": "Mum-mum-mum-mah",
+      "targetPitch": 208.37
+    },
+    {
+      "timestamp": 19.61,
+      "text": "Mum-mum-mum-mah",
+      "targetPitch": 103.48
+    },
+    {
+      "timestamp": 23.55,
+      "text": "Mum-mum-mum-mah",
+      "targetPitch": 115.72
+    },
+    {
+      "timestamp": 24.68,
+      "text": "I wanna hold 'em like they do in Texas, please (hey)",
+      "targetPitch": 249.68
+    },
+    {
+      "timestamp": 28.33,
+      "text": "Fold 'em, let 'em hit me, raise it, baby, stay with me (I love it)",
+      "targetPitch": 233.69
+    },
+    {
+      "timestamp": 32.37,
+      "text": "LoveGame intuition play the cards with spades to start",
+      "targetPitch": 299.14
+    },
+    {
+      "timestamp": 36.05,
+      "text": "And after he's been hooked, I'll play the one that's on his heart",
+      "targetPitch": 237.61
+    },
+    {
+      "timestamp": 40.39,
+      "text": "Oh, whoa, oh-oh, ooh",
+      "targetPitch": 250.71
+    },
+    {
+      "timestamp": 44.72,
+      "text": "I'll get him hot, show him what I've got",
+      "targetPitch": 232.74
+    },
+    {
+      "timestamp": 48.36,
+      "text": "Oh, whoa, oh-oh, ooh",
+      "targetPitch": 248.86
+    },
+    {
+      "timestamp": 52.77,
+      "text": "I'll get him hot, show him what I've got",
+      "targetPitch": 235.37
+    },
+    {
+      "timestamp": 56.75,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 420.8
+    },
+    {
+      "timestamp": 58.76,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 232.33
+    },
+    {
+      "timestamp": 64.7,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 401.18
+    },
+    {
+      "timestamp": 66.97,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 257.62
+    },
+    {
+      "timestamp": 72.83,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (mum-mum-mum-mah)",
+      "targetPitch": 208.63
+    },
+    {
+      "timestamp": 77.0,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (mum-mum-mum-mah)",
+      "targetPitch": 236.49
+    },
+    {
+      "timestamp": 81.07,
+      "text": "I wanna roll with him, a hard pair we will be (hey)",
+      "targetPitch": 249.03
+    },
+    {
+      "timestamp": 85.05,
+      "text": "A little gambling is fun when you're with me (hey, I love it)",
+      "targetPitch": 240.84
+    },
+    {
+      "timestamp": 89.02,
+      "text": "Russian roulette is not the same without a gun",
+      "targetPitch": 296.15
+    },
+    {
+      "timestamp": 92.5,
+      "text": "And, baby, when it's love, if it's not rough, it isn't fun (fun)",
+      "targetPitch": 235.44
+    },
+    {
+      "timestamp": 96.95,
+      "text": "Oh, whoa, oh-oh, ooh",
+      "targetPitch": 250.99
+    },
+    {
+      "timestamp": 101.11,
+      "text": "I'll get him hot, show him what I've got",
+      "targetPitch": 232.11
+    },
+    {
+      "timestamp": 104.87,
+      "text": "Oh, whoa, oh-oh, ooh",
+      "targetPitch": 251.53
+    },
+    {
+      "timestamp": 109.21,
+      "text": "I'll get him hot, show him what I've got",
+      "targetPitch": 235.07
+    },
+    {
+      "timestamp": 113.26,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 415.95
+    },
+    {
+      "timestamp": 115.28,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 251.93
+    },
+    {
+      "timestamp": 121.29,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 422.52
+    },
+    {
+      "timestamp": 123.27,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 247.07
+    },
+    {
+      "timestamp": 129.3,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (mum-mum-mum-mah)",
+      "targetPitch": 223.64
+    },
+    {
+      "timestamp": 133.43,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (mum-mum-mum-mah)",
+      "targetPitch": 213.24
+    },
+    {
+      "timestamp": 140.42,
+      "text": "(Mum-mum-mum-mah)",
+      "targetPitch": 178.97
+    },
+    {
+      "timestamp": 144.71,
+      "text": "I won't tell you that I love you, kiss or hug you",
+      "targetPitch": 322.06
+    },
+    {
+      "timestamp": 147.78,
+      "text": "'Cause I'm bluffin' with my muffin",
+      "targetPitch": 304.72
+    },
+    {
+      "timestamp": 149.8,
+      "text": "I'm not lyin', I'm just stunnin' with my love-glue gunnin'",
+      "targetPitch": 298.41
+    },
+    {
+      "timestamp": 153.65,
+      "text": "Just like a chick in the casino",
+      "targetPitch": 340.56
+    },
+    {
+      "timestamp": 155.86,
+      "text": "Take your bank before I pay you out",
+      "targetPitch": 324.74
+    },
+    {
+      "timestamp": 158.15,
+      "text": "I promise this, promise this",
+      "targetPitch": 290.84
+    },
+    {
+      "timestamp": 159.95,
+      "text": "Check this hand 'cause I'm marvelous",
+      "targetPitch": 264.78
+    },
+    {
+      "timestamp": 161.68,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 414.52
+    },
+    {
+      "timestamp": 163.62,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 288.15
+    },
+    {
+      "timestamp": 169.72,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 414.1
+    },
+    {
+      "timestamp": 171.83,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 252.81
+    },
+    {
+      "timestamp": 177.78,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 417.31
+    },
+    {
+      "timestamp": 179.83,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 294.08
+    },
+    {
+      "timestamp": 185.8,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 412.81
+    },
+    {
+      "timestamp": 187.82,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 264.52
+    },
+    {
+      "timestamp": 193.93,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 420.95
+    },
+    {
+      "timestamp": 195.98,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 297.82
+    },
+    {
+      "timestamp": 201.97,
+      "text": "Can't read my, can't read my",
+      "targetPitch": 414.66
+    },
+    {
+      "timestamp": 203.85,
+      "text": "No, he can't read my poker face (she's got me like nobody)",
+      "targetPitch": 264.56
+    },
+    {
+      "timestamp": 210.09,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face",
+      "targetPitch": 237.51
+    },
+    {
+      "timestamp": 214.03,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (she's got me like nobody)",
+      "targetPitch": 211.63
+    },
+    {
+      "timestamp": 218.07,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (mum-mum-mum-mah)",
+      "targetPitch": 219.96
+    },
+    {
+      "timestamp": 222.16,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (mum-mum-mum-mah)",
+      "targetPitch": 221.43
+    },
+    {
+      "timestamp": 226.15,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (mum-mum-mum-mah)",
+      "targetPitch": 219.19
+    },
+    {
+      "timestamp": 230.23,
+      "text": "Po-po-po-poker face, fu-fu-fuck her face (mum-mum-mum-mah)",
+      "targetPitch": 199.77
+    }
+  ]
+}

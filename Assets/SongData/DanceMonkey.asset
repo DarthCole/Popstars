@@ -17,6 +17,9 @@ MonoBehaviour:
   BPM: 0
   backingTrack: {fileID: 8300000, guid: a083a89f064d9564892b11ed68108245, type: 3}
   coverArt: {fileID: -1499966076920533335, guid: 65f6e2e4d8867f443819272eaa12c9f8, type: 3}
+  songID: 3
+  price: 0
+  isDefault: 1
   lines:
   - timestamp: 9.11
     text: They say, "Oh my God, I see the way you shine

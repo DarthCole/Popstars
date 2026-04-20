@@ -301,6 +301,7 @@ public class KaraokeUI : MonoBehaviour
     private void OnBack()
     {
         manager.Stop();
+        BackgroundMusicManager.Instance?.Play();
         if (songSelectPanel != null) songSelectPanel.SetActive(true);
         if (karaokePanel    != null) karaokePanel.SetActive(false);
     }

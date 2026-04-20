@@ -143,6 +143,16 @@ public class AvatarSceneBuilder : EditorWindow
         if (playAnimBtnGO != null)
             WirePlayAnimButton(playAnimBtnGO.GetComponent<Button>(), manager);
 
+        // ── Enter Stage button + EnterStageHandler ────────────────────────────
+        var enterStageBtn = BuildEnterStageButton(root);
+        var handler = root.gameObject.AddComponent<EnterStageHandler>();
+        var hso = new SerializedObject(handler);
+        hso.FindProperty("outfitManager").objectReferenceValue  = manager;
+        hso.FindProperty("genderSelector").objectReferenceValue = selector;
+        hso.ApplyModifiedProperties();
+        if (enterStageBtn != null)
+            UnityEventTools.AddPersistentListener(enterStageBtn.onClick, handler.GoToStage);
+
         EditorUtility.SetDirty(canvas.gameObject);
         Debug.Log("[AvatarSceneBuilder] 2D Avatar Scene UI built. Create OutfitData assets (Assets > Create > PopstarHub > Outfit Data), assign characterSprite + optional animatorController, then populate femaleOutfits / maleOutfits on AvatarGenderSelector.");
     }
@@ -380,6 +390,47 @@ public class AvatarSceneBuilder : EditorWindow
     {
         if (btn == null || manager == null) return;
         UnityEventTools.AddPersistentListener(btn.onClick, manager.PlayAnimation);
+    }
+
+    // ── Enter Stage button (bottom-centre of screen) ──────────────────────────
+    static Button BuildEnterStageButton(RectTransform root)
+    {
+        var spr = AssetDatabase.GetBuiltinExtraResource<Sprite>("UI/Skin/UISprite.psd");
+        Color STAGE_BG     = new Color(0.180f, 0.082f, 0.380f, 1.00f);
+        Color STAGE_BORDER = new Color(0.420f, 0.220f, 0.760f, 1.00f);
+
+        // Border
+        var borderGO = new GameObject("EnterStageBtn_Border", typeof(RectTransform), typeof(Image));
+        borderGO.transform.SetParent(root, false);
+        var borderRT  = borderGO.GetComponent<RectTransform>();
+        borderRT.anchorMin = borderRT.anchorMax = new Vector2(0.5f, 0f);
+        borderRT.pivot     = new Vector2(0.5f, 0f);
+        borderRT.sizeDelta = new Vector2(342f, 68f);
+        borderRT.anchoredPosition = new Vector2(0f, 36f);
+        var borderImg  = borderGO.GetComponent<Image>();
+        borderImg.sprite = spr; borderImg.color = STAGE_BORDER; borderImg.type = Image.Type.Sliced;
+
+        // Button face
+        var btnGO = new GameObject("EnterStageBtn", typeof(RectTransform), typeof(Image), typeof(Button));
+        btnGO.transform.SetParent(borderRT, false);
+        var btnRT  = btnGO.GetComponent<RectTransform>();
+        btnRT.anchorMin = Vector2.zero; btnRT.anchorMax = Vector2.one;
+        btnRT.offsetMin = new Vector2(2f, 2f); btnRT.offsetMax = new Vector2(-2f, -2f);
+        var btnImg  = btnGO.GetComponent<Image>();
+        btnImg.sprite = spr; btnImg.color = STAGE_BG; btnImg.type = Image.Type.Sliced;
+        var btn = btnGO.GetComponent<Button>();
+        btn.targetGraphic = btnImg;
+        var bc = btn.colors;
+        bc.highlightedColor = new Color(0.24f, 0.11f, 0.50f, 1f);
+        bc.pressedColor     = new Color(0.14f, 0.06f, 0.30f, 1f);
+        btn.colors = bc;
+
+        // Label
+        var lblRT = MakeTMP(btnRT, "Label", "\U0001F3A4  Enter Stage", 24f, W100,
+                             TextAlignmentOptions.Center, true);
+        Stretch(lblRT);
+
+        return btn;
     }
 
     static RectTransform BuildOutfitPanel(RectTransform p)

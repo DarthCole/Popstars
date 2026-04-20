@@ -22,6 +22,11 @@ public class SongData : ScriptableObject
     [Header("Art")]
     public Sprite coverArt;
 
+    [Header("Shop")]
+    public int  songID;
+    public int  price;
+    public bool isDefault;
+
     [Header("Lyrics")]
     public LyricLine[] lines;
 }

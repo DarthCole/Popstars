@@ -17,6 +17,9 @@ MonoBehaviour:
   BPM: 0
   backingTrack: {fileID: 8300000, guid: 1c2c954a650a6a44e9cd41f49490743f, type: 3}
   coverArt: {fileID: 5163341900627328946, guid: bfd9a9c76ee36704f8e3168e04337d76, type: 3}
+  songID: 5
+  price: 0
+  isDefault: 1
   lines:
   - timestamp: 0.38
     text: "Mof\u1EB9, mof\u1EB9, mof\u1EB9, mof\u1EB9 (Kilolo)"
