@@ -2,7 +2,7 @@
 
 # 💎 Popstar Hub
 
-**A gem-match battle game where pop star rivals clash for chart supremacy.**
+**A game where pop star rivals clash for chart supremacy.**
 
 [![Unity](https://img.shields.io/badge/Engine-Unity%206-black?logo=unity)](https://unity.com/)
 [![Language](https://img.shields.io/badge/Language-C%23-purple?logo=csharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
@@ -23,9 +23,10 @@
 
 ## 🎮 What is Popstar Hub?
 
-Popstar Hub is a **PC party game** where two iconic pop star rivals — **MikaelYackson** and **Beyonslay** — battle for chart dominance through arcade mini-game challenges.
+Popstar Hub is a **PC party game** where players battle for chart dominance through arcade mini-game challenges.
 
-Players compete on a glittering 8×8 gem board, chaining combos to deal damage to their opponent's health bar. Every match earns **StarCoins**, the in-game currency of fame, which can be spent in the **Shop** on outfits, stages, and songs that visually transform your popstar.
+Mini games include 1) a glittering 8×8 gem board, chaining combos to deal damage to their opponent's health bar. 2) a karaoke batte game 3) a trivia game, and so many more
+Every match earns **StarCoins**, the in-game currency of fame, which can be spent in the **Shop** on outfits, stages, and songs that visually transform your popstar.
 
 Progression isn't just numbers — it's your popstar evolving and gaining access to more of the world.
 
@@ -41,7 +42,7 @@ Progression isn't just numbers — it's your popstar evolving and gaining access
 | 🛍️ **Shop & Unlocks** | Outfits, stages, songs — self-expression is the popstar fantasy | 🔧 WIP |
 | 🌐 **LAN Multiplayer** | Head-to-head on a local network — no internet required | 🔧 Prototyping |
 
-### Secondary Features (Scoped for Future Sprints)
+### Secondary Features 
 
 - 🎵 **Karaoke** — performance layer, high technical risk
 - 🧠 **Trivia** — entertaining side challenge
@@ -263,8 +264,7 @@ This is a closed university project. If you're a team member:
 ---
 
 ## 📄 License
-
-This project is submitted as a university final project. Source code is available for review and portfolio purposes under the [MIT License](LICENSE).
+ Source code is available for review and portfolio purposes under the [MIT License](LICENSE).
 
 ---
 
