@@ -199,9 +199,8 @@ git push origin feature/gem-board
 | Project Kickoff + Repo Setup | Jan 2025 | ✅ Done |
 | GemMatch Core (board, match detection, scoring) | Feb 2025 | ✅ Done |
 | Battle System (fighters, health bars, AI) | Mar 2025 | ✅ Done |
-| Shop & StarCoin Economy | Apr 2025 | 🔧 In Progress |
-| UI Polish + LAN Multiplayer | May 2025 | 🔧 In Progress |
-| **Final Submission (University Showcase)** | **Jun 2025** | ⏳ Upcoming |
+| Shop & StarCoin Economy | Apr 2025 |  ✅ Done  |
+| UI Polish + LAN Multiplayer | May 2025 |  ✅ Done  |
 
 ---
 
@@ -216,7 +215,6 @@ git push origin feature/gem-board
 | **Reno** | Game Design & Balance |
 | **Gibby** | Gem Match / Mini-Games |
 
-*University Final Project — 2025*
 
 ---
 
@@ -252,8 +250,6 @@ Popstars/
 ---
 
 ## 🤝 Contributing
-
-This is a closed university project. If you're a team member:
 
 1. Always branch from `feature/gem-board`, not `main`
 2. Keep commits small and descriptive (`feat:`, `fix:`, `refactor:`)
