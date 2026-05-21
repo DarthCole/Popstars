@@ -1,131 +1,277 @@
-# PopstarHub Shop UI Progress Summary
+<div align="center">
 
-Date: 2026-03-28
-Project: PopstarHub (Unity 2D)
-Owner: Andre (Shop UI)
+# 💎 Popstar Hub
 
-## 1. What Was Completed
+**A gem-match battle game where pop star rivals clash for chart supremacy.**
 
-### Core Shop Structure
-- Built the shop landing page and category page flow inside `ShopPanel`.
-- Added category pages:
-  - OutfitsPage
-  - SongsPage
-  - StagesPage
-  - CharactersPage
-- Kept one shared top-level title object and switched text per active page.
+[![Unity](https://img.shields.io/badge/Engine-Unity%206-black?logo=unity)](https://unity.com/)
+[![Language](https://img.shields.io/badge/Language-C%23-purple?logo=csharp)](https://learn.microsoft.com/en-us/dotnet/csharp/)
+[![Platform](https://img.shields.io/badge/Platform-PC%20%7C%20Mac-blue)](#)
+[![Branch](https://img.shields.io/badge/Active%20Branch-feature%2Fgem--board-pink)](https://github.com/DarthCole/Popstars/tree/feature/gem-board)
+[![Status](https://img.shields.io/badge/Status-In%20Development-yellow)](#)
+[![License](https://img.shields.io/badge/License-MIT-green)](#license)
 
-### Navigation System
-- Implemented `ShopPageNavigator.cs` to manage page visibility and navigation.
-- Added methods to open each page:
-  - OpenOutfitsPage
-  - OpenSongsPage
-  - OpenStagesPage
-  - OpenCharactersPage
-- Added contextual back behavior:
-  - If inside a category page -> return to landing page.
-  - If on landing page -> go to home page (when assigned).
-- Added safety fallback if home page is not assigned.
+<br/>
 
-### Tab Bar Behavior
-- Added `tabBar` control in navigator.
-- Tab bar now:
-  - Hidden on landing page.
-  - Visible on category pages.
-  - Hidden again when exiting shop to home.
+> *Match gems. Deal damage. Become the bigger star.*
 
-### Dynamic Shared Title Behavior
-- Updated `ShopPageNavigator.cs` to support shared title switching using TMP text.
-- Added configurable title strings:
-  - landingTitle
-  - outfitsTitle
-  - songsTitle
-  - stagesTitle
-  - charactersTitle
-- Title updates automatically when pages change.
+<br/>
 
-### Category Card Visuals and Interactions
-- Set up hover interactions for category cards.
-- Added bobbing/hover effects and click navigation flow.
-- Implemented category card button wiring to navigator page methods.
+</div>
 
-### Shop Item Cards and Scroll Pages
-- Built card-based item layout under scroll containers for category pages.
-- Implemented multi-row card arrangement and duplicated rows for faster setup.
-- Added and tested card visuals (frame/background/button/text/icon structure).
+---
 
-### Scroll/Content Layout Improvements
-- Created `ManualScrollContentFitter.cs` to support manual card arrangement with dynamic content height for proper scroll bounds.
-- Created `DynamicShopGridLayout.cs` to support fully dynamic card arrangement with configurable:
-  - Columns
-  - Cell size
-  - Horizontal spacing
-  - Vertical spacing
-  - Top/Bottom/Left/Right padding
-- Dynamic height resizing added for ScrollRect compatibility.
+## 🎮 What is Popstar Hub?
 
-### Hover Script Cleanup
-- Updated `ButtonHoverEffect.cs` to remove hover color changing behavior.
-- Kept scale-on-hover behavior only.
+Popstar Hub is a **PC party game** where two iconic pop star rivals — **MikaelYackson** and **Beyonslay** — battle for chart dominance through arcade mini-game challenges.
 
-## 2. Files Added or Updated
+Players compete on a glittering 8×8 gem board, chaining combos to deal damage to their opponent's health bar. Every match earns **StarCoins**, the in-game currency of fame, which can be spent in the **Shop** on outfits, stages, and songs that visually transform your popstar.
 
-### Added
-- `Assets/ManualScrollContentFitter.cs`
-- `Assets/DynamicShopGridLayout.cs`
+Progression isn't just numbers — it's your popstar evolving and gaining access to more of the world.
 
-### Updated
-- `Assets/ShopPageNavigator.cs`
-  - Tab bar visibility logic
-  - Shared TMP title switching logic
-- `Assets/ButtonHoverEffect.cs`
-  - Removed color tint hover logic
+---
 
-## 3. Current Working Behavior
+## ✨ Core Features
 
-- Landing page opens correctly.
-- Category buttons open their corresponding pages.
-- Back button returns from category -> landing.
-- Tab bar appears on category pages and hides on landing.
-- Shared title changes based on active page.
-- Item cards can be arranged and displayed in multi-row layouts.
-- Dynamic layout scripts are available depending on preferred workflow:
-  - Manual arrangement with dynamic scroll bounds (`ManualScrollContentFitter`)
-  - Fully automatic grid arrangement (`DynamicShopGridLayout`)
+| Feature | Description | Status |
+|---|---|---|
+| 🏠 **Hub Navigation** | Home base — select challenges, view your evolving popstar identity | 🔧 WIP |
+| 💎 **Gem Match Battle** | 8×8 board — match symbols to deal damage and chain combos | ✅ Complete |
+| 🪙 **StarCoin Economy** | Performance score converts to spendable in-game currency | 🔧 WIP |
+| 🛍️ **Shop & Unlocks** | Outfits, stages, songs — self-expression is the popstar fantasy | 🔧 WIP |
+| 🌐 **LAN Multiplayer** | Head-to-head on a local network — no internet required | 🔧 Prototyping |
 
-## 4. Key Setup Notes in Unity Inspector
+### Secondary Features (Scoped for Future Sprints)
 
-### For Shared Title
-On `ShopPageNavigator`:
-- Assign `shopTitleText` to your top title TMP object.
-- Configure title strings for landing and each category.
+- 🎵 **Karaoke** — performance layer, high technical risk
+- 🧠 **Trivia** — entertaining side challenge
+- 💃 **Popstar Life** — lifestyle minigame (overlaps with Shop)
 
-### For Tab Bar Visibility
-On `ShopPageNavigator`:
-- Assign `tabBar` field to TabBar GameObject.
+---
 
-### For Dynamic Auto Grid
-On `Content` object:
-- Disable/remove Grid Layout Group and Content Size Fitter.
-- Add `DynamicShopGridLayout`.
-- Assign Content and Viewport references.
-- Tune columns/spacing/padding in inspector.
+## 🕹️ The 5-Step Gameplay Loop
 
-### For Manual Placement + Dynamic Scroll Bounds
-On `Content` object:
-- Keep manual card positions.
-- Add `ManualScrollContentFitter`.
-- Assign Content and Viewport references.
-- Use top/bottom padding controls.
+```
+1. Enter the Hub      →   Select a mini-game challenge on your path to stardom
+2. Compete            →   Play Gem Match — match gems, chain combos, defeat your rival
+3. Earn StarCoins     →   Your performance score converts to StarCoins (in-game fame currency)
+4. Visit the Shop     →   Spend StarCoins on outfits, stages & songs
+5. Return Transformed →   Back to the Hub, visually evolved — ready for the next challenge
+```
 
-## 5. Recommended Next Steps
+---
 
-1. Wire all tab buttons (Outfits/Songs/Stages/Characters) to navigator methods and verify in Play Mode.
-2. Add active-tab visual state so current category is clearly highlighted.
-3. Replace placeholder icons/text/prices with real shop data.
-4. Integrate StarCoin purchase logic once coin manager is finalized.
-5. Convert one polished item card into a prefab and reuse across all pages.
+## 🎤 Characters
 
-## 6. Quick Handoff Summary
+<table>
+<tr>
+<td align="center" width="50%">
 
-The Shop UI now has working navigation, category pages, tab visibility control, shared dynamic title updates, cleaned hover behavior, and both manual and automatic item layout options. The system is now ready for final content population and purchase integration.
+### 🕺 MikaelYackson
+*The Smooth Operator*
+
+- **Specialty:** High combo multiplier
+- **Playstyle:** Chain-focused, reward patient players who set up long sequences
+
+</td>
+<td align="center" width="50%">
+
+### 💃 Beyonslay
+*The Fierce Diva*
+
+- **Specialty:** Power-Up Specialist
+- **Playstyle:** Aggressive, burst-damage oriented through rapid power-up activation
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🏗️ Architecture
+
+Popstar Hub follows a **clean, component-based Unity architecture**. One class per file, `[SerializeField]` over public fields, events for callbacks, and coroutines for all timed logic.
+
+### Script Map
+
+```
+Assets/
+├── Scripts/
+│   ├── GemMatch/
+│   │   ├── GemBoard.cs           # Central coordinator — 8×8 grid, spawning, cascade logic
+│   │   ├── Gem.cs                # Individual gem data and state
+│   │   ├── GemAnimator.cs        # All gem animations (slide, fall, match flash, power-up burst)
+│   │   ├── GemInputHandler.cs    # Click/swap input — decoupled from board logic
+│   │   ├── MatchDetector.cs      # Detects 3+ horizontal/vertical matches, returns match groups
+│   │   ├── PowerUpHandler.cs     # Row clear, bomb, stun — event-driven, fully modular
+│   │   └── HintSystem.cs         # Highlights valid moves — timer-triggered for new players
+│   │
+│   ├── Battle/
+│   │   ├── BattleManager.cs      # Orchestrates fighter health, AI turns, win/loss flow
+│   │   ├── Fighter.cs            # Fighter data and health logic
+│   │   ├── HealthBarUI.cs        # Health bar rendering and animation
+│   │   ├── AIOpponent.cs         # AI decision-making for solo play
+│   │   └── PopstarData.cs        # ScriptableObject — character stats and metadata
+│   │
+│   ├── Economy/
+│   │   ├── ScoreManager.cs       # Tracks score, combo multiplier, StarCoin conversion
+│   │   └── ScorePopup.cs         # Floating score text on match
+│   │
+│   ├── Game/
+│   │   ├── GameManager.cs        # Scene flow, game state orchestration
+│   │   └── GameTimer.cs          # Match countdown timer
+│   │
+│   └── Audio/
+│       └── SoundManager.cs       # 100% procedural audio — no audio files required
+│
+└── ScriptableObjects/
+    └── PopstarData/              # MikaelYackson.asset, Beyonslay.asset
+```
+
+### Key Design Decisions
+
+- **`GemBoard.cs` is the single coordinator** — all other gem systems communicate through it
+- **Events over direct calls** — systems raise events; dependent scripts subscribe
+- **Coroutines for all timed logic** — no heavy `Update()` polling
+- **`[SerializeField]` everywhere** — never `public` fields; Inspector-wired references
+- **`Awake()` null-coalescing fallbacks** — `??=` guards protect against reference loss from scene reloads
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Unity 6](https://unity.com/releases/unity-6) (6000.0.x or later)
+- Git with LFS support
+- Windows 10 / macOS 12 or later
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/DarthCole/Popstars.git
+cd Popstars
+
+# Switch to the active development branch
+git checkout feature/gem-board
+```
+
+Then open the project folder in **Unity Hub** and let it import.
+
+> ⚠️ **Important:** Always move files using Unity's **Project window** — never via Finder/Explorer. Moving scripts outside Unity breaks all `.meta` file links and loses every serialized Inspector reference.
+
+### First Run
+
+1. Open `Assets/Scenes/MainScene.unity` in the Unity Editor
+2. Press **Play** to launch the gem board
+3. Click a gem, then click an adjacent gem to swap — match 3 or more to score
+
+---
+
+## 🌿 Branch Structure
+
+| Branch | Purpose |
+|---|---|
+| `main` | Stable, reviewed builds only |
+| `feature/gem-board` | **Active development** — all current gem-match and battle work lives here |
+
+The PR from `feature/gem-board` → `main` will be opened at final submission: [DarthCole/Popstars/pull/new/feature/gem-board](https://github.com/DarthCole/Popstars/pull/new/feature/gem-board)
+
+### Git Workflow (End of Session)
+
+```bash
+cd ~/Desktop/Popstars
+git add .
+git commit -m "feat: describe your change here"
+git push origin feature/gem-board
+```
+
+> ✅ Always track `.meta` files in Git — they preserve serialized Inspector references across machines.
+
+---
+
+## 🗺️ Roadmap
+
+| Milestone | Target | Status |
+|---|---|---|
+| Project Kickoff + Repo Setup | Jan 2025 | ✅ Done |
+| GemMatch Core (board, match detection, scoring) | Feb 2025 | ✅ Done |
+| Battle System (fighters, health bars, AI) | Mar 2025 | ✅ Done |
+| Shop & StarCoin Economy | Apr 2025 | 🔧 In Progress |
+| UI Polish + LAN Multiplayer | May 2025 | 🔧 In Progress |
+| **Final Submission (University Showcase)** | **Jun 2025** | ⏳ Upcoming |
+
+---
+
+## 👥 Team Popstars
+
+| Name | Role |
+|---|---|
+| **Andre** | Lead Developer |
+| **Jason** | UI / Battle System |
+| **Sedem** | Backend & Architecture |
+| **Elsie** | Art & Character Design |
+| **Reno** | Game Design & Balance |
+| **Gibby** | Gem Match / Mini-Games |
+
+*University Final Project — 2025*
+
+---
+
+## 🛠️ Tech Stack
+
+| Tool | Use |
+|---|---|
+| Unity 6 | Game engine |
+| C# | All game logic |
+| GitHub | Version control |
+| Unity Netcode for GameObjects | LAN multiplayer (prototyping) |
+| TextMeshPro | All in-game UI text |
+| ScriptableObjects | Character data (`PopstarData`) |
+
+---
+
+## 📁 Project Structure
+
+```
+Popstars/
+├── Assets/
+│   ├── Scenes/
+│   ├── Scripts/          # All C# source (see Architecture above)
+│   ├── Prefabs/
+│   ├── ScriptableObjects/
+│   ├── Art/              # Placeholder art — final assets TBD
+│   └── Audio/            # Procedural only — no audio files committed
+├── Packages/
+├── ProjectSettings/
+└── README.md
+```
+
+---
+
+## 🤝 Contributing
+
+This is a closed university project. If you're a team member:
+
+1. Always branch from `feature/gem-board`, not `main`
+2. Keep commits small and descriptive (`feat:`, `fix:`, `refactor:`)
+3. Never move scripts outside Unity's Project window
+4. Add `Awake()` null-coalescing guards to any new script that uses Inspector references
+5. Open a PR for review before merging anything to `main`
+
+---
+
+## 📄 License
+
+This project is submitted as a university final project. Source code is available for review and portfolio purposes under the [MIT License](LICENSE).
+
+---
+
+<div align="center">
+
+💎 *Match gems. Deal damage. Become the bigger star.* 💎
+
+**[github.com/DarthCole/Popstars](https://github.com/DarthCole/Popstars)**  ·  Branch: `feature/gem-board`
+
+</div>
